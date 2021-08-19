@@ -19,7 +19,8 @@ jobs:
         sed '/include/r.github/workflows/boards.txt' .github/workflows/mirror-sync.template > .github/workflows/mirror-sync.yml
         #cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/<a href=releases\/tag\/&>&<\/a>/' > README.md
         SITE="${{ github.repository }}"
-        cat userdata.csv | cut -d"/" -f1 | uniq | sed "s/.*/<a href=\/$SITE\/releases\/tag\/&>&<\/a>/" > README.md
+        SITE="lloo"
+        cat userdata.csv | cut -d"/" -f1 | uniq | sed "s/.*/<a href=\/${SITE}\/releases\/tag\/&>&<\/a>/" > README.md
         git add .github/workflows/mirror-purge.yml
         git add .github/workflows/mirror-sync.yml
         git add README.md
