@@ -22,7 +22,7 @@ jobs:
         #cat userdata.csv | cut -d"/" -f1 | uniq | sed "s/.*/<a href=\/$SITE\/releases\/tag\/&>&<\/a>/"
         git add .github/workflows/mirror-purge.yml
         git add .github/workflows/mirror-sync.yml
-        git add README.md
+        #git add README.md
     - name: Commit files
       run: |
         git config --local user.email "info@armbian.com"
