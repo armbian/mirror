@@ -1,0 +1,97 @@
+name: image_build_more
+on:
+  workflow_dispatch:
+
+jobs:
+  Prepare:
+    runs-on: ubuntu-20.04
+    steps:
+      -
+        run: |
+          wget https://www.armbian.com/userdata.csv
+          mkdir temp
+          cp userdata.csv temp/
+          
+      - name: Cache Gradle packages
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-build
+        with:
+          path: temp
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**') }}
+
+  "Build": # short name because GH will expand with the matrix values
+    needs: [ Prepare ]
+    runs-on: ubuntu-20.04
+    timeout-minutes: 480
+    strategy:
+      max-parallel: 4
+      fail-fast: false # let other jobs try to complete if one fails
+      matrix: 
+        include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
+    steps:
+      - name: Install depen
+        run: sudo apt-get -y install parallel jq axel
+      - name: Cache Gradle packages
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-build
+        with:
+          path: temp
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**') }}
+
+      - 
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{ github.token }}
+      -
+        name: Download from Armbian storage
+        id: image-build
+        run: |
+
+          set +e
+          BOARD="${{ matrix.board }}"
+          DEBUG="no"
+
+          FILES=$(cat temp/userdata.csv | grep ${BOARD}"/" | grep -v nightly | cut -d"|" -f2) # exclude nightly
+          MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -M -r | tr -d \" | grep http | tr -d , | tr -d " " | sort| uniq) 
+          for FILE in ${FILES[@]}
+          do
+            echo $FILE
+            PARALLEL=$(
+            for k in ${MIRRORS[@]}
+            do
+              echo "$k$j"
+            done | parallel --halt now,fail=1 --jobs 32 wget -q --spider --timeout=5 --tries=2 --retry-connrefused {} 2>&1 >/dev/null)
+            if [[ -n "${PARALLEL}" ]]; then
+              REMOVE=$(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed "s/$BOARD.*//" | sort | uniq)
+              for l in ${REMOVE[@]}; do
+                [[ "${DEBUG}" == yes ]] && echo "Removing mirror: $l"
+                MIRRORS=$(echo "${MIRRORS}" | sed "s|$l ||")
+              done
+              [[ $DEBUG == yes ]] && echo "Timeout: $(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | cut -d"/" -f1-4 | sort | uniq)/${BOARD}/archive/$(echo $PARALLEL | egrep -o 'https?://[^ ]+' | rev | cut -d / -f 1 | rev)"
+            fi
+          # download
+          DOWNLOAD="axel -q -c -a "
+          for m in ${MIRRORS[@]}; do
+              DOWNLOAD=${DOWNLOAD}" $m$FILE"
+          done
+          echo "https://github.com/${{ github.repository }}/releases/download/${FILE/archive\//}"
+          if ! wget -q --spider --timeout=5 --tries=2 --retry-connrefused https://github.com/"${{ github.repository }}"/releases/download/${FILE/archive\//} ; then
+              echo "Downloading ..."
+              eval "${DOWNLOAD}"
+              echo "UPLOAD=true" >> $GITHUB_ENV
+          fi
+          done
+      - name: Upload artefacts
+        if: ${{ env.UPLOAD == 'true' }}
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: Armbian*
+          tag: ${{ matrix.board }}
+          overwrite: true
+          file_glob: true
+          body: "This is Armbian file mirror at Github"
