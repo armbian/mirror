@@ -1,4 +1,4 @@
-name: image_build_more
+name: Sync mirror
 on:
   workflow_dispatch:
 
