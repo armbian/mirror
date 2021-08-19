@@ -1,0 +1,215 @@
+name: image_build_more
+on:
+  workflow_dispatch:
+
+jobs:
+  Prepare:
+    runs-on: ubuntu-20.04
+    steps:
+      -
+        run: |
+          wget https://www.armbian.com/userdata.csv
+          mkdir temp
+          cp userdata.csv temp/
+          
+      - name: Cache Gradle packages
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-build
+        with:
+          path: temp
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**') }}
+
+  "Build": # short name because GH will expand with the matrix values
+    needs: [ Prepare ]
+    runs-on: ubuntu-20.04
+    timeout-minutes: 480
+    strategy:
+      max-parallel: 4
+      fail-fast: false # let other jobs try to complete if one fails
+      matrix: 
+        include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
+          - board: bananapi
+          - board: bananapim2plus
+          - board: bananapim2ultra
+          - board: bananapim2zero
+          - board: bananapim3
+          - board: bananapim64
+          - board: bananapipro
+          - board: bananapir2
+          - board: clearfogbase
+          - board: clearfogpro
+          - board: cubieboard2
+          - board: cubieboard
+          - board: cubietruck
+          - board: cubox-i
+          - board: espressobin
+          - board: fe-som-rk3399
+          - board: firefly-rk3399
+          - board: helios4
+          - board: helios64
+          - board: jetson-nano
+          - board: khadas-edge
+          - board: khadas-vim1
+          - board: khadas-vim2
+          - board: khadas-vim3
+          - board: khadas-vim3l
+          - board: lafrite
+          - board: lepotato
+          - board: lime2
+          - board: lime-a10
+          - board: lime-a64
+          - board: lime
+          - board: macchiatobin-doubleshot
+          - board: micro
+          - board: miqi
+          - board: nanopct3
+          - board: nanopct3plus
+          - board: nanopct4
+          - board: nanopia64
+          - board: nanopiair
+          - board: nanopiduo2
+          - board: nanopiduo
+          - board: nanopifire3
+          - board: nanopik1plus
+          - board: nanopik2-s905
+          - board: nanopim1
+          - board: nanopim1plus
+          - board: nanopim3
+          - board: nanopim4
+          - board: nanopim4v2
+          - board: nanopineo2black
+          - board: nanopineo2
+          - board: nanopineo3
+          - board: nanopineo4
+          - board: nanopineo
+          - board: nanopineocore2
+          - board: nanopineo
+          - board: nanopineoplus2
+          - board: nanopi-r1
+          - board: nanopi-r2s
+          - board: nanopi-r4s
+          - board: odroidc1
+          - board: odroidc2
+          - board: odroidc4
+          - board: odroidhc4
+          - board: odroidn2
+          - board: odroidxu4
+          - board: orangepi2
+          - board: orangepi3
+          - board: orangepi4
+          - board: orangepilite2
+          - board: orangepilite
+          - board: orangepione
+          - board: orangepioneplus
+          - board: orangepipc2
+          - board: orangepipc
+          - board: orangepipcplus
+          - board: orangepiplus2e
+          - board: orangepiplus
+          - board: orangepiprime
+          - board: orangepi-r1
+          - board: orangepi-r1plus
+          - board: orangepi-rk3399
+          - board: orangepiwin
+          - board: orangepizero2
+          - board: orangepizero
+          - board: orangepizeroplus2-h3
+          - board: orangepizeroplus2-h5
+          - board: orangepizeroplus
+          - board: pcduino3
+          - board: pine64
+          - board: pine64so
+          - board: pinebook-a64
+          - board: pinebook-pro
+          - board: pinecube
+          - board: pineh64-b
+          - board: pineh64
+          - board: renegade
+          - board: rk322x-box
+          - board: rock64
+          - board: rockpi-4a
+          - board: rockpi-4b
+          - board: rockpi-4c
+          - board: rockpi-e
+          - board: rockpi-n10
+          - board: rockpi-s
+          - board: rockpro64
+          - board: station-m1
+          - board: station-p1
+          - board: teres-a64
+          - board: tinkerboard-2
+          - board: tinkerboard
+          - board: tritium-h3
+          - board: tritium-h5
+          - board: udoo
+          - board: virtual-qemu
+          - board: xt-q8l-v10
+          - board: z28pro
+          - board: zeropi
+    steps:
+      - name: Install depen
+        run: sudo apt-get -y install parallel jq axel
+      - name: Cache Gradle packages
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-build
+        with:
+          path: temp
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**') }}
+
+      - 
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{ github.token }}
+      -
+        name: Download from Armbian storage
+        id: image-build
+        run: |
+
+          set +e
+          BOARD="${{ matrix.board }}"
+          DEBUG="no"
+
+          FILES=$(cat temp/userdata.csv | grep ${BOARD}"/" | grep -v nightly | cut -d"|" -f2) # exclude nightly
+          MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -M -r | tr -d \" | grep http | tr -d , | tr -d " " | sort| uniq) 
+          for FILE in ${FILES[@]}
+          do
+            echo $FILE
+            PARALLEL=$(
+            for k in ${MIRRORS[@]}
+            do
+              echo "$k$j"
+            done | parallel --halt now,fail=1 --jobs 32 wget -q --spider --timeout=5 --tries=2 --retry-connrefused {} 2>&1 >/dev/null)
+            if [[ -n "${PARALLEL}" ]]; then
+              REMOVE=$(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed "s/$BOARD.*//" | sort | uniq)
+              for l in ${REMOVE[@]}; do
+                [[ "${DEBUG}" == yes ]] && echo "Removing mirror: $l"
+                MIRRORS=$(echo "${MIRRORS}" | sed "s|$l ||")
+              done
+              [[ $DEBUG == yes ]] && echo "Timeout: $(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | cut -d"/" -f1-4 | sort | uniq)/${BOARD}/archive/$(echo $PARALLEL | egrep -o 'https?://[^ ]+' | rev | cut -d / -f 1 | rev)"
+            fi
+          # download
+          DOWNLOAD="axel -q -c -a "
+          for m in ${MIRRORS[@]}; do
+              DOWNLOAD=${DOWNLOAD}" $m$FILE"
+          done
+          echo "https://github.com/${{ github.repository }}/releases/download/${FILE/archive\//}"
+          if ! wget -q --spider --timeout=5 --tries=2 --retry-connrefused https://github.com/"${{ github.repository }}"/releases/download/${FILE/archive\//} ; then
+              echo "Downloading ..."
+              eval "${DOWNLOAD}"
+              echo "UPLOAD=true" >> $GITHUB_ENV
+          fi
+          done
+      - name: Upload artefacts
+        if: ${{ env.UPLOAD == 'true' }}
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: Armbian*
+          tag: ${{ matrix.board }}
+          overwrite: true
+          file_glob: true
+          body: "This is Armbian file mirror at Github"

@@ -1,0 +1,138 @@
+name: Delete releases
+on:
+  workflow_dispatch:
+
+jobs:
+  Purge:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 480
+    strategy:
+      max-parallel: 4
+      fail-fast: false
+      matrix: 
+        include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
+          - board: bananapi
+          - board: bananapim2plus
+          - board: bananapim2ultra
+          - board: bananapim2zero
+          - board: bananapim3
+          - board: bananapim64
+          - board: bananapipro
+          - board: bananapir2
+          - board: clearfogbase
+          - board: clearfogpro
+          - board: cubieboard2
+          - board: cubieboard
+          - board: cubietruck
+          - board: cubox-i
+          - board: espressobin
+          - board: fe-som-rk3399
+          - board: firefly-rk3399
+          - board: helios4
+          - board: helios64
+          - board: jetson-nano
+          - board: khadas-edge
+          - board: khadas-vim1
+          - board: khadas-vim2
+          - board: khadas-vim3
+          - board: khadas-vim3l
+          - board: lafrite
+          - board: lepotato
+          - board: lime2
+          - board: lime-a10
+          - board: lime-a64
+          - board: lime
+          - board: macchiatobin-doubleshot
+          - board: micro
+          - board: miqi
+          - board: nanopct3
+          - board: nanopct3plus
+          - board: nanopct4
+          - board: nanopia64
+          - board: nanopiair
+          - board: nanopiduo2
+          - board: nanopiduo
+          - board: nanopifire3
+          - board: nanopik1plus
+          - board: nanopik2-s905
+          - board: nanopim1
+          - board: nanopim1plus
+          - board: nanopim3
+          - board: nanopim4
+          - board: nanopim4v2
+          - board: nanopineo2black
+          - board: nanopineo2
+          - board: nanopineo3
+          - board: nanopineo4
+          - board: nanopineo
+          - board: nanopineocore2
+          - board: nanopineo
+          - board: nanopineoplus2
+          - board: nanopi-r1
+          - board: nanopi-r2s
+          - board: nanopi-r4s
+          - board: odroidc1
+          - board: odroidc2
+          - board: odroidc4
+          - board: odroidhc4
+          - board: odroidn2
+          - board: odroidxu4
+          - board: orangepi2
+          - board: orangepi3
+          - board: orangepi4
+          - board: orangepilite2
+          - board: orangepilite
+          - board: orangepione
+          - board: orangepioneplus
+          - board: orangepipc2
+          - board: orangepipc
+          - board: orangepipcplus
+          - board: orangepiplus2e
+          - board: orangepiplus
+          - board: orangepiprime
+          - board: orangepi-r1
+          - board: orangepi-r1plus
+          - board: orangepi-rk3399
+          - board: orangepiwin
+          - board: orangepizero2
+          - board: orangepizero
+          - board: orangepizeroplus2-h3
+          - board: orangepizeroplus2-h5
+          - board: orangepizeroplus
+          - board: pcduino3
+          - board: pine64
+          - board: pine64so
+          - board: pinebook-a64
+          - board: pinebook-pro
+          - board: pinecube
+          - board: pineh64-b
+          - board: pineh64
+          - board: renegade
+          - board: rk322x-box
+          - board: rock64
+          - board: rockpi-4a
+          - board: rockpi-4b
+          - board: rockpi-4c
+          - board: rockpi-e
+          - board: rockpi-n10
+          - board: rockpi-s
+          - board: rockpro64
+          - board: station-m1
+          - board: station-p1
+          - board: teres-a64
+          - board: tinkerboard-2
+          - board: tinkerboard
+          - board: tritium-h3
+          - board: tritium-h5
+          - board: udoo
+          - board: virtual-qemu
+          - board: xt-q8l-v10
+          - board: z28pro
+          - board: zeropi
+    steps:
+      - uses: dev-drprasad/delete-tag-and-release@v0.2.0
+        with:
+          delete_release: true # default: false
+          tag_name: ${{ matrix.board }} # tag name to delete
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
