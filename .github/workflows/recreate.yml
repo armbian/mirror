@@ -20,6 +20,7 @@ jobs:
         #cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/<a href=releases\/tag\/&>&<\/a>/' > README.md
         SITE="${{ github.repository }}"
         #SITE="lloo"
+        echo $SITE
         cat userdata.csv | cut -d"/" -f1 | uniq | sed "s/.*/<a href=http:\/\/www.github.com\/\/${SITE}\/releases\/tag\/&>&<\/a>/" > README.md
         git add .github/workflows/mirror-purge.yml
         git add .github/workflows/mirror-sync.yml
