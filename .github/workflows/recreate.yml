@@ -17,7 +17,7 @@ jobs:
         cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/' > .github/workflows/boards.txt
         sed '/include/r.github/workflows/boards.txt' .github/workflows/mirror-purge.template > .github/workflows/mirror-purge.yml
         sed '/include/r.github/workflows/boards.txt' .github/workflows/mirror-sync.template > .github/workflows/mirror-sync.yml
-        cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/<a href=releases\/tag\/&>&<\/a>/' > README.md
+        #cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/<a href=releases\/tag\/&>&<\/a>/' > README.md
         #SITE="${{ github.repository }}"
         #cat userdata.csv | cut -d"/" -f1 | uniq | sed "s/.*/<a href=\/$SITE\/releases\/tag\/&>&<\/a>/"
         git add .github/workflows/mirror-purge.yml
