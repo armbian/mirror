@@ -8,13 +8,12 @@ on:
 jobs:
   Prepare:
     runs-on: ubuntu-20.04
+    if: ${{ github.repository_owner == 'Armbian' }}
     steps:
       -
         run: |
-          wget https://www.armbian.com/userdata.csv
-          mkdir temp
-          cp userdata.csv temp/
-          
+          wget -P temp https://www.armbian.com/userdata.csv
+
       - name: Cache Gradle packages
         uses: actions/cache@v2
         env:

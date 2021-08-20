@@ -5,6 +5,7 @@ on:
 jobs:
   Purge:
     runs-on: ubuntu-20.04
+    if: ${{ github.repository_owner == 'Armbian' }}
     timeout-minutes: 480
     strategy:
       max-parallel: 4
