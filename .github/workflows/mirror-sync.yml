@@ -1,7 +1,7 @@
 name: Sync mirror
 on:
-  schedule:
-    - cron:  '0 */4 * * *'
+#  schedule:
+#    - cron:  '0 */4 * * *'
 
   workflow_dispatch:
 
@@ -23,7 +23,7 @@ jobs:
           path: temp
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**') }}
 
-  "Build": # short name because GH will expand with the matrix values
+  "Sync": # short name because GH will expand with the matrix values
     needs: [ Prepare ]
     runs-on: ubuntu-20.04
     timeout-minutes: 480
