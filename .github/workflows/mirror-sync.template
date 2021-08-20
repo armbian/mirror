@@ -20,9 +20,9 @@ jobs:
           cache-name: cache-build
         with:
           path: temp
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ github.run_id }}
 
-  "Sync": # short name because GH will expand with the matrix values
+  Build: # short name because GH will expand with the matrix values
     needs: [ Prepare ]
     runs-on: ubuntu-20.04
     timeout-minutes: 480
@@ -40,9 +40,9 @@ jobs:
           cache-name: cache-build
         with:
           path: temp
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ github.run_id }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**') }}
+            ${{ runner.os }}-build-${{ env.cache-name }}-${{ github.run_id }}
 
       - 
         uses: styfle/cancel-workflow-action@0.9.1
@@ -59,6 +59,9 @@ jobs:
 
           FILES=$(cat temp/userdata.csv | grep ${BOARD}"/" | grep -v nightly | cut -d"|" -f2) # exclude nightly
           MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -M -r | tr -d \" | grep http | tr -d , | tr -d " " | sort| uniq) 
+          echo "BOARD=$BOARD" >> $GITHUB_ENV
+          truncate -s 0 ${BOARD}.log
+
           for FILE in ${FILES[@]}
           do
             echo $FILE
@@ -71,6 +74,7 @@ jobs:
               REMOVE=$(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed "s/$BOARD.*//" | sort | uniq)
               for l in ${REMOVE[@]}; do
                 [[ "${DEBUG}" == yes ]] && echo "Removing mirror: $l"
+                echo "Error,$l,$FILE" >> ${BOARD}.log
                 MIRRORS=$(echo "${MIRRORS}" | sed "s|$l ||")
               done
               [[ $DEBUG == yes ]] && echo "Timeout: $(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | cut -d"/" -f1-4 | sort | uniq)/${BOARD}/archive/$(echo $PARALLEL | egrep -o 'https?://[^ ]+' | rev | cut -d / -f 1 | rev)"
@@ -97,3 +101,38 @@ jobs:
           overwrite: true
           file_glob: true
           body: "This is Armbian file mirror at Github"
+      - name: Upload logs
+        uses: actions/upload-artifact@v2
+        with:
+          name: logs
+          path: ${{ env.BOARD }}.log
+
+  Finish:
+    needs: [ Build ]
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: logs
+
+      - name: Display structure of downloaded files
+        run: |
+          echo "[![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml)" > README.md
+          echo -en "\n# Mirrors error count:\n" >> README.md
+          cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
+      - name: Add
+        run: |
+          git add README.md
+
+      - name: Commit files
+        run: |
+          git config --local user.email "info@armbian.com"
+          git config --local user.name "Armbianworker"
+          git commit --allow-empty -m "Update github actions" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.MIRROR }}
+          branch: ${{ github.ref }}
