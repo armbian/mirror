@@ -1,1 +1,1 @@
-[![Recreate action](https://github.com/armbian/mirror/actions/workflows/recreate.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/recreate.yml)
+[![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml)
