@@ -6,6 +6,7 @@ jobs:
   build:
     name: Recreate action
     runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'Armbian' }}
     steps:
     - uses: actions/checkout@v2
       with:
