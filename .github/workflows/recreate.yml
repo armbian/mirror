@@ -2,6 +2,10 @@ name: Recreate action
 on:
   workflow_dispatch:
 
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     name: Recreate action
