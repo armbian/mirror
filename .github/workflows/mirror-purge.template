@@ -13,7 +13,7 @@ jobs:
       matrix: 
         include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
     steps:
-      - uses: igorpecovnik/delete-tag-and-release
+      - uses: igorpecovnik/delete-tag-and-release@master
         with:
           delete_release: true # default: false
           tag_name: ${{ matrix.board }} # tag name to delete
