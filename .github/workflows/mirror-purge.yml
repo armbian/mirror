@@ -131,7 +131,7 @@ jobs:
           - board: z28pro
           - board: zeropi
     steps:
-      - uses: dev-drprasad/delete-tag-and-release@v0.2.0
+      - uses: igorpecovnik/delete-tag-and-release
         with:
           delete_release: true # default: false
           tag_name: ${{ matrix.board }} # tag name to delete
