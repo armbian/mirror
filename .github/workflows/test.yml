@@ -17,7 +17,7 @@ jobs:
 
           set +e
           FILES=$(rsync rsync://rsync.armbian.com/dl/_rootfs/ | awk '{ print $5}' | tail -n +3)
-          MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -M -r | tr -d \" | grep http | tr -d , | tr -d " " | sort| uniq)
+          MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -M -r | tr -d \" | grep http | grep -v github| tr -d , | tr -d " " | sort| uniq)
           for FILE in ${FILES[@]}
           do
             echo $FILE
@@ -40,8 +40,9 @@ jobs:
           for m in ${MIRRORS[@]}; do
               DOWNLOAD=${DOWNLOAD}" $m$FILE"
           done
+          echo $DOWNLOAD
           echo "https://github.com/${{ github.repository }}/releases/download/_rootfs/}"
-          if ! wget -q --spider --timeout=5 --tries=2 --retry-connrefused https://github.com/"${{ github.repository }}"/releases/download/_rootfs/} ; then
+          if ! wget -q --spider --timeout=5 --tries=2 --retry-connrefused https://github.com/"${{ github.repository }}"/releases/download/_rootfs/${FILE}} ; then
               echo "Downloading ..."
               eval "${DOWNLOAD}"
               echo "UPLOAD=true" >> $GITHUB_ENV
