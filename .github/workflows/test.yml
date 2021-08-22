@@ -15,6 +15,7 @@ jobs:
       -
         run: |
 
+          set +e
           FILES=$(rsync rsync://rsync.armbian.com/dl/_rootfs/ | awk '{ print $5}' | tail -n +3)
           MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -M -r | tr -d \" | grep http | tr -d , | tr -d " " | sort| uniq)
           for FILE in ${FILES[@]}
@@ -23,24 +24,24 @@ jobs:
             PARALLEL=$(
             for k in ${MIRRORS[@]}
             do
-              echo "$k$j"
+              echo "${k}_rootfs/${FILE}"
             done | parallel --halt now,fail=1 --jobs 32 wget -q --spider --timeout=5 --tries=2 --retry-connrefused {} 2>&1 >/dev/null)
             if [[ -n "${PARALLEL}" ]]; then
-              REMOVE=$(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed "s/$BOARD.*//" | sort | uniq)
+              REMOVE=$(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed "s/_rootfs.*//" | sort | uniq)
               for l in ${REMOVE[@]}; do
                 [[ "${DEBUG}" == yes ]] && echo "Removing mirror: $l"
                 echo "Error,$l,$FILE" >> mirror.log
                 MIRRORS=$(echo "${MIRRORS}" | sed "s|$l ||")
               done
-              [[ $DEBUG == yes ]] && echo "echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed "s/$BOARD.*//" | sort | uniq"
+              [[ $DEBUG == yes ]] && echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed 's/_rootfs.*//' | sort | uniq
             fi
           # download
           DOWNLOAD="axel -q -c -a "
           for m in ${MIRRORS[@]}; do
               DOWNLOAD=${DOWNLOAD}" $m$FILE"
           done
-          echo "https://github.com/${{ github.repository }}/releases/download/rootfs/}"
-          if ! wget -q --spider --timeout=5 --tries=2 --retry-connrefused https://github.com/"${{ github.repository }}"/releases/download/rootfs/} ; then
+          echo "https://github.com/${{ github.repository }}/releases/download/_rootfs/}"
+          if ! wget -q --spider --timeout=5 --tries=2 --retry-connrefused https://github.com/"${{ github.repository }}"/releases/download/_rootfs/} ; then
               echo "Downloading ..."
               eval "${DOWNLOAD}"
               echo "UPLOAD=true" >> $GITHUB_ENV
@@ -60,5 +61,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: logs
-          path: ${{ env.BOARD }}.log
+          path: mirror.log
 
