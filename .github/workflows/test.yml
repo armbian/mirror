@@ -38,7 +38,7 @@ jobs:
           # download
           DOWNLOAD="axel -q -c -a "
           for m in ${MIRRORS[@]}; do
-              DOWNLOAD=${DOWNLOAD}" $m$FILE"
+              DOWNLOAD=${DOWNLOAD}" ${m}_rootfs/${FILE}"
           done
           echo $DOWNLOAD
           echo "https://github.com/${{ github.repository }}/releases/download/_rootfs/}"
