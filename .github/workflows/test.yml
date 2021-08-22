@@ -10,9 +10,12 @@ jobs:
     runs-on: ubuntu-20.04
     if: ${{ github.repository_owner == 'Armbian' }}
     steps:
+      - name: Install depen
+        run: sudo apt-get -y install parallel jq axel
       -
         run: |
-          FILES=$(rsync rsync://rsync.armbian.com/dl/_rootfs/ | awk '{ print $5}')
+
+          FILES=$(rsync rsync://rsync.armbian.com/dl/_rootfs/ | awk '{ print $5}' | tail -n +3)
           MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -M -r | tr -d \" | grep http | tr -d , | tr -d " " | sort| uniq)
           for FILE in ${FILES[@]}
           do
