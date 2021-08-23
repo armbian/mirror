@@ -124,6 +124,7 @@ jobs:
           echo -en "\n[![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml)" >> README.md
           echo -en "\n# Mirrors error count:\n" >> README.md
           cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
+          echo -en "\n\n[Detailed report](detailed.txt)"
           find *.log -not -empty -type f -print0 | xargs -0 -I % sh -c 'cat % | cut -d"," -f2-3 |tr -d \"," " ' | sort > detailed.txt
       - name: Add
         run: |
