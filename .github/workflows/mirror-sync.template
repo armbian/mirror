@@ -68,7 +68,7 @@ jobs:
             PARALLEL=$(
             for k in ${MIRRORS[@]}
             do
-              echo "$k$j"
+              echo "$k$FILE"
             done | parallel --halt now,fail=1 --jobs 32 wget -q --spider --timeout=5 --tries=2 --retry-connrefused {} 2>&1 >/dev/null)
             if [[ -n "${PARALLEL}" ]]; then
               REMOVE=$(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed "s/$BOARD.*//" | sort | uniq)
