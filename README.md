@@ -2,9 +2,7 @@
 <p align=right>&nbsp;</p>
 
 [![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml)
-
 # Mirrors error count:
-      3 https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/
-      4 https://armbian.hosthatch.com/dl/
-    159 https://mirrors.ustc.edu.cn/armbian-dl/
-    593 https://mirrors.bfsu.edu.cn/armbian-releases/
+      1 https://armbian.hosthatch.com/dl/
+      4 https://mirrors.ustc.edu.cn/armbian-dl/
+    354 https://mirrors.bfsu.edu.cn/armbian-releases/
