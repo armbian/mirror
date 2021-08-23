@@ -58,7 +58,7 @@ jobs:
           DEBUG="no"
 
           FILES=$(cat temp/userdata.csv | grep ${BOARD}"/" | grep -v nightly | cut -d"|" -f2) # exclude nightly
-          MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -M -r | tr -d \" | grep http | tr -d , | tr -d " " | sort| uniq) 
+          MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)          
           echo "BOARD=$BOARD" >> $GITHUB_ENV
           truncate -s 0 ${BOARD}.log
 
