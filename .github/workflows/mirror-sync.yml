@@ -173,7 +173,7 @@ jobs:
 
           set +e
           BOARD="${{ matrix.board }}"
-          DEBUG="yes"
+          DEBUG="no"
 
           FILES=$(cat temp/userdata.csv | grep ${BOARD}"/" | grep -v nightly | cut -d"|" -f2) # exclude nightly
           MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)          
@@ -186,7 +186,7 @@ jobs:
             PARALLEL=$(
             for k in ${MIRRORS[@]}
             do
-              echo "$k$j"
+              echo "$k$FILE"
             done | parallel --halt now,fail=1 --jobs 32 wget -q --spider --timeout=5 --tries=2 --retry-connrefused {} 2>&1 >/dev/null)
             if [[ -n "${PARALLEL}" ]]; then
               REMOVE=$(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed "s/$BOARD.*//" | sort | uniq)
@@ -238,7 +238,7 @@ jobs:
       - name: Display structure of downloaded files
         run: |
           echo '<h3 align=center><a href="#build-tools"><img src="https://raw.githubusercontent.com/armbian/build/master/.github/armbian-logo.png" alt="Armbian logo" width="144"></a><br>mirror sync</h3>'  > README.md
-          echo '<p align=right>&nbsp;</p>' >> README.md
+          echo -en "<p align=right>&nbsp;</p>\n" >> README.md
           echo "[![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml)" >> README.md
           echo -en "\n# Mirrors error count:\n" >> README.md
           cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
