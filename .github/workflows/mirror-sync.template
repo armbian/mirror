@@ -85,7 +85,7 @@ jobs:
               DOWNLOAD=${DOWNLOAD}" $m$FILE"
           done
           echo "https://github.com/${{ github.repository }}/releases/download/${FILE}"
-          if ! wget -q --spider --timeout=5 --tries=2 --retry-connrefused https://github.com/"${{ github.repository }}"/releases/download/${FILE} ; then
+          if ! wget -q --spider --timeout=15 --tries=3 --retry-connrefused https://github.com/"${{ github.repository }}"/releases/download/${FILE} ; then
               echo "Downloading ..."
               eval "${DOWNLOAD}"
               echo "UPLOAD=true" >> $GITHUB_ENV
