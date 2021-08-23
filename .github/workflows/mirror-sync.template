@@ -126,6 +126,7 @@ jobs:
           cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
       - name: Add
         run: |
+          git pull
           git add README.md
 
       - name: Commit files
