@@ -69,7 +69,7 @@ jobs:
             for k in ${MIRRORS[@]}
             do
               echo "$k$FILE"
-            done | parallel --halt now,fail=1 --jobs 32 wget -q --spider --timeout=10 --tries=3 --retry-connrefused {} 2>&1 >/dev/null)
+            done | parallel --halt now,fail=1 --jobs 32 wget -q --spider --timeout=15 --tries=3 --retry-connrefused {} 2>&1 >/dev/null)
             if [[ -n "${PARALLEL}" ]]; then
               REMOVE=$(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed "s/$BOARD.*//" | sort | uniq)
               for l in ${REMOVE[@]}; do
