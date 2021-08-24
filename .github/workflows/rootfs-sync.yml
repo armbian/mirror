@@ -94,17 +94,14 @@ jobs:
               for l in ${REMOVE[@]}; do
                 [[ "${DEBUG}" == yes ]] && echo "Removing mirror: $l"
                 echo "Error,$l,$FILE" >> mirror.log
-                if ! wget -q --spider --timeout=15 --tries=3 --retry-connrefused https://github.com/${GITURL}/releases/download/_rootfs/${FILE} ; then
-                    rsync -av rsync://rsync.armbian.com/dl/_rootfs/${FILE} download/
-                    echo "1 $?"
-                fi
               done
               [[ $(ls -1 download | wc -l) -gt 0 ]] && echo "UPLOAD=true" >> $GITHUB_ENV
               [[ $DEBUG == yes ]] && echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed 's/_rootfs.*//' | sort | uniq
-              echo "2 $?"
             fi
-          done
-          echo "3 $?"
+            if ! wget -q --spider --timeout=15 --tries=3 --retry-connrefused https://github.com/${GITURL}/releases/download/_rootfs/${FILE} ; then
+                rsync -av rsync://rsync.armbian.com/dl/_rootfs/${FILE} download/
+            fi
+            done
       - name: Upload artefacts
         if: ${{ env.UPLOAD == 'true' }}
         uses: svenstaro/upload-release-action@v2
