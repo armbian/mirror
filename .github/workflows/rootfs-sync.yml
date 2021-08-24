@@ -95,11 +95,11 @@ jobs:
                 [[ "${DEBUG}" == yes ]] && echo "Removing mirror: $l"
                 echo "Error,$l,$FILE" >> mirror.log
               done
-              [[ $(ls -1 download | wc -l) -gt 0 ]] && echo "UPLOAD=true" >> $GITHUB_ENV
-              [[ $DEBUG == yes ]] && echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed 's/_rootfs.*//' | sort | uniq
             fi
+
             if ! wget -q --spider --timeout=15 --tries=3 --retry-connrefused https://github.com/${GITURL}/releases/download/_rootfs/${FILE} ; then
                 rsync -av rsync://rsync.armbian.com/dl/_rootfs/${FILE} download/
+                [[ $(ls -1 download | wc -l) -gt 0 ]] && echo "UPLOAD=true" >> $GITHUB_ENV
             fi
             done
       - name: Upload artefacts
