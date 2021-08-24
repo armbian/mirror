@@ -239,10 +239,10 @@ jobs:
         run: |
           echo '<h3 align=center><a href="#build-tools"><img src="https://raw.githubusercontent.com/armbian/build/master/.github/armbian-logo.png" alt="Armbian logo" width="144"></a><br>mirror sync</h3>'  > README.md
           echo -en "<p align=right>&nbsp;</p>\n" >> README.md
-          echo -en "\n[![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml)" >> README.md
+          echo -en "\n[![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml) [![Rootfs sync](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml)" >> README.md
           echo -en "\n# Mirrors error count:\n" >> README.md
           cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
-          echo -en "\n\n[Detailed report](detailed.txt)"
+          echo -en "\n\n[Detailed report](detailed.txt)" >> README.md
           find *.log -not -empty -type f -print0 | xargs -0 -I % sh -c 'cat % | cut -d"," -f2-3 |tr -d \"," " ' | sort > detailed.txt
       - name: Add
         run: |
