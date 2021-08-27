@@ -3,8 +3,10 @@
 
 [![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml) [![Rootfs sync](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml)
 # Mirrors error count:
-     12 https://mirrors.ustc.edu.cn/armbian-dl/
-    239 https://mirrors.bfsu.edu.cn/armbian-releases/
+      3 https://armbian.hosthatch.com/dl/
+      3 https://mirrors.netix.net/armbian/dl/
+     15 https://mirrors.nju.edu.cn/armbian-releases/
+    246 https://mirrors.bfsu.edu.cn/armbian-releases/
 
 
 [Detailed report](detailed.txt)
