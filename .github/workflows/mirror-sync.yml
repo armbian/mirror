@@ -162,10 +162,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-${{ github.run_id }}
 
-      - 
-        uses: styfle/cancel-workflow-action@0.9.1
-        with:
-          access_token: ${{ github.token }}
+      #- 
+      #  uses: styfle/cancel-workflow-action@0.9.1
+      #  with:
+      #    access_token: ${{ github.token }}
       -
         name: Download from Armbian storage
         id: image-build
