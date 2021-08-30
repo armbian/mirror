@@ -102,6 +102,7 @@ jobs:
                 [[ $(ls -1 download | wc -l) -gt 0 ]] && echo "UPLOAD=true" >> $GITHUB_ENV
             fi
             done
+            ls -1 download
       - name: Upload artefacts
         if: ${{ env.UPLOAD == 'true' }}
         uses: svenstaro/upload-release-action@v2
