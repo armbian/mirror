@@ -17,7 +17,7 @@ jobs:
         run: |
 
           mkdir -p temp
-          rsync rsync://rsync.armbian.com/dl/_rootfs/ | awk '{ print $5}' | tail -n +3 > temp/rootfs.chunk
+          rsync --exclude '*.current' rsync://rsync.armbian.com/dl/_rootfs/ | awk '{ print $5}' | tail -n +3 > temp/rootfs.chunk
           split -d --number=l/20 --additional-suffix=.chunk --suffix-length=2 temp/rootfs.chunk temp/rootfs-
 
       - name: Cache Gradle packages
