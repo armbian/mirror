@@ -1,8 +1,0 @@
-https://mirrors.bfsu.edu.cn/armbian-releases/cubieboard2/archive/Armbian_21.08.1_Cubieboard2_hirsute_edge_5.13.12.img.xz.sha
-https://mirrors.bfsu.edu.cn/armbian-releases/cubieboard2/archive/Armbian_21.08.1_Cubieboard2_hirsute_edge_5.13.12.img.xz.torrent
-https://mirrors.bfsu.edu.cn/armbian-releases/cubietruck/archive/Armbian_21.08.1_Cubietruck_focal_current_5.10.60_xfce_desktop.img.xz.asc
-https://mirrors.bfsu.edu.cn/armbian-releases/cubietruck/archive/Armbian_21.08.1_Cubietruck_focal_current_5.10.60_xfce_desktop.img.xz.sha
-https://mirrors.bfsu.edu.cn/armbian-releases/cubox-i/archive/Armbian_21.08.1_Cubox-i_focal_current_5.10.60.img.xz
-https://mirrors.bfsu.edu.cn/armbian-releases/espressobin/archive/Armbian_21.08.1_Espressobin_bullseye_current_5.10.60.img.xz
-https://mirrors.bfsu.edu.cn/armbian-releases/espressobin/archive/Armbian_21.08.1_Espressobin_bullseye_current_5.10.60.img.xz.asc
-https://mirrors.bfsu.edu.cn/armbian-releases/nanopiair/archive/Armbian_21.08.1_Nanopiair_bullseye_current_5.10.60.img.xz.asc
