@@ -1,0 +1,8 @@
+https://mirrors.bfsu.edu.cn/armbian-releases/bananapipro/archive/Armbian_21.08.1_Bananapipro_focal_current_5.10.60.img.xz.asc
+https://mirrors.bfsu.edu.cn/armbian-releases/bananapipro/archive/Armbian_21.08.1_Bananapipro_focal_current_5.10.60.img.xz.sha
+https://mirrors.bfsu.edu.cn/armbian-releases/cubieboard/archive/Armbian_21.08.1_Cubieboard_bullseye_current_5.10.60.img.xz
+https://mirrors.bfsu.edu.cn/armbian-releases/cubieboard2/archive/Armbian_21.08.1_Cubieboard2_bullseye_current_5.10.60.img.xz
+https://mirrors.bfsu.edu.cn/armbian-releases/cubieboard2/archive/Armbian_21.08.1_Cubieboard2_bullseye_current_5.10.60.img.xz.asc
+https://mirrors.bfsu.edu.cn/armbian-releases/cubieboard2/archive/Armbian_21.08.1_Cubieboard2_bullseye_current_5.10.60.img.xz.sha
+https://mirrors.bfsu.edu.cn/armbian-releases/cubietruck/archive/Armbian_21.08.1_Cubietruck_bullseye_current_5.10.60.img.xz
+https://mirrors.bfsu.edu.cn/armbian-releases/cubietruck/archive/Armbian_21.08.1_Cubietruck_bullseye_current_5.10.60.img.xz.asc
