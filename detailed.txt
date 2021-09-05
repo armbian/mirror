@@ -1,0 +1,6 @@
+https://github.com/armbian/mirror/releases/download/odroidxu4/archive/Armbian_21.08.1_Odroidxu4_buster_current_5.4.142.img.xz.torrent
+https://mirrors.ustc.edu.cn/armbian-dl/khadas-vim1/archive/Armbian_21.08.1_Khadas-vim1_hirsute_edge_5.13.12_budgie_desktop.img.xz
+https://mirrors.ustc.edu.cn/armbian-dl/khadas-vim1/archive/Armbian_21.08.1_Khadas-vim1_hirsute_edge_5.13.12_budgie_desktop.img.xz.asc
+https://mirrors.ustc.edu.cn/armbian-dl/lepotato/archive/Armbian_21.08.1_Lepotato_focal_current_5.10.60_cinnamon_desktop.img.xz
+https://mirrors.ustc.edu.cn/armbian-dl/lepotato/archive/Armbian_21.08.1_Lepotato_focal_current_5.10.60_cinnamon_desktop.img.xz.asc
+https://mirrors.ustc.edu.cn/armbian-dl/lepotato/archive/Armbian_21.08.1_Lepotato_focal_current_5.10.60_cinnamon_desktop.img.xz.sha
