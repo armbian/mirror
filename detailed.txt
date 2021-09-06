@@ -1,0 +1,5 @@
+https://mirrors.bfsu.edu.cn/armbian-releases/rockpi-4c/archive/Armbian_21.08.1_Rockpi-4c_hirsute_edge_5.13.12.img.xz.sha
+https://mirrors.bfsu.edu.cn/armbian-releases/rockpi-4c/archive/Armbian_21.08.1_Rockpi-4c_hirsute_edge_5.13.12.img.xz.torrent
+https://mirrors.bfsu.edu.cn/armbian-releases/rockpi-n10/archive/Armbian_21.08.1_Rockpi-n10_hirsute_edge_5.13.12.img.xz.sha
+https://mirrors.bfsu.edu.cn/armbian-releases/rockpi-s/archive/Armbian_21.08.1_Rockpi-s_focal_current_5.10.60_minimal.img.xz
+https://mirrors.bfsu.edu.cn/armbian-releases/rockpi-s/archive/Armbian_21.08.1_Rockpi-s_focal_current_5.10.60_minimal.img.xz.asc
