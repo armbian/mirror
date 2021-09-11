@@ -32,124 +32,7 @@ jobs:
       matrix: 
         include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
           - board: bananapi
-          - board: bananapim2plus
-          - board: bananapim2ultra
-          - board: bananapim2zero
-          - board: bananapim3
-          - board: bananapim64
-          - board: bananapipro
-          - board: bananapir2
-          - board: clearfogbase
-          - board: clearfogpro
-          - board: cubieboard2
-          - board: cubieboard
-          - board: cubietruck
-          - board: cubox-i
-          - board: espressobin
-          - board: fe-som-rk3399
-          - board: firefly-rk3399
-          - board: helios4
-          - board: helios64
-          - board: jetson-nano
-          - board: khadas-edge
-          - board: khadas-vim1
-          - board: khadas-vim2
-          - board: khadas-vim3
-          - board: khadas-vim3l
-          - board: lafrite
-          - board: lepotato
-          - board: lime2
-          - board: lime-a10
-          - board: lime-a64
-          - board: lime
-          - board: macchiatobin-doubleshot
-          - board: micro
-          - board: miqi
-          - board: nanopct3
-          - board: nanopct3plus
-          - board: nanopct4
-          - board: nanopia64
-          - board: nanopiair
-          - board: nanopiduo2
-          - board: nanopiduo
-          - board: nanopifire3
-          - board: nanopik1plus
-          - board: nanopik2-s905
-          - board: nanopim1
-          - board: nanopim1plus
-          - board: nanopim3
-          - board: nanopim4
-          - board: nanopim4v2
-          - board: nanopineo2black
-          - board: nanopineo2
-          - board: nanopineo3
-          - board: nanopineo4
-          - board: nanopineo
-          - board: nanopineocore2
-          - board: nanopineo
-          - board: nanopineoplus2
-          - board: nanopi-r1
-          - board: nanopi-r2s
-          - board: nanopi-r4s
-          - board: odroidc1
-          - board: odroidc2
-          - board: odroidc4
-          - board: odroidhc4
-          - board: odroidn2
-          - board: odroidxu4
-          - board: orangepi2
-          - board: orangepi3
-          - board: orangepi4
-          - board: orangepilite2
-          - board: orangepilite
-          - board: orangepione
-          - board: orangepioneplus
-          - board: orangepipc2
-          - board: orangepipc
-          - board: orangepipcplus
-          - board: orangepiplus2e
-          - board: orangepiplus
-          - board: orangepiprime
-          - board: orangepi-r1
-          - board: orangepi-r1plus
-          - board: orangepi-rk3399
-          - board: orangepiwin
-          - board: orangepizero2
-          - board: orangepizero
-          - board: orangepizeroplus2-h3
-          - board: orangepizeroplus2-h5
-          - board: orangepizeroplus
-          - board: pcduino3
-          - board: pine64
-          - board: pine64so
-          - board: pinebook-a64
-          - board: pinebook-pro
-          - board: pinecube
-          - board: pineh64-b
-          - board: pineh64
-          - board: radxa-zero
-          - board: renegade
-          - board: rk322x-box
-          - board: rock64
-          - board: rockpi-4a
-          - board: rockpi-4b
-          - board: rockpi-4c
-          - board: rockpi-e
-          - board: rockpi-n10
-          - board: rockpi-s
-          - board: rockpro64
-          - board: station-m1
-          - board: station-p1
-          - board: teres-a64
-          - board: tinkerboard-2
-          - board: tinkerboard
-          - board: tritium-h3
-          - board: tritium-h5
-          - board: udoo
-          - board: virtual-qemu
-          - board: xt-q8l-v10
-          - board: z28pro
-          - board: zeropi
+       
     steps:
       - name: Install depen
         run: sudo apt-get -y install parallel jq axel
@@ -238,13 +121,66 @@ jobs:
 
       - name: Display structure of downloaded files
         run: |
+          
+          function show_mirrors()
+          {
+          MIRRORS=$1
+          echo -en "\n## $2\n\n"
+          echo "|URL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|City &nbsp; &nbsp; &nbsp; |Flag|Country|"
+          echo "|:--|:--|:--:|--:|"
+          for k in ${MIRRORS[@]}
+              do
+              HOST=$(echo "$k" | awk -F/ '{print $3}')
+              IP=$(dig +short $HOST | tail -1)
+          RES=$(
+          curl --max-time 5 -s http://ipwhois.app/json/${IP} | \
+          jq '.timezone, .city, .country, .country_flag' | \
+          while read -r TIMEZONE; do
+          read -r COUNTRY
+          echo "${TIMEZONE},${COUNTRY},${COUNTRYFLAG}" | tr --delete \"
+          done
+          )
+          TZDATA=$(echo ${RES} | cut -d"," -f1)
+          CITY=$(echo ${RES} | cut -d"," -f2)
+          COUNTRY=$(echo ${RES} | cut -d"," -f3 | xargs)
+          FLAG=$(echo ${RES} | cut -d"," -f4)
+          echo "|$k|$CITY|<img width=24 src=$FLAG>|$COUNTRY|"
+          done
+          }
+          
           echo '<h3 align=center><a href="#build-tools"><img src="https://raw.githubusercontent.com/armbian/build/master/.github/armbian-logo.png" alt="Armbian logo" width="144"></a><br>mirror sync</h3>'  > README.md
           echo -en "<p align=right>&nbsp;</p>\n" >> README.md
           echo -en "\n[![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml) [![Rootfs sync](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml)" >> README.md
-          echo -en "\n# Mirrors error count:\n" >> README.md
+          echo "
+          ## Mirroring Armbian?
+          
+          We are providing rsync service for stable images (dl), repository (apt), beta (beta) and archive (archive) at:
+
+              rsync -av rsync://rsync.armbian.com/
+
+          Alternatively you can sync most valuable date from one of our mirror that provides rsync and is much faster: 
+          
+              rsync -av rsync://mirrors.dotsrc.org/armbian-dl
+              rsync -av rsync://mirrors.dotsrc.org/armbian-apt
+
+          Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
+
+          1. Setup HTTP and HTTPS hostname
+          2. Setup cron to sync every 2-4 hours
+          3. [Inform us](https://www.armbian.com/#contact)
+          " >> README.md
+          MIR=$(curl -sq http://redirect.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
+          show_mirrors "$MIR" "Images" >> README.md
+          echo "" >> README.md
+          MIR=$(curl -sq http://apt.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
+          show_mirrors "$MIR" "Packages" >> README.md
+          echo "" >> README.md
+          if [[ $(cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n | wc -l) -gt 0 ]]; then
+          echo -en "\n## Mirrors error count:\n" >> README.md
           cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
           echo -en "\n\n[Detailed report](detailed.txt)" >> README.md
           find *.log -not -empty -type f -print0 | xargs -0 -I % sh -c 'cat % | cut -d"," -f2-3 |tr -d \"," " ' | sort > detailed.txt
+          fi
       - name: Add
         run: |
           git pull
