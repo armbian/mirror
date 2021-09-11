@@ -144,7 +144,6 @@ jobs:
           CITY=$(echo ${RES} | cut -d"," -f2)
           COUNTRY=$(echo ${RES} | cut -d"," -f3 | xargs)
           FLAG=$(echo ${RES} | cut -d"," -f4)
-          fixed_length "$k"
           echo "|$k|$CITY|<img width=24 src=$FLAG>|$COUNTRY|"
           done
           }
