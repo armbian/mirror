@@ -56,3 +56,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 
 ## Mirrors error count:
+
+
+[Detailed report](detailed.txt)
