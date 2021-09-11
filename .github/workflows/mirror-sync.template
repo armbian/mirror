@@ -142,7 +142,6 @@ jobs:
           CITY=$(echo ${RES} | cut -d"," -f2)
           COUNTRY=$(echo ${RES} | cut -d"," -f3 | xargs)
           FLAG=$(echo ${RES} | cut -d"," -f4)
-          fixed_length "$k"
           echo "|$k|$CITY|<img width=24 src=$FLAG>|$COUNTRY|"
           done
           }
@@ -174,10 +173,12 @@ jobs:
           MIR=$(curl -sq http://apt.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
           show_mirrors "$MIR" "Packages" >> README.md
           echo "" >> README.md
+          if [[ $(cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n | wc -l) -gt 0 ]]; then
           echo -en "\n## Mirrors error count:\n" >> README.md
           cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
           echo -en "\n\n[Detailed report](detailed.txt)" >> README.md
           find *.log -not -empty -type f -print0 | xargs -0 -I % sh -c 'cat % | cut -d"," -f2-3 |tr -d \"," " ' | sort > detailed.txt
+          fi
       - name: Add
         run: |
           git pull
