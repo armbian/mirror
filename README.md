@@ -2,6 +2,23 @@
 <p align=right>&nbsp;</p>
 
 [![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml) [![Rootfs sync](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml)
+# Add mirror
+
+We are providing rsync service for stable images (dl), repository (apt), beta (beta) and archive (archive) at:
+
+    rsync -av rsync://rsync.armbian.com/
+
+Alternatively you can sync most valuable date from one of our mirror that provides rsync and is much faster: 
+
+    rsync -av rsync://mirrors.dotsrc.org/armbian-dl
+    rsync -av rsync://mirrors.dotsrc.org/armbian-apt
+
+Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
+
+1. Setup HTTP and HTTPS hostname
+2. Setup cron to sync every 2-4 hours
+3. [Inform us](https://www.armbian.com/#contact)
+
 
 # Images
 
