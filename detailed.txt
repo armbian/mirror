@@ -1,0 +1,7 @@
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/bananapim2plus/archive/Armbian_21.08.1_Bananapim2plus_buster_current_5.10.60.img.xz.sha
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/bananapim2plus/archive/Armbian_21.08.1_Bananapim2plus_buster_current_5.10.60.img.xz.torrent
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/bananapim2plus/archive/Armbian_21.08.1_Bananapim2plus_buster_current_5.10.60_xfce_desktop.img.xz
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/bananapim2zero/archive/Armbian_21.08.1_Bananapim2zero_focal_current_5.10.60.img.xz.torrent
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/bananapim2zero/archive/Armbian_21.08.1_Bananapim2zero_hirsute_edge_5.13.12.img.xz
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/bananapim3/archive/Armbian_21.08.1_Bananapim3_buster_current_5.10.60.img.xz.sha
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/bananapim3/archive/Armbian_21.08.1_Bananapim3_buster_current_5.10.60.img.xz.torrent
