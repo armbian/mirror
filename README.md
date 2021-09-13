@@ -54,3 +54,9 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://mirrors.tuna.tsinghua.edu.cn/armbian/|Langfang Shi|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.ustc.edu.cn/armbian/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 
+
+## Mirrors error count
+     12 https://mirrors.ustc.edu.cn/armbian-dl/
+
+
+[Detailed report](detailed.txt)
