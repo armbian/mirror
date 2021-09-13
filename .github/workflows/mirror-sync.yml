@@ -293,7 +293,7 @@ jobs:
           show_mirrors "$MIR" "Packages" >> README.md
           echo "" >> README.md
           if [[ $(cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n | wc -l) -gt 0 ]]; then
-          echo -en "\n## Mirrors error count:\n" >> README.md
+          echo -en "\n## Mirrors error count\n" >> README.md
           cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
           echo -en "\n\n[Detailed report](detailed.txt)" >> README.md
           find *.log -not -empty -type f -print0 | xargs -0 -I % sh -c 'cat % | cut -d"," -f2-3 |tr -d \"," " ' | sort > detailed.txt
