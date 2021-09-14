@@ -56,7 +56,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 
 ## Mirrors error count
-     12 https://mirrors.ustc.edu.cn/armbian-dl/
+     17 https://mirrors.ustc.edu.cn/armbian-dl/
 
 
 [Detailed report](detailed.txt)
