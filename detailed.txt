@@ -1,5 +1,3 @@
-https://mirrors.bfsu.edu.cn/armbian-releases/bananapi/archive/Armbian_21.08.1_Bananapi_bullseye_current_5.10.60.img.xz.asc
-https://mirrors.bfsu.edu.cn/armbian-releases/bananapi/archive/Armbian_21.08.1_Bananapi_buster_current_5.10.60.img.xz.asc
-https://mirrors.bfsu.edu.cn/armbian-releases/bananapi/archive/Armbian_21.08.1_Bananapi_buster_current_5.10.60_xfce_desktop.img.xz.asc
+https://mirrors.bfsu.edu.cn/armbian-releases/bananapi/archive/Armbian_21.08.1_Bananapi_bullseye_current_5.10.60.img.xz.sha
+https://mirrors.bfsu.edu.cn/armbian-releases/bananapi/archive/Armbian_21.08.1_Bananapi_buster_current_5.10.60.img.xz.sha
 https://mirrors.bfsu.edu.cn/armbian-releases/bananapi/archive/Armbian_21.08.1_Bananapi_focal_current_5.10.60.img.xz.asc
-https://mirrors.bfsu.edu.cn/armbian-releases/bananapi/archive/Armbian_21.08.1_Bananapi_focal_current_5.10.60.img.xz.torrent
