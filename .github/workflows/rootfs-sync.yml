@@ -107,7 +107,7 @@ jobs:
         if: ${{ env.UPLOAD == 'true' }}
         uses: AButler/upload-release-assets@v2.0
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           files: download/*
           release-tag: "_rootfs"
       - name: Upload logs
