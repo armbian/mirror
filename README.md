@@ -35,6 +35,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |https://mirrors.nju.edu.cn/armbian-releases/|Nanjing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/|Langfang Shi|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://mirrors.ustc.edu.cn/armbian-dl/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|https://xogium.armbian.com/dl/|Oslo|<img width=24 src=https://cdn.ipwhois.io/flags/no.svg>|Norway|
 
 
 ## Packages
@@ -55,11 +56,13 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://mirrors.nju.edu.cn/armbian/|Nanjing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.tuna.tsinghua.edu.cn/armbian/|Langfang Shi|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.ustc.edu.cn/armbian/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://xogium.armbian.com/apt/|Oslo|<img width=24 src=https://cdn.ipwhois.io/flags/no.svg>|Norway|
 
 
 ## Mirrors error count
-     34 https://mirrors.ustc.edu.cn/armbian-dl/
-    475 https://mirrors.bfsu.edu.cn/armbian-releases/
+      1 https://armbian.hosthatch.com/dl/
+      5 https://mirrors.ustc.edu.cn/armbian-dl/
+    437 https://mirrors.bfsu.edu.cn/armbian-releases/
 
 
 [Detailed report](detailed.txt)
