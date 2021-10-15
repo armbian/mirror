@@ -105,14 +105,11 @@ jobs:
             ls -1 download
       - name: Upload artefacts
         if: ${{ env.UPLOAD == 'true' }}
-        uses: svenstaro/upload-release-action@v2
+        uses: AButler/upload-release-assets@v2.0
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: download/
-          tag: "_rootfsx"
-          overwrite: true
-          file_glob: true
-          body: "This is Armbian file mirror at Github"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          files: download/*
+          release-tag: "_rootfs"
       - name: Upload logs
         uses: actions/upload-artifact@v2
         with:
