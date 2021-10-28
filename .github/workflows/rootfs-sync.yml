@@ -105,11 +105,13 @@ jobs:
             ls -1 download
       - name: Upload artefacts
         if: ${{ env.UPLOAD == 'true' }}
-        uses: AButler/upload-release-assets@v2.0
+        uses: svenstaro/upload-release-action@v2
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          files: download/*
-          release-tag: "_rootfs"
+          file: download/*
+          tag: "_rootfs"
+          overwrite: true
+          file_glob: true
       - name: Upload logs
         uses: actions/upload-artifact@v2
         with:
