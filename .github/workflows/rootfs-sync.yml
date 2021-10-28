@@ -107,7 +107,7 @@ jobs:
         if: ${{ env.UPLOAD == 'true' }}
         uses: svenstaro/upload-release-action@v2
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: download/*
           tag: "_rootfs"
           overwrite: true
