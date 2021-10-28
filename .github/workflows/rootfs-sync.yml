@@ -104,12 +104,12 @@ jobs:
             done
             ls -1 download
       - name: Upload artefacts
-        uses: softprops/action-gh-release@v1
         if: ${{ env.UPLOAD == 'true' }}
+        uses: AButler/upload-release-assets@v2.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           files: download/*
-          tag_name: "_rootfs"
+          release-tag: "_rootfs"
       - name: Upload logs
         uses: actions/upload-artifact@v2
         with:
