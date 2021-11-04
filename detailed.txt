@@ -286,7 +286,6 @@ https://armbian.hosthatch.com/dl/firefly-rk3399/archive/Armbian_21.08.1_Firefly-
 https://armbian.hosthatch.com/dl/firefly-rk3399/archive/Armbian_21.08.1_Firefly-rk3399_focal_current_5.10.60_budgie_desktop.img.xz.asc
 https://armbian.hosthatch.com/dl/firefly-rk3399/archive/Armbian_21.08.1_Firefly-rk3399_focal_current_5.10.60_budgie_desktop.img.xz.sha
 https://armbian.hosthatch.com/dl/firefly-rk3399/archive/Armbian_21.08.1_Firefly-rk3399_focal_current_5.10.60_budgie_desktop.img.xz.torrent
-https://armbian.hosthatch.com/dl/firefly-rk3399/archive/Armbian_21.08.1_Firefly-rk3399_focal_current_5.10.60_cinnamon_desktop.img.xz
 https://armbian.hosthatch.com/dl/firefly-rk3399/archive/Armbian_21.08.1_Firefly-rk3399_focal_current_5.10.60_cinnamon_desktop.img.xz.asc
 https://armbian.hosthatch.com/dl/firefly-rk3399/archive/Armbian_21.08.1_Firefly-rk3399_focal_current_5.10.60_cinnamon_desktop.img.xz.sha
 https://armbian.hosthatch.com/dl/firefly-rk3399/archive/Armbian_21.08.1_Firefly-rk3399_focal_current_5.10.60_cinnamon_desktop.img.xz.torrent
@@ -378,6 +377,7 @@ https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge
 https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_focal_current_5.10.60_budgie_desktop.img.xz.asc
 https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_focal_current_5.10.60_budgie_desktop.img.xz.sha
 https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_focal_current_5.10.60_budgie_desktop.img.xz.torrent
+https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_focal_current_5.10.60_cinnamon_desktop.img.xz
 https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_focal_current_5.10.60_cinnamon_desktop.img.xz.asc
 https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_focal_current_5.10.60_cinnamon_desktop.img.xz.sha
 https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_focal_current_5.10.60_cinnamon_desktop.img.xz.torrent
@@ -387,7 +387,6 @@ https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge
 https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_hirsute_edge_5.13.12.img.xz.torrent
 https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_hirsute_edge_5.13.12_xfce_desktop.img.xz
 https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_hirsute_edge_5.13.12_xfce_desktop.img.xz.asc
-https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_hirsute_edge_5.13.12_xfce_desktop.img.xz.sha
 https://armbian.hosthatch.com/dl/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_hirsute_edge_5.13.12_xfce_desktop.img.xz.torrent
 https://armbian.hosthatch.com/dl/khadas-vim1/archive/Armbian_21.08.1_Khadas-vim1_bullseye_current_5.10.60.img.xz
 https://armbian.hosthatch.com/dl/khadas-vim1/archive/Armbian_21.08.1_Khadas-vim1_bullseye_current_5.10.60.img.xz.asc
@@ -663,6 +662,7 @@ https://armbian.hosthatch.com/dl/lime2/archive/Armbian_21.08.1_Lime2_buster_curr
 https://armbian.hosthatch.com/dl/lime2/archive/Armbian_21.08.1_Lime2_buster_current_5.10.60.img.xz.torrent
 https://armbian.hosthatch.com/dl/lime2/archive/Armbian_21.08.1_Lime2_focal_current_5.10.60.img.xz
 https://armbian.hosthatch.com/dl/lime2/archive/Armbian_21.08.1_Lime2_focal_current_5.10.60.img.xz.asc
+https://armbian.hosthatch.com/dl/lime2/archive/Armbian_21.08.1_Lime2_focal_current_5.10.60.img.xz.sha
 https://armbian.hosthatch.com/dl/lime2/archive/Armbian_21.08.1_Lime2_focal_current_5.10.60.img.xz.torrent
 https://armbian.hosthatch.com/dl/lime2/archive/Armbian_21.08.1_Lime2_focal_current_5.10.60_xfce_desktop.img.xz
 https://armbian.hosthatch.com/dl/lime2/archive/Armbian_21.08.1_Lime2_focal_current_5.10.60_xfce_desktop.img.xz.asc
@@ -1551,7 +1551,6 @@ https://armbian.hosthatch.com/dl/orangepilite/archive/Armbian_21.08.1_Orangepili
 https://armbian.hosthatch.com/dl/orangepilite/archive/Armbian_21.08.1_Orangepilite_hirsute_edge_5.13.12.img.xz
 https://armbian.hosthatch.com/dl/orangepilite/archive/Armbian_21.08.1_Orangepilite_hirsute_edge_5.13.12.img.xz.asc
 https://armbian.hosthatch.com/dl/orangepilite/archive/Armbian_21.08.1_Orangepilite_hirsute_edge_5.13.12.img.xz.sha
-https://armbian.hosthatch.com/dl/orangepilite/archive/Armbian_21.08.1_Orangepilite_hirsute_edge_5.13.12.img.xz.torrent
 https://armbian.hosthatch.com/dl/orangepilite2/archive/Armbian_21.08.1_Orangepilite2_bullseye_current_5.10.60.img.xz
 https://armbian.hosthatch.com/dl/orangepilite2/archive/Armbian_21.08.1_Orangepilite2_bullseye_current_5.10.60.img.xz.asc
 https://armbian.hosthatch.com/dl/orangepilite2/archive/Armbian_21.08.1_Orangepilite2_bullseye_current_5.10.60.img.xz.sha
@@ -2074,7 +2073,6 @@ https://armbian.hosthatch.com/dl/rock64/archive/Armbian_21.08.1_Rock64_focal_cur
 https://armbian.hosthatch.com/dl/rock64/archive/Armbian_21.08.1_Rock64_focal_current_5.10.60.img.xz.torrent
 https://armbian.hosthatch.com/dl/rock64/archive/Armbian_21.08.1_Rock64_focal_current_5.10.60_cinnamon_desktop.img.xz
 https://armbian.hosthatch.com/dl/rock64/archive/Armbian_21.08.1_Rock64_focal_current_5.10.60_cinnamon_desktop.img.xz.asc
-https://armbian.hosthatch.com/dl/rock64/archive/Armbian_21.08.1_Rock64_focal_current_5.10.60_cinnamon_desktop.img.xz.sha
 https://armbian.hosthatch.com/dl/rock64/archive/Armbian_21.08.1_Rock64_focal_current_5.10.60_cinnamon_desktop.img.xz.torrent
 https://armbian.hosthatch.com/dl/rock64/archive/Armbian_21.08.1_Rock64_focal_current_5.10.60_xfce_desktop.img.xz
 https://armbian.hosthatch.com/dl/rock64/archive/Armbian_21.08.1_Rock64_focal_current_5.10.60_xfce_desktop.img.xz.asc
@@ -2093,7 +2091,6 @@ https://armbian.hosthatch.com/dl/rockpi-4a/archive/Armbian_21.08.1_Rockpi-4a_bus
 https://armbian.hosthatch.com/dl/rockpi-4a/archive/Armbian_21.08.1_Rockpi-4a_buster_current_5.10.60.img.xz.sha
 https://armbian.hosthatch.com/dl/rockpi-4a/archive/Armbian_21.08.1_Rockpi-4a_buster_current_5.10.60.img.xz.torrent
 https://armbian.hosthatch.com/dl/rockpi-4a/archive/Armbian_21.08.1_Rockpi-4a_buster_legacy_4.4.213_xfce_desktop.img.xz
-https://armbian.hosthatch.com/dl/rockpi-4a/archive/Armbian_21.08.1_Rockpi-4a_buster_legacy_4.4.213_xfce_desktop.img.xz.asc
 https://armbian.hosthatch.com/dl/rockpi-4a/archive/Armbian_21.08.1_Rockpi-4a_buster_legacy_4.4.213_xfce_desktop.img.xz.sha
 https://armbian.hosthatch.com/dl/rockpi-4a/archive/Armbian_21.08.1_Rockpi-4a_buster_legacy_4.4.213_xfce_desktop.img.xz.torrent
 https://armbian.hosthatch.com/dl/rockpi-4a/archive/Armbian_21.08.1_Rockpi-4a_focal_current_5.10.60.img.xz
@@ -2524,7 +2521,6 @@ https://armbian.hosthatch.com/dl/z28pro/archive/Armbian_21.08.1_Z28pro_buster_cu
 https://armbian.hosthatch.com/dl/z28pro/archive/Armbian_21.08.1_Z28pro_buster_current_5.10.60.img.xz.asc
 https://armbian.hosthatch.com/dl/z28pro/archive/Armbian_21.08.1_Z28pro_buster_current_5.10.60.img.xz.sha
 https://armbian.hosthatch.com/dl/z28pro/archive/Armbian_21.08.1_Z28pro_buster_current_5.10.60.img.xz.torrent
-https://armbian.hosthatch.com/dl/z28pro/archive/Armbian_21.08.1_Z28pro_buster_legacy_4.4.213_xfce_desktop.img.xz
 https://armbian.hosthatch.com/dl/z28pro/archive/Armbian_21.08.1_Z28pro_buster_legacy_4.4.213_xfce_desktop.img.xz.asc
 https://armbian.hosthatch.com/dl/z28pro/archive/Armbian_21.08.1_Z28pro_buster_legacy_4.4.213_xfce_desktop.img.xz.sha
 https://armbian.hosthatch.com/dl/z28pro/archive/Armbian_21.08.1_Z28pro_buster_legacy_4.4.213_xfce_desktop.img.xz.torrent
@@ -2556,5 +2552,9 @@ https://armbian.hosthatch.com/dl/zeropi/archive/Armbian_21.08.1_Zeropi_hirsute_e
 https://armbian.hosthatch.com/dl/zeropi/archive/Armbian_21.08.1_Zeropi_hirsute_edge_5.13.12.img.xz.asc
 https://armbian.hosthatch.com/dl/zeropi/archive/Armbian_21.08.1_Zeropi_hirsute_edge_5.13.12.img.xz.sha
 https://armbian.hosthatch.com/dl/zeropi/archive/Armbian_21.08.1_Zeropi_hirsute_edge_5.13.12.img.xz.torrent
-https://mirrors.nju.edu.cn/armbian-releases/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_focal_current_5.10.60_cinnamon_desktop.img.xz
-https://mirrors.nju.edu.cn/armbian-releases/lime2/archive/Armbian_21.08.1_Lime2_focal_current_5.10.60.img.xz.sha
+https://mirrors.nju.edu.cn/armbian-releases/firefly-rk3399/archive/Armbian_21.08.1_Firefly-rk3399_focal_current_5.10.60_cinnamon_desktop.img.xz
+https://mirrors.nju.edu.cn/armbian-releases/orangepilite/archive/Armbian_21.08.1_Orangepilite_hirsute_edge_5.13.12.img.xz.torrent
+https://mirrors.nju.edu.cn/armbian-releases/rock64/archive/Armbian_21.08.1_Rock64_focal_current_5.10.60_cinnamon_desktop.img.xz.sha
+https://mirrors.nju.edu.cn/armbian-releases/rockpi-4a/archive/Armbian_21.08.1_Rockpi-4a_buster_legacy_4.4.213_xfce_desktop.img.xz.asc
+https://mirrors.nju.edu.cn/armbian-releases/z28pro/archive/Armbian_21.08.1_Z28pro_buster_legacy_4.4.213_xfce_desktop.img.xz
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_hirsute_edge_5.13.12_xfce_desktop.img.xz.sha
