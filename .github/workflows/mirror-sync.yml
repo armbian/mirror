@@ -129,6 +129,7 @@ jobs:
           - board: pinecube
           - board: pineh64-b
           - board: pineh64
+          - board: radxa-zero
           - board: renegade
           - board: rk322x-box
           - board: rock64
