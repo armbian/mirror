@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-20.04
     timeout-minutes: 480
     strategy:
-      max-parallel: 10
+      max-parallel: 4
       fail-fast: false
       matrix: 
         include:
