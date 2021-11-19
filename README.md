@@ -43,7 +43,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 |URL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Flag|Country &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
 |:--|:--|:--:|--:|
-|http://armbian.12z.eu/apt/|Tarnowskie Gory|<img width=24 src=https://cdn.ipwhois.io/flags/pl.svg>|Poland|
 |http://armbian.16z.eu/apt/|Warsaw|<img width=24 src=https://cdn.ipwhois.io/flags/pl.svg>|Poland|
 |http://armbian.hosthatch.com/apt/|Amsterdam|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
 |http://armbian.systemonachip.net/apt/|Gravelines|<img width=24 src=https://cdn.ipwhois.io/flags/fr.svg>|France|
@@ -62,13 +61,12 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 
 ## Mirrors error count
-      1 https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/
-     19 https://mirrors.ustc.edu.cn/armbian-dl/
-     28 https://github.com/armbian/mirror/releases/download/
-     56 https://mirrors.netix.net/armbian/dl/
-    153 https://mirror.armbian.de/dl/
-    498 https://mirrors.bfsu.edu.cn/armbian-releases/
-    590 https://mirrors.nju.edu.cn/armbian-releases/
+      3 https://mirrors.nju.edu.cn/armbian-releases/
+     33 https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/
+     42 https://mirrors.ustc.edu.cn/armbian-dl/
+     80 https://mirror.12z.eu/pub/linux/armbian/dl/
+     84 https://mirrors.netix.net/armbian/dl/
+    621 https://mirrors.bfsu.edu.cn/armbian-releases/
 
 
 [Detailed report](detailed.txt)
