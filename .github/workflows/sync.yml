@@ -1,4 +1,4 @@
-name: Sync mirror
+name: Sync mirror beta
 on:
   workflow_dispatch:
 
