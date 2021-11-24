@@ -61,29 +61,9 @@ jobs:
           truncate -s 0 ${BOARD}.log
           for FILE in ${FILES[@]}
           do
-            echo $FILE
-            PARALLEL=$(
-            for k in ${MIRRORS[@]}
-            do
-              echo "$k$FILE"
-            done | parallel --halt now,fail=1 --jobs 32 wget -q --spider --timeout=15 --tries=4 --retry-connrefused {} 2>&1 >/dev/null)
-            if [[ -n "${PARALLEL}" ]]; then
-              REMOVE=$(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed "s/$BOARD.*//" | sort | uniq)
-              for l in ${REMOVE[@]}; do
-                [[ "${DEBUG}" == yes ]] && echo "Removing mirror: $l"
-                echo "Error,$l,$FILE" >> ${BOARD}.log
-                MIRRORS=$(echo "${MIRRORS}" | sed "s|$l ||")
-              done
-              [[ $DEBUG == yes ]] && echo "Timeout: $(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | cut -d"/" -f1-4 | sort | uniq)/${BOARD}/archive/$(echo $PARALLEL | egrep -o 'https?://[^ ]+' | rev | cut -d / -f 1 | rev)"
-            fi
-          # download
-          DOWNLOAD="axel -c -a "
-          for m in ${MIRRORS[@]}; do
-              DOWNLOAD=${DOWNLOAD}" $m$FILE"
-          done
-          echo "https://github.com/${{ github.repository }}/releases/download/${FILE}"
           if ! wget -q --spider --timeout=15 --tries=3 --retry-connrefused https://github.com/"${{ github.repository }}"/releases/download/${FILE} ; then
               echo "Downloading ..."
+              wget https://imola.armbian.com/dl/$FILE
               eval "${DOWNLOAD}"
               echo "UPLOAD=true" >> $GITHUB_ENV
           fi
