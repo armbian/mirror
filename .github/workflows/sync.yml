@@ -4,7 +4,7 @@ on:
 
 jobs:
   Prepare:
-    runs-on: latest
+    runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'Armbian' }}
     steps:
       -
