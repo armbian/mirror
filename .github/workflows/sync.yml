@@ -18,6 +18,11 @@ jobs:
         with:
           path: temp
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ github.run_id }}
+      - name: Prepare matrix
+        id: list_dirs
+        run:
+          
+          echo ::set-output name=matrix::$(for x in $(wget -qO - https://www.armbian.com/userdata.csv | cut -d"/" -f1 | uniq); do echo $x; done|jq -cnR '[inputs | select(length>0)]' | jq)
 
   Build: # short name because GH will expand with the matrix values
     needs: [ Prepare ]
@@ -27,10 +32,7 @@ jobs:
       max-parallel: 4
       fail-fast: false # let other jobs try to complete if one fails
       matrix: 
-        include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
-          - board: odroidc2
-          - board: odroidc4
-          - board: odroidhc4
+        node: ${{fromJson(needs.Prepare.outputs.matrix)}}
     steps:
       - name: Install depen
         run: sudo apt-get -y install parallel jq axel
