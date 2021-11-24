@@ -52,16 +52,13 @@ jobs:
         name: Download from Armbian storage
         id: image-build
         run: |
-
           set +e
           BOARD="${{ matrix.board }}"
           DEBUG="no"
-
           FILES=$(cat temp/userdata.csv | grep ${BOARD}"/" | grep -v nightly | cut -d"|" -f2) # exclude nightly
-          MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)          
+          MIRRORS=$(https://imola.armbian.com/dl/)          
           echo "BOARD=$BOARD" >> $GITHUB_ENV
           truncate -s 0 ${BOARD}.log
-
           for FILE in ${FILES[@]}
           do
             echo $FILE
@@ -86,8 +83,8 @@ jobs:
           done
           echo "https://github.com/${{ github.repository }}/releases/download/${FILE}"
           if ! wget -q --spider --timeout=15 --tries=3 --retry-connrefused https://github.com/"${{ github.repository }}"/releases/download/${FILE} ; then
-              echo "Downloading ..."              
-              aria2c --seed-time=0 --download-result=hide --disable-ipv6=true --summary-interval=0 --console-log-level=error --auto-file-renaming=false --continue=false --allow-overwrite=true https://imola.armbian.com/dl/odroidhc4/archive/${FILE}.torrent
+              echo "Downloading ..."
+              eval "${DOWNLOAD}"
               echo "UPLOAD=true" >> $GITHUB_ENV
           fi
           done
