@@ -26,8 +26,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |:--|:--|:--:|--:|
 |https://armbian.hosthatch.com/dl/|Amsterdam|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
 |https://armbian.tnahosting.net/dl/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
-|https://github.com/armbian/mirror/releases/download/|San Francisco|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
-|https://mirror.12z.eu/pub/linux/armbian/dl/|Montreal|<img width=24 src=https://cdn.ipwhois.io/flags/ca.svg>|Canada|
+|https://github.com/armbian/mirror/releases/download/|Dulles|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |https://mirror.armbian.de/dl/|Nuremberg|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |https://mirrors.bfsu.edu.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://mirrors.dotsrc.org/armbian-dl/|Kongens Lyngby|<img width=24 src=https://cdn.ipwhois.io/flags/dk.svg>|Denmark|
@@ -58,11 +57,3 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://stpete-mirror.armbian.com/apt/|Saint Petersburg|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 |http://xogium.performanceservers.nl/apt/|Newark|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 
-
-## Mirrors error count
-      2 https://mirror.12z.eu/pub/linux/armbian/dl/
-     11 https://mirrors.ustc.edu.cn/armbian-dl/
-    604 https://mirrors.bfsu.edu.cn/armbian-releases/
-
-
-[Detailed report](detailed.txt)
