@@ -1,0 +1,197 @@
+name: Sync mirror beta
+on:
+  workflow_dispatch:
+
+jobs:
+  Prepare:
+    runs-on: latest
+    if: ${{ github.repository_owner == 'Armbian' }}
+    steps:
+      -
+        run: |
+          wget -P temp https://www.armbian.com/userdata.csv
+
+      - name: Cache Gradle packages
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-build
+        with:
+          path: temp
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ github.run_id }}
+
+  Build: # short name because GH will expand with the matrix values
+    needs: [ Prepare ]
+    runs-on: ubuntu-20.04
+    timeout-minutes: 480
+    strategy:
+      max-parallel: 4
+      fail-fast: false # let other jobs try to complete if one fails
+      matrix: 
+        include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
+          - board: odroidc2
+          - board: odroidc4
+          - board: odroidhc4
+    steps:
+      - name: Install depen
+        run: sudo apt-get -y install parallel jq axel
+      - name: Cache Gradle packages
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-build
+        with:
+          path: temp
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-${{ github.run_id }}
+
+      #- 
+      #  uses: styfle/cancel-workflow-action@0.9.1
+      #  with:
+      #    access_token: ${{ github.token }}
+      -
+        name: Download from Armbian storage
+        id: image-build
+        run: |
+
+          set +e
+          BOARD="${{ matrix.board }}"
+          DEBUG="no"
+
+          FILES=$(cat temp/userdata.csv | grep ${BOARD}"/" | grep -v nightly | cut -d"|" -f2) # exclude nightly
+          MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)          
+          echo "BOARD=$BOARD" >> $GITHUB_ENV
+          truncate -s 0 ${BOARD}.log
+
+          for FILE in ${FILES[@]}
+          do
+            echo $FILE
+            PARALLEL=$(
+            for k in ${MIRRORS[@]}
+            do
+              echo "$k$FILE"
+            done | parallel --halt now,fail=1 --jobs 32 wget -q --spider --timeout=15 --tries=4 --retry-connrefused {} 2>&1 >/dev/null)
+            if [[ -n "${PARALLEL}" ]]; then
+              REMOVE=$(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | sed "s/$BOARD.*//" | sort | uniq)
+              for l in ${REMOVE[@]}; do
+                [[ "${DEBUG}" == yes ]] && echo "Removing mirror: $l"
+                echo "Error,$l,$FILE" >> ${BOARD}.log
+                MIRRORS=$(echo "${MIRRORS}" | sed "s|$l ||")
+              done
+              [[ $DEBUG == yes ]] && echo "Timeout: $(echo $PARALLEL | egrep -o 'https?://[^ ]+/' | cut -d"/" -f1-4 | sort | uniq)/${BOARD}/archive/$(echo $PARALLEL | egrep -o 'https?://[^ ]+' | rev | cut -d / -f 1 | rev)"
+            fi
+          # download
+          DOWNLOAD="axel -c -a "
+          for m in ${MIRRORS[@]}; do
+              DOWNLOAD=${DOWNLOAD}" $m$FILE"
+          done
+          echo "https://github.com/${{ github.repository }}/releases/download/${FILE}"
+          if ! wget -q --spider --timeout=15 --tries=3 --retry-connrefused https://github.com/"${{ github.repository }}"/releases/download/${FILE} ; then
+              echo "Downloading ..."              
+              aria2c --seed-time=0 --download-result=hide --disable-ipv6=true --summary-interval=0 --console-log-level=error --auto-file-renaming=false --continue=false --allow-overwrite=true https://imola.armbian.com/dl/odroidhc4/archive/${FILE}.torrent
+              echo "UPLOAD=true" >> $GITHUB_ENV
+          fi
+          done
+      - name: Upload artefacts
+        if: ${{ env.UPLOAD == 'true' }}
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: Armbian*
+          tag: "${{ matrix.board }}/archive"
+          overwrite: true
+          file_glob: true
+          body: "This is Armbian file mirror at Github"
+      - name: Upload logs
+        uses: actions/upload-artifact@v2
+        with:
+          name: logs
+          path: ${{ env.BOARD }}.log
+
+  Finish:
+    needs: [ Build ]
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: logs
+
+      - name: Display structure of downloaded files
+        run: |
+          
+          function show_mirrors()
+          {
+          MIRRORS=$1
+          echo -en "\n## $2\n\n"
+          echo "|URL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Flag|Country &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|"
+          echo "|:--|:--|:--:|--:|"
+          for k in ${MIRRORS[@]}
+              do
+              HOST=$(echo "$k" | awk -F/ '{print $3}')
+              IP=$(dig +short $HOST | tail -1)
+          RES=$(
+          curl --max-time 5 -s http://ipwhois.app/json/${IP} | \
+          jq '.timezone, .city, .country, .country_flag' | \
+          while read -r TIMEZONE; do
+          read -r COUNTRY
+          echo "${TIMEZONE},${COUNTRY},${COUNTRYFLAG}" | tr --delete \"
+          done
+          )
+          TZDATA=$(echo ${RES} | cut -d"," -f1)
+          CITY=$(echo ${RES} | cut -d"," -f2)
+          COUNTRY=$(echo ${RES} | cut -d"," -f3 | xargs)
+          FLAG=$(echo ${RES} | cut -d"," -f4)
+          echo "|$k|$CITY|<img width=24 src=$FLAG>|$COUNTRY|"
+          done
+          }
+          
+          echo '<h3 align=center><a href="#build-tools"><img src="https://raw.githubusercontent.com/armbian/build/master/.github/armbian-logo.png" alt="Armbian logo" width="144"></a><br>mirror sync</h3>'  > README.md
+          echo -en "<p align=right>&nbsp;</p>\n" >> README.md
+          echo -en "\n[![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml) [![Rootfs sync](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml)" >> README.md
+          echo "
+          ## Mirroring Armbian?
+          
+          We are providing rsync service for stable images (dl), repository (apt), beta (beta) and archive (archive) at:
+
+              rsync -av rsync://rsync.armbian.com/
+
+          Alternatively you can sync most valuable date from one of our mirror that provides rsync and is much faster: 
+          
+              rsync -av rsync://mirrors.dotsrc.org/armbian-dl
+              rsync -av rsync://mirrors.dotsrc.org/armbian-apt
+
+          Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
+
+          1. Setup HTTP and HTTPS hostname
+          2. Setup cron to sync every 2-4 hours
+          3. [Inform us](https://www.armbian.com/#contact)
+          " >> README.md
+          MIR=$(curl -sq http://redirect.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
+          show_mirrors "$MIR" "Images" >> README.md
+          echo "" >> README.md
+          MIR=$(curl -sq http://apt.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
+          show_mirrors "$MIR" "Packages" >> README.md
+          echo "" >> README.md
+          if [[ $(cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n | wc -l) -gt 0 ]]; then
+          echo -en "\n## Mirrors error count\n" >> README.md
+          cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
+          echo -en "\n\n[Detailed report](detailed.txt)" >> README.md
+          find *.log -not -empty -type f -print0 | xargs -0 -I % sh -c 'cat % | cut -d"," -f2-3 |tr -d \"," " ' | sort > detailed.txt
+          fi
+      - name: Add
+        run: |
+          git pull
+          git add README.md
+          git add detailed.txt
+
+      - name: Commit files
+        run: |
+          git config --local user.email "info@armbian.com"
+          git config --local user.name "Armbianworker"
+          git commit --allow-empty -m "Update github actions" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.MIRROR }}
+          branch: ${{ github.ref }}
