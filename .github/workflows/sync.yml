@@ -32,7 +32,7 @@ jobs:
         id: image-build
         run: |
           set +e
-          BOARD="${{ matrix }}"
+          BOARD="${{ matrix.node }}"
           FILES=$(wget -qO - https://www.armbian.com/userdata.csv | grep ${BOARD}"/" | grep -v nightly | cut -d"|" -f2) # exclude nightly
           for FILE in ${FILES[@]}
           do
