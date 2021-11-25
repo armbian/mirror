@@ -41,8 +41,8 @@ jobs:
           - board: bananapir2
           - board: clearfogbase
           - board: clearfogpro
-          - board: cubieboard2
           - board: cubieboard
+          - board: cubieboard2
           - board: cubietruck
           - board: cubox-i
           - board: espressobin
@@ -60,20 +60,23 @@ jobs:
           - board: khadas-vim3l
           - board: lafrite
           - board: lepotato
-          - board: lime2
           - board: lime-a10
           - board: lime-a64
           - board: lime
+          - board: lime2
           - board: macchiatobin-doubleshot
           - board: micro
           - board: miqi
           - board: nanopct3
           - board: nanopct3plus
           - board: nanopct4
+          - board: nanopi-r1
+          - board: nanopi-r2s
+          - board: nanopi-r4s
           - board: nanopia64
           - board: nanopiair
-          - board: nanopiduo2
           - board: nanopiduo
+          - board: nanopiduo2
           - board: nanopifire3
           - board: nanopik1plus
           - board: nanopik2-s905
@@ -82,45 +85,41 @@ jobs:
           - board: nanopim3
           - board: nanopim4
           - board: nanopim4v2
-          - board: nanopineo2black
+          - board: nanopineo
           - board: nanopineo2
+          - board: nanopineo2black
           - board: nanopineo3
           - board: nanopineo4
-          - board: nanopineo
           - board: nanopineocore2
-          - board: nanopineo
           - board: nanopineoplus2
-          - board: nanopi-r1
-          - board: nanopi-r2s
-          - board: nanopi-r4s
           - board: odroidc1
           - board: odroidc2
           - board: odroidc4
           - board: odroidhc4
           - board: odroidn2
           - board: odroidxu4
-          - board: orangepi2
-          - board: orangepi3
-          - board: orangepi4
-          - board: orangepilite2
-          - board: orangepilite
-          - board: orangepione
-          - board: orangepioneplus
-          - board: orangepipc2
-          - board: orangepipc
-          - board: orangepipcplus
-          - board: orangepiplus2e
-          - board: orangepiplus
-          - board: orangepiprime
           - board: orangepi-r1
           - board: orangepi-r1plus
           - board: orangepi-rk3399
+          - board: orangepi2
+          - board: orangepi3
+          - board: orangepi4
+          - board: orangepilite
+          - board: orangepilite2
+          - board: orangepione
+          - board: orangepioneplus
+          - board: orangepipc
+          - board: orangepipc2
+          - board: orangepipcplus
+          - board: orangepiplus
+          - board: orangepiplus2e
+          - board: orangepiprime
           - board: orangepiwin
-          - board: orangepizero2
           - board: orangepizero
+          - board: orangepizero2
+          - board: orangepizeroplus
           - board: orangepizeroplus2-h3
           - board: orangepizeroplus2-h5
-          - board: orangepizeroplus
           - board: pcduino3
           - board: pine64
           - board: pine64so
