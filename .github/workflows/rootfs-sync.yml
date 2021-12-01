@@ -10,6 +10,7 @@ jobs:
   Prepare:
 
     runs-on: ubuntu-20.04
+    continue-on-error: true
     if: ${{ github.repository_owner == 'armbian' }}
     steps:
 
@@ -31,6 +32,7 @@ jobs:
   Cache: # short name because GH will expand with the matrix values
     needs: [ Prepare ]
     runs-on: ubuntu-20.04
+    continue-on-error: true
     timeout-minutes: 480
     strategy:
       max-parallel: 1
