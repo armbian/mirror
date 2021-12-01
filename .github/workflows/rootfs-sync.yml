@@ -18,7 +18,7 @@ jobs:
 
           mkdir -p temp
           rsync --exclude '*.current' rsync://rsync.armbian.com/dl/_rootfs/ | awk '{ print $5}' | tail -n +3 > temp/rootfs.chunk
-          split -d --number=l/20 --additional-suffix=.chunk --suffix-length=2 temp/rootfs.chunk temp/rootfs-
+          split -d --number=l/40 --additional-suffix=.chunk --suffix-length=2 temp/rootfs.chunk temp/rootfs-
 
       - name: Cache Gradle packages
         uses: actions/cache@v2
@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-20.04
     timeout-minutes: 480
     strategy:
-      max-parallel: 2
+      max-parallel: 1
       fail-fast: false
       matrix: 
         include:
@@ -57,6 +57,27 @@ jobs:
           - part: "17"
           - part: "18"
           - part: "19"
+          - part: "20"
+          - part: "21"
+          - part: "22"
+          - part: "23"
+          - part: "24"
+          - part: "25"
+          - part: "26"
+          - part: "27"
+          - part: "28"
+          - part: "29"
+          - part: "30"
+          - part: "31"
+          - part: "32"
+          - part: "33"
+          - part: "34"
+          - part: "35"
+          - part: "36"
+          - part: "37"
+          - part: "38"
+          - part: "39"
+
 
     steps:
       - name: Install depen
