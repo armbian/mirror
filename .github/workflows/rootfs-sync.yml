@@ -130,7 +130,7 @@ jobs:
         if: ${{ env.UPLOAD == 'true' }}
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.UPLOAD }}
           file: download/*
           tag: "_rootfs"
           overwrite: true
@@ -138,12 +138,12 @@ jobs:
       - if: failure()        
         run: |
           echo "REUPLOAD=true" >> $GITHUB_ENV
-          sleep 3600
+          sleep 1800
       - name: Upload artefacts
         if: ${{ env.REUPLOAD == 'true' }}
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.UPLOAD }}
           file: download/*
           tag: "_rootfs"
           overwrite: true
