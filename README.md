@@ -26,7 +26,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |:--|:--|:--:|--:|
 |https://armbian.hosthatch.com/dl/|Amsterdam|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
 |https://armbian.tnahosting.net/dl/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
-|https://github.com/armbian/mirror/releases/download/|Seattle|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
+|https://github.com/armbian/mirror/releases/download/|San Francisco|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |https://mirror.armbian.de/dl/|Falkenstein|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |https://mirrors.bfsu.edu.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://mirrors.dotsrc.org/armbian-dl/|Kongens Lyngby|<img width=24 src=https://cdn.ipwhois.io/flags/dk.svg>|Denmark|
@@ -35,7 +35,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://mirrors.ustc.edu.cn/armbian-dl/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://stpete-mirror.armbian.com/dl/|Malaya|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
-|https://xogium.performanceservers.nl/dl/|Oslo|<img width=24 src=https://cdn.ipwhois.io/flags/no.svg>|Norway|
+|https://xogium.performanceservers.nl/dl/|Dallas|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 
 
 ## Packages
@@ -56,14 +56,14 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://mirrors.tuna.tsinghua.edu.cn/armbian/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.ustc.edu.cn/armbian/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://stpete-mirror.armbian.com/apt/|Malaya|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
-|http://xogium.performanceservers.nl/apt/|Oslo|<img width=24 src=https://cdn.ipwhois.io/flags/no.svg>|Norway|
+|http://xogium.performanceservers.nl/apt/|Dallas|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 
 
 ## Mirrors error count
-      2 https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/
-     12 https://mirrors.ustc.edu.cn/armbian-dl/
-     64 https://xogium.performanceservers.nl/dl/
-    577 https://mirrors.bfsu.edu.cn/armbian-releases/
+      3 https://mirrors.nju.edu.cn/armbian-releases/
+      6 https://mirrors.ustc.edu.cn/armbian-dl/
+     15 https://armbian.hosthatch.com/dl/
+    526 https://mirrors.bfsu.edu.cn/armbian-releases/
 
 
 [Detailed report](detailed.txt)
