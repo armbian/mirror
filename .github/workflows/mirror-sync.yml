@@ -218,7 +218,7 @@ jobs:
           tag: "${{ matrix.board }}/archive"
           overwrite: true
           file_glob: true
-          body: "This is Armbian file mirror at Github"
+          body: "<p align='center'><a href='https://www.armbian.com'><img src='https://raw.githubusercontent.com/armbian/.github/master/profile/tux-two.png' width='400' height='226' alt='Armbian Linux'></a></p>"
       - name: Upload logs
         uses: actions/upload-artifact@v2
         with:
