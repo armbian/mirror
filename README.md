@@ -60,11 +60,9 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 
 ## Mirrors error count
-      1 https://armbian.hosthatch.com/dl/
-      3 https://mirrors.ustc.edu.cn/armbian-dl/
-      5 https://mirrors.nju.edu.cn/armbian-releases/
-    116 https://github.com/armbian/mirror/releases/download/
-    627 https://mirrors.bfsu.edu.cn/armbian-releases/
+      9 https://mirrors.ustc.edu.cn/armbian-dl/
+     10 https://github.com/armbian/mirror/releases/download/
+    568 https://mirrors.bfsu.edu.cn/armbian-releases/
 
 
 [Detailed report](detailed.txt)
