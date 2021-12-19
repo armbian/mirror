@@ -33,7 +33,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |https://mirrors.nju.edu.cn/armbian-releases/|Wuhai Shi|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://mirrors.ustc.edu.cn/armbian-dl/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
-|https://stpete-mirror.armbian.com/dl/|Malaya|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
+|https://spb-mirror.ru.armbian.com/dl/|Malaya|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 |https://xogium.performanceservers.nl/dl/|Dallas|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 
 
@@ -51,14 +51,15 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://mirrors.nju.edu.cn/armbian/|Wuhai Shi|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.tuna.tsinghua.edu.cn/armbian/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.ustc.edu.cn/armbian/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
-|http://stpete-mirror.armbian.com/apt/|Malaya|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
+|http://spb-mirror.ru.armbian.com/apt/|Malaya|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 |http://xogium.performanceservers.nl/apt/|Dallas|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 
 
 ## Mirrors error count
-      1 https://mirrors.nju.edu.cn/armbian-releases/
-      3 https://mirrors.ustc.edu.cn/armbian-dl/
-    489 https://mirrors.bfsu.edu.cn/armbian-releases/
+      1 https://mirrors.ustc.edu.cn/armbian-dl/
+      5 https://mirrors.nju.edu.cn/armbian-releases/
+    142 https://mirrors.bfsu.edu.cn/armbian-releases/
+   1900 https://spb-mirror.ru.armbian.com/dl/
 
 
 [Detailed report](detailed.txt)
