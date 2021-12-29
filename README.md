@@ -35,7 +35,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://mirrors.ustc.edu.cn/armbian-dl/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://stpete-mirror.armbian.com/dl/|Malaya|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
-|https://xogium.performanceservers.nl/dl/|Halfweg|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
+|https://xogium.performanceservers.nl/dl/|Dallas|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 
 
 ## Packages
@@ -55,12 +55,13 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://mirrors.tuna.tsinghua.edu.cn/armbian/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.ustc.edu.cn/armbian/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://stpete-mirror.armbian.com/apt/|Malaya|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
-|http://xogium.performanceservers.nl/apt/|Halfweg|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
+|http://xogium.performanceservers.nl/apt/|Dallas|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 
 
 ## Mirrors error count
-      2 https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/
-    369 https://mirrors.bfsu.edu.cn/armbian-releases/
+      1 https://github.com/armbian/mirror/releases/download/
+     10 https://mirrors.ustc.edu.cn/armbian-dl/
+    365 https://mirrors.bfsu.edu.cn/armbian-releases/
 
 
 [Detailed report](detailed.txt)
