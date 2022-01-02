@@ -63,6 +63,7 @@ jobs:
           - board: nanopi-r2s
           - board: nanopi-r4s
           - board: odroidc2
+          - board: odroidc4
           - board: odroidhc4
           - board: odroidn2
           - board: odroidxu4
@@ -87,6 +88,7 @@ jobs:
           - board: pineh64-b
           - board: renegade
           - board: rk322x-box
+          - board: rock-3a
           - board: rock64
           - board: rockpi-4a
           - board: rockpi-4b
@@ -97,6 +99,8 @@ jobs:
           - board: station-p1
           - board: tinkerboard
           - board: uefi-arm64
+          - board: uefi-x86
+          - board: virtual-qemu
           - board: xt-q8l-v10
           - board: zeropi
     steps:
