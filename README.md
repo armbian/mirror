@@ -26,7 +26,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |:--|:--|:--:|--:|
 |https://armbian.hosthatch.com/dl/|Amsterdam|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
 |https://armbian.tnahosting.net/dl/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
-|https://github.com/armbian/mirror/releases/download/|Seattle|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
+|https://github.com/armbian/mirror/releases/download/|San Francisco|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |https://mirror.armbian.de/dl/|Gunzenhausen|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |https://mirrors.bfsu.edu.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://mirrors.dotsrc.org/armbian-dl/|Copenhagen|<img width=24 src=https://cdn.ipwhois.io/flags/dk.svg>|Denmark|
@@ -47,7 +47,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://armbian.tnahosting.net/apt/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://mirror.12z.eu/pub/linux/armbian/apt/|Montreal|<img width=24 src=https://cdn.ipwhois.io/flags/ca.svg>|Canada|
 |http://mirror.armbian.de/apt/|Gunzenhausen|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
-|http://mirrors.aliyun.com/armbian/|Miami|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
+|http://mirrors.aliyun.com/armbian/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://mirrors.bfsu.edu.cn/armbian/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.dotsrc.org/armbian-apt/|Copenhagen|<img width=24 src=https://cdn.ipwhois.io/flags/dk.svg>|Denmark|
 |http://mirrors.netix.net/armbian/apt/|Sofia|<img width=24 src=https://cdn.ipwhois.io/flags/bg.svg>|Bulgaria|
@@ -59,8 +59,9 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 
 ## Mirrors error count
-     13 https://mirrors.ustc.edu.cn/armbian-dl/
-    331 https://mirrors.bfsu.edu.cn/armbian-releases/
+      1 https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/
+     62 https://mirrors.ustc.edu.cn/armbian-dl/
+    354 https://mirrors.bfsu.edu.cn/armbian-releases/
 
 
 [Detailed report](detailed.txt)
