@@ -19,6 +19,7 @@ jobs:
           - board: clearfogpro
           - board: cubietruck
           - board: cubox-i
+          - board: firefly-rk3399
           - board: helios4
           - board: helios64
           - board: jethubj100
