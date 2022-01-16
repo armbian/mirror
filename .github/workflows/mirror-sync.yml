@@ -72,6 +72,7 @@ jobs:
           - board: orangepi4
           - board: orangepilite2
           - board: orangepilite
+          - board: orangepione
           - board: orangepioneplus
           - board: orangepipc2
           - board: orangepipc
