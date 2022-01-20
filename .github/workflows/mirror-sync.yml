@@ -194,6 +194,15 @@ jobs:
       - name: Display structure of downloaded files
         run: |
           
+          function exceptions()
+          {
+          if [[ $k == *aliyun* ]]; then 
+                COUNTRY=China
+                CITY=Hangzhou
+                FLAG="https://cdn.ipwhois.io/flags/cn.svg"
+          fi
+          }
+          
           function show_mirrors()
           {
           MIRRORS=$1
@@ -216,6 +225,10 @@ jobs:
           CITY=$(echo ${RES} | cut -d"," -f2)
           COUNTRY=$(echo ${RES} | cut -d"," -f3 | xargs)
           FLAG=$(echo ${RES} | cut -d"," -f4)
+          
+          # automation is not perfect
+          exceptions
+
           echo "|$k|$CITY|<img width=24 src=$FLAG>|$COUNTRY|"
           done
           }
