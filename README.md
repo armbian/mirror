@@ -46,7 +46,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |:--|:--|:--:|--:|
 |http://armbian.12z.eu/apt/|Tarnowskie Gory|<img width=24 src=https://cdn.ipwhois.io/flags/pl.svg>|Poland|
 |http://armbian.hosthatch.com/apt/|Amsterdam|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
-|http://armbian.lv.auroradev.org/apt/|Las Vegas|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://armbian.systemonachip.net/apt/|Gravelines|<img width=24 src=https://cdn.ipwhois.io/flags/fr.svg>|France|
 |http://armbian.tnahosting.net/apt/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://mirror.12z.eu/pub/linux/armbian/apt/|Montreal|<img width=24 src=https://cdn.ipwhois.io/flags/ca.svg>|Canada|
@@ -63,12 +62,10 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 
 ## Mirrors error count
-      1 https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/
-      2 https://github.com/armbian/mirror/releases/download/
-      6 https://mirrors.ustc.edu.cn/armbian-dl/
-     16 https://mirrors.nju.edu.cn/armbian-releases/
-    197 https://mirrors.bfsu.edu.cn/armbian-releases/
-    714 https://armbian.lv.auroradev.org/dl/
+      1 https://armbian.hosthatch.com/dl/
+     24 https://mirrors.ustc.edu.cn/armbian-dl/
+     81 https://mirrors.bfsu.edu.cn/armbian-releases/
+   1540 https://armbian.lv.auroradev.org/dl/
 
 
 [Detailed report](detailed.txt)
