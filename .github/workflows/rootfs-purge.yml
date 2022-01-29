@@ -1,12 +1,14 @@
 name: Delete rootfs cache
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
 
 jobs:
   Purge:
     runs-on: ubuntu-20.04
     if: ${{ github.repository_owner == 'Armbian' }}
-    timeout-minutes: 480
+    timeout-minutes: 10
     strategy:
       max-parallel: 4
       fail-fast: false
