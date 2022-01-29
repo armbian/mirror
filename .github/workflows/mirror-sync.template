@@ -6,8 +6,17 @@ on:
   workflow_dispatch:
 
 jobs:
+  Cancel:
+    if: ${{ github.repository_owner == 'Armbian' }}
+    runs-on: small
+    steps:
+      - uses: n1hility/cancel-previous-runs@v2
+        with: 
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
   Prepare:
     runs-on: ubuntu-20.04
+    needs: Cancel
     if: ${{ github.repository_owner == 'Armbian' }}
     steps:
       -
@@ -25,9 +34,9 @@ jobs:
   Build: # short name because GH will expand with the matrix values
     needs: [ Prepare ]
     runs-on: ubuntu-20.04
-    timeout-minutes: 480
+    timeout-minutes: 120
     strategy:
-      max-parallel: 4
+      max-parallel: 6
       fail-fast: false # let other jobs try to complete if one fails
       matrix: 
         include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
