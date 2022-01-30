@@ -6,18 +6,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  Cancel:
-    if: ${{ github.repository_owner == 'Armbian' }}
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: n1hility/cancel-previous-runs@v2
-        with: 
-          token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: mirror-sync.yml
-          
+         
   Prepare:
     runs-on: ubuntu-20.04
-    needs: Cancel
     if: ${{ github.repository_owner == 'Armbian' }}
     steps:
       -
