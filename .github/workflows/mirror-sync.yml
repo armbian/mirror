@@ -13,6 +13,7 @@ jobs:
       - uses: n1hility/cancel-previous-runs@v2
         with: 
           token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: mirror-sync.yml
           
   Prepare:
     runs-on: ubuntu-20.04
