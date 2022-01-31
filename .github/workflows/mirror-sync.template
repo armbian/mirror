@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-20.04
     timeout-minutes: 120
     strategy:
-      max-parallel: 6
+      max-parallel: 4
       fail-fast: false # let other jobs try to complete if one fails
       matrix: 
         include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
