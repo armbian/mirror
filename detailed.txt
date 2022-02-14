@@ -1,6 +1,5 @@
-https://mirrors.nju.edu.cn/armbian-releases/bananapi/archive/Armbian_21.08.1_Bananapi_focal_current_5.10.60_xfce_desktop.img.xz
-https://mirrors.nju.edu.cn/armbian-releases/bananapi/archive/Armbian_21.08.1_Bananapi_focal_current_5.10.60_xfce_desktop.img.xz.asc
-https://mirrors.nju.edu.cn/armbian-releases/bananapi/archive/Armbian_21.08.1_Bananapi_focal_current_5.10.60_xfce_desktop.img.xz.sha
-https://mirrors.ustc.edu.cn/armbian-dl/renegade/archive/Armbian_21.08.1_Renegade_focal_current_5.10.60_xfce_desktop.img.xz
-https://mirrors.ustc.edu.cn/armbian-dl/rockpi-4c/archive/Armbian_21.08.1_Rockpi-4c_bullseye_current_5.10.60.img.xz.asc
-https://mirrors.ustc.edu.cn/armbian-dl/rockpi-4c/archive/Armbian_21.08.1_Rockpi-4c_focal_current_5.10.60.img.xz
+https://mirrors.ustc.edu.cn/armbian-dl/nanopi-r2s/archive/Armbian_21.08.1_Nanopi-r2s_buster_current_5.10.60.img.xz.sha
+https://mirrors.ustc.edu.cn/armbian-dl/nanopim4v2/archive/Armbian_21.08.1_Nanopim4v2_hirsute_edge_5.13.12_budgie_desktop.img.xz
+https://mirrors.ustc.edu.cn/armbian-dl/odroidhc4/archive/Armbian_21.08.9_Odroidhc4_jammy_current_5.10.81_xfce_desktop.img.xz.sha
+https://mirrors.ustc.edu.cn/armbian-dl/odroidxu4/archive/Armbian_21.08.5_Odroidxu4_focal_current_5.4.159_minimal.img.xz.torrent
+https://mirrors.ustc.edu.cn/armbian-dl/orangepilite2/archive/Armbian_21.08.1_Orangepilite2_bullseye_current_5.10.60.img.xz.torrent
