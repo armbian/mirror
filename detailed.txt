@@ -1,4 +1,4 @@
-https://github.com/armbian/mirror/releases/download/khadas-edge/archive/Armbian_21.08.1_Khadas-edge_bullseye_current_5.10.60.img.xz.sha
-https://mirrors.nju.edu.cn/armbian-releases/odroidc4/archive/Armbian_21.08.9_Odroidc4_bullseye_current_5.10.81.img.xz
-https://mirrors.ustc.edu.cn/armbian-dl/lime-a64/archive/Armbian_21.08.1_Lime-a64_focal_current_5.10.60_xfce_desktop.img.xz.sha
-https://mirrors.ustc.edu.cn/armbian-dl/rockpi-4c/archive/Armbian_21.08.1_Rockpi-4c_bullseye_current_5.10.60.img.xz.sha
+https://mirrors.nju.edu.cn/armbian-releases/rockpro64/archive/Armbian_21.08.1_Rockpro64_bullseye_current_5.10.60.img.xz
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/rockpi-4a/archive/Armbian_21.08.1_Rockpi-4a_focal_current_5.10.60_budgie_desktop.img.xz
+https://mirrors.ustc.edu.cn/armbian-dl/pine64/archive/Armbian_21.08.1_Pine64_focal_current_5.10.60_cinnamon_desktop.img.xz.sha
+https://mirrors.ustc.edu.cn/armbian-dl/pine64/archive/Armbian_21.08.1_Pine64_focal_current_5.10.60_xfce_desktop.img.xz.asc
