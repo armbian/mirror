@@ -62,3 +62,13 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://stpete-mirror.armbian.com/apt/|Saint Petersburg|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 |http://xogium.performanceservers.nl/apt/|Dallas|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 
+
+## Mirrors error count
+      2 https://mirrors.bfsu.edu.cn/armbian-releases/
+      2 https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/
+      3 https://mirrors.nju.edu.cn/armbian-releases/
+      5 https://mirrors.ustc.edu.cn/armbian-dl/
+   1600 https://xogium.performanceservers.nl/dl/
+
+
+[Detailed report](detailed.txt)
