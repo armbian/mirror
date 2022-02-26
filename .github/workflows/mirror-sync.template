@@ -133,6 +133,11 @@ jobs:
                 CITY=Nanjing
                 FLAG="https://cdn.ipwhois.io/flags/cn.svg"
           fi
+          if [[ $k == *imola.armbian* ]]; then 
+                COUNTRY=Slovenia
+                CITY=Ljubljana
+                FLAG="https://cdn.ipwhois.io/flags/si.svg"
+          fi
           }
           
           function show_mirrors()
