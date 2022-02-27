@@ -29,7 +29,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |https://armbian.lv.auroradev.org/dl/|Las Vegas|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |https://armbian.site-meganet.com/dl/|Roubaix|<img width=24 src=https://cdn.ipwhois.io/flags/fr.svg>|France|
 |https://armbian.tnahosting.net/dl/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
-|https://github.com/armbian/mirror/releases/download/|San Francisco|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
+|https://github.com/armbian/mirror/releases/download/|Seattle|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |https://mirror.12z.eu/pub/linux/armbian/dl/|Montreal|<img width=24 src=https://cdn.ipwhois.io/flags/ca.svg>|Canada|
 |https://mirror.armbian.de/dl/|Nuremberg|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |https://mirrors.bfsu.edu.cn/armbian-releases/|Xicheng|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
@@ -67,11 +67,8 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 
 ## Mirrors error count
-      1 https://github.com/armbian/mirror/releases/download/
-      1 https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/
-      5 https://stpete-mirror.armbian.com/dl/
-      6 https://armbian.hosthatch.com/dl/
-     13 https://mirrors.ustc.edu.cn/armbian-dl/
+     11 https://mirrors.ustc.edu.cn/armbian-dl/
+    128 https://stpete-mirror.armbian.com/dl/
 
 
 [Detailed report](detailed.txt)
