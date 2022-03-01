@@ -35,9 +35,10 @@ jobs:
           - board: bananapi
           - board: bananapim2plus
           - board: bananapim64
+          - board: bananapipro
+          - board: bananapi
           - board: clearfogbase
           - board: clearfogpro
-          - board: cubietruck
           - board: cubox-i
           - board: firefly-rk3399
           - board: helios4
@@ -56,13 +57,14 @@ jobs:
           - board: lime2
           - board: lime-a64
           - board: nanopct4
-          - board: nanopiduo2
           - board: nanopik1plus
+          - board: nanopim4
           - board: nanopim4v2
           - board: nanopineo2black
-          - board: nanopineo2
           - board: nanopineo
+          - board: nanopineoplus2
           - board: nanopi-r1
+          - board: nanopi-r2c
           - board: nanopi-r2s
           - board: nanopi-r4s
           - board: odroidc2
@@ -80,26 +82,21 @@ jobs:
           - board: orangepipc
           - board: orangepipcplus
           - board: orangepiplus2e
+          - board: orangepiplus
           - board: orangepiprime
           - board: orangepi-r1
+          - board: orangepi-r1plus-lts
           - board: orangepi-r1plus
-          - board: orangepiwin
           - board: orangepizero2
           - board: orangepizero
           - board: orangepizeroplus
           - board: orangepizero
-          - board: pine64
+          - board: pinebook-a64
           - board: pinebook-pro
-          - board: pineh64-b
           - board: radxa-zero
           - board: renegade
           - board: rk322x-box
           - board: rock-3a
-          - board: rock64
-          - board: rockpi-4a
-          - board: rockpi-4b
-          - board: rockpi-4c
-          - board: rockpro64
           - board: rpi4b
           - board: station-m1
           - board: station-m2
