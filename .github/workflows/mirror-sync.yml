@@ -89,6 +89,7 @@ jobs:
           - board: orangepi-r1plus
           - board: orangepizero2
           - board: orangepizero
+          - board: orangepizeroplus2-h3
           - board: orangepizeroplus
           - board: orangepizero
           - board: pinebook-a64
