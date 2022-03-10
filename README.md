@@ -29,9 +29,10 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |https://armbian.site-meganet.com/dl/|Roubaix|<img width=24 src=https://cdn.ipwhois.io/flags/fr.svg>|France|
 |https://armbian.tnahosting.net/dl/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |https://es.armbian.mirrors.bret.dk/dl/|Madrid|<img width=24 src=https://cdn.ipwhois.io/flags/es.svg>|Spain|
-|https://github.com/armbian/mirror/releases/download/|San Francisco|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
+|https://github.com/armbian/mirror/releases/download/|Seattle|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |https://imola.armbian.com/dl/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
 |https://mirror.12z.eu/pub/linux/armbian/dl/|Montreal|<img width=24 src=https://cdn.ipwhois.io/flags/ca.svg>|Canada|
+|https://mirrors.aliyun.com/armbian-releases/|Hangzhou|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://mirrors.bfsu.edu.cn/armbian-releases/|Xicheng|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |https://mirrors.dotsrc.org/armbian-dl/|Kongens Lyngby|<img width=24 src=https://cdn.ipwhois.io/flags/dk.svg>|Denmark|
 |https://mirrors.netix.net/armbian/dl/|Sofia|<img width=24 src=https://cdn.ipwhois.io/flags/bg.svg>|Bulgaria|
@@ -66,8 +67,8 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 
 ## Mirrors error count
-     56 https://armbian.lv.auroradev.org/dl/
-   1192 https://mirror.12z.eu/pub/linux/armbian/dl/
+     51 https://armbian.lv.auroradev.org/dl/
+   1197 https://mirror.12z.eu/pub/linux/armbian/dl/
 
 
 [Detailed report](detailed.txt)
