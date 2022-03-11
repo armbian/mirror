@@ -67,8 +67,8 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 
 ## Mirrors error count
-     51 https://armbian.lv.auroradev.org/dl/
-   1197 https://mirror.12z.eu/pub/linux/armbian/dl/
+     40 https://armbian.lv.auroradev.org/dl/
+   1208 https://mirror.12z.eu/pub/linux/armbian/dl/
 
 
 [Detailed report](detailed.txt)
