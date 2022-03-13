@@ -17,6 +17,7 @@ https://armbian.lv.auroradev.org/dl/jethubj100/archive/Armbian_22.02.2_Jethubj10
 https://armbian.lv.auroradev.org/dl/jethubj100/archive/Armbian_22.02.2_Jethubj100_focal_edge_5.15.26.img.xz
 https://armbian.lv.auroradev.org/dl/jethubj100/archive/Armbian_22.02.2_Jethubj100_focal_edge_5.15.26.img.xz.asc
 https://armbian.lv.auroradev.org/dl/jethubj100/archive/Armbian_22.02.2_Jethubj100_focal_edge_5.15.26.img.xz.sha
+https://armbian.lv.auroradev.org/dl/jethubj100/archive/Armbian_22.02.2_Jethubj100_focal_edge_5.15.26.img.xz.torrent
 https://armbian.lv.auroradev.org/dl/jethubj100/archive/Armbian_22.02.2_Jethubj100_jammy_current_5.10.103.img.xz
 https://armbian.lv.auroradev.org/dl/jethubj100/archive/Armbian_22.02.2_Jethubj100_jammy_current_5.10.103.img.xz.asc
 https://armbian.lv.auroradev.org/dl/jethubj100/archive/Armbian_22.02.2_Jethubj100_jammy_current_5.10.103.img.xz.sha
@@ -40,10 +41,8 @@ https://armbian.lv.auroradev.org/dl/jethubj80/archive/Armbian_22.02.2_Jethubj80_
 https://armbian.lv.auroradev.org/dl/jethubj80/archive/Armbian_22.02.2_Jethubj80_jammy_current_5.10.103.img.xz
 https://armbian.lv.auroradev.org/dl/jethubj80/archive/Armbian_22.02.2_Jethubj80_jammy_current_5.10.103.img.xz.asc
 https://armbian.lv.auroradev.org/dl/jethubj80/archive/Armbian_22.02.2_Jethubj80_jammy_current_5.10.103.img.xz.sha
-https://armbian.lv.auroradev.org/dl/jethubj80/archive/Armbian_22.02.2_Jethubj80_jammy_current_5.10.103.img.xz.torrent
 https://armbian.lv.auroradev.org/dl/jethubj80/archive/Armbian_22.02.2_Jethubj80_jammy_edge_5.15.26.img.xz
 https://armbian.lv.auroradev.org/dl/jethubj80/archive/Armbian_22.02.2_Jethubj80_jammy_edge_5.15.26.img.xz.asc
-https://armbian.lv.auroradev.org/dl/jethubj80/archive/Armbian_22.02.2_Jethubj80_jammy_edge_5.15.26.img.xz.sha
 https://armbian.lv.auroradev.org/dl/jethubj80/archive/Armbian_22.02.2_Jethubj80_jammy_edge_5.15.26.img.xz.torrent
 https://armbian.lv.auroradev.org/dl/nanopineo2/archive/Armbian_22.02.2_Nanopineo2_bullseye_current_5.15.26.img.xz
 https://armbian.lv.auroradev.org/dl/nanopineo2/archive/Armbian_22.02.2_Nanopineo2_bullseye_current_5.15.26.img.xz.asc
@@ -189,9 +188,7 @@ https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jamm
 https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jammy_edge_5.16.12.img.xz.asc
 https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jammy_edge_5.16.12.img.xz.sha
 https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jammy_edge_5.16.12.img.xz.torrent
-https://es.armbian.mirrors.bret.dk/dl/jethubj100/archive/Armbian_22.02.2_Jethubj100_focal_edge_5.15.26.img.xz.torrent
-https://github.com/armbian/mirror/releases/download/renegade/archive/Armbian_22.02.1_Renegade_bullseye_current_5.15.25.img.xz.asc
-https://mirrors.nju.edu.cn/armbian-releases/odroidc4/archive/Armbian_22.02.1_Odroidc4_buster_legacy_4.9.277.img.xz.asc
-https://mirrors.nju.edu.cn/armbian-releases/odroidc4/archive/Armbian_22.02.1_Odroidc4_buster_legacy_4.9.277.img.xz.sha
-https://mirrors.nju.edu.cn/armbian-releases/odroidc4/archive/Armbian_22.02.1_Odroidc4_buster_legacy_4.9.277.img.xz.torrent
-https://mirrors.nju.edu.cn/armbian-releases/odroidc4/archive/Armbian_22.02.1_Odroidc4_focal_current_5.10.102.img.xz
+https://es.armbian.mirrors.bret.dk/dl/jethubj80/archive/Armbian_22.02.2_Jethubj80_jammy_current_5.10.103.img.xz.torrent
+https://es.armbian.mirrors.bret.dk/dl/jethubj80/archive/Armbian_22.02.2_Jethubj80_jammy_edge_5.15.26.img.xz.sha
+https://mirrors.ustc.edu.cn/armbian-dl/uefi-arm64/archive/Armbian_22.02.1_Uefi-arm64_focal_current_5.15.25_xfce_desktop.img.xz.asc
+https://mirrors.ustc.edu.cn/armbian-dl/uefi-arm64/archive/Armbian_22.02.1_Uefi-arm64_focal_current_5.15.25_xfce_desktop.img.xz.sha
