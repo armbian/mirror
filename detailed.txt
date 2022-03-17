@@ -1,3 +1,5 @@
+https://armbian.hosthatch.com/dl/nanopik1plus/archive/Armbian_22.02.1_Nanopik1plus_jammy_edge_5.16.11.img.xz.torrent
+https://armbian.hosthatch.com/dl/nanopim4v2/archive/Armbian_22.02.1_Nanopim4v2_focal_current_5.15.25_xfce_desktop.img.xz.sha
 https://armbian.lv.auroradev.org/dl/helios4/archive/Armbian_22.02.2_Helios4_bullseye_current_5.15.26.img.xz
 https://armbian.lv.auroradev.org/dl/helios4/archive/Armbian_22.02.2_Helios4_bullseye_current_5.15.26.img.xz.asc
 https://armbian.lv.auroradev.org/dl/helios4/archive/Armbian_22.02.2_Helios4_bullseye_current_5.15.26.img.xz.sha
@@ -190,6 +192,9 @@ https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jamm
 https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jammy_edge_5.16.12.img.xz.asc
 https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jammy_edge_5.16.12.img.xz.sha
 https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jammy_edge_5.16.12.img.xz.torrent
-https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/firefly-rk3399/archive/Armbian_22.02.1_Firefly-rk3399_bullseye_edge_5.16.11_xfce_desktop.img.xz.asc
-https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/khadas-vim3/archive/Armbian_22.02.1_Khadas-vim3_bullseye_current_5.10.102.img.xz.sha
-https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/odroidc2/archive/Armbian_22.02.1_Odroidc2_focal_current_5.10.102_cinnamon_desktop.img.xz
+https://mirrors.nju.edu.cn/armbian-releases/lepotato/archive/Armbian_22.02.1_Lepotato_bullseye_current_5.10.102.img.xz
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/khadas-vim3/archive/Armbian_22.02.1_Khadas-vim3_bullseye_current_5.10.102.img.xz
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/khadas-vim3l/archive/Armbian_22.02.1_Khadas-vim3l_bullseye_current_5.10.102.img.xz
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/lepotato/archive/Armbian_22.02.1_Lepotato_bullseye_current_5.10.102.img.xz
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/station-m2/archive/Armbian_22.02.1_Station-m2_bullseye_legacy_4.19.219_xfce_desktop.img.xz.torrent
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/xt-q8l-v10/archive/Armbian_22.02.1_Xt-q8l-v10_bullseye_current_5.15.25.img.xz
