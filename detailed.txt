@@ -1,3 +1,4 @@
+https://armbian.hosthatch.com/dl/orangepione/archive/Armbian_22.02.1_Orangepione_focal_current_5.15.25.img.xz.sha
 https://armbian.lv.auroradev.org/dl/helios4/archive/Armbian_22.02.2_Helios4_bullseye_current_5.15.26.img.xz
 https://armbian.lv.auroradev.org/dl/helios4/archive/Armbian_22.02.2_Helios4_bullseye_current_5.15.26.img.xz.asc
 https://armbian.lv.auroradev.org/dl/helios4/archive/Armbian_22.02.2_Helios4_bullseye_current_5.15.26.img.xz.sha
@@ -190,5 +191,8 @@ https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jamm
 https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jammy_edge_5.16.12.img.xz.asc
 https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jammy_edge_5.16.12.img.xz.sha
 https://armbian.lv.auroradev.org/dl/pineh64/archive/Armbian_22.02.2_Pineh64_jammy_edge_5.16.12.img.xz.torrent
-https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/odroidxu4/archive/Armbian_22.02.1_Odroidxu4_focal_current_5.4.181.img.xz
-https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/orangepiprime/archive/Armbian_22.02.1_Orangepiprime_jammy_edge_5.16.11.img.xz
+https://mirrors.nju.edu.cn/armbian-releases/nanopim4/archive/Armbian_22.02.1_Nanopim4_focal_current_5.15.25.img.xz.torrent
+https://mirrors.nju.edu.cn/armbian-releases/nanopim4/archive/Armbian_22.02.1_Nanopim4_focal_current_5.15.25_xfce_desktop.img.xz
+https://mirrors.nju.edu.cn/armbian-releases/nanopim4/archive/Armbian_22.02.1_Nanopim4_focal_current_5.15.25_xfce_desktop.img.xz.asc
+https://mirrors.nju.edu.cn/armbian-releases/nanopim4/archive/Armbian_22.02.1_Nanopim4_focal_current_5.15.25_xfce_desktop.img.xz.sha
+https://mirrors.ustc.edu.cn/armbian-dl/nanopim4v2/archive/Armbian_22.02.1_Nanopim4v2_jammy_edge_5.16.11.img.xz.sha
