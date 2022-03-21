@@ -197,6 +197,12 @@ jobs:
           MIR=$(curl -sq http://apt.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
           show_mirrors "$MIR" "Packages" >> README.md
           echo "" >> README.md
+          MIR=$(curl -sq http://archive.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
+          show_mirrors "$MIR" "Archive" >> README.md
+          echo "" >> README.md
+          MIR=$(curl -sq http://beta.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
+          show_mirrors "$MIR" "Beta" >> README.md
+          echo "" >> README.md
           if [[ $(cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n | wc -l) -gt 0 ]]; then
           echo -en "\n## Mirrors error count\n" >> README.md
           cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
