@@ -1,8 +1,6 @@
-https://mirrors.aliyun.com/armbian-releases/bananapim2plus/archive/Armbian_22.02.1_Bananapim2plus_bullseye_current_5.15.25.img.xz
-https://mirrors.aliyun.com/armbian-releases/bananapim64/archive/Armbian_22.02.1_Bananapim64_bullseye_current_5.15.25.img.xz
-https://mirrors.nju.edu.cn/armbian-releases/orangepi-r1plus-lts/archive/Armbian_22.02.1_Orangepi-r1plus-lts_bullseye_current_5.15.25.img.xz
-https://mirrors.nju.edu.cn/armbian-releases/orangepi-r1plus-lts/archive/Armbian_22.02.1_Orangepi-r1plus-lts_bullseye_current_5.15.25.img.xz.asc
+https://mirrors.nju.edu.cn/armbian-releases/orangepipcplus/archive/Armbian_22.02.2_Orangepipcplus_focal_current_5.15.26_xfce_desktop.img.xz.torrent
+https://mirrors.nju.edu.cn/armbian-releases/orangepipcplus/archive/Armbian_22.02.2_Orangepipcplus_jammy_edge_5.16.12.img.xz
+https://mirrors.nju.edu.cn/armbian-releases/orangepipcplus/archive/Armbian_22.02.2_Orangepipcplus_jammy_edge_5.16.12.img.xz.asc
 https://mirrors.nju.edu.cn/armbian-releases/orangepipcplus/archive/Armbian_22.02.2_Orangepipcplus_jammy_edge_5.16.12.img.xz.sha
-https://mirrors.nju.edu.cn/armbian-releases/orangepipcplus/archive/Armbian_22.02.2_Orangepipcplus_jammy_edge_5.16.12.img.xz.torrent
-https://mirrors.nju.edu.cn/armbian-releases/orangepizero2/archive/Armbian_22.02.2_Orangepizero2_bullseye_legacy_4.9.255.img.xz
-https://mirrors.nju.edu.cn/armbian-releases/orangepizero2/archive/Armbian_22.02.2_Orangepizero2_bullseye_legacy_4.9.255.img.xz.asc
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/station-p2/archive/Armbian_22.02.1_Station-p2_jammy_edge_5.16.11_xfce_desktop.img.xz.sha
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/uefi-arm64/archive/Armbian_22.02.1_Uefi-arm64_sid_edge_5.16.11.img.xz
