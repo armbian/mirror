@@ -1,2 +1,1 @@
-https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/orangepi3/archive/Armbian_22.02.1_Orangepi3_jammy_edge_5.16.11.img.xz.asc
-https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/orangepiplus2e/archive/Armbian_22.02.1_Orangepiplus2e_focal_current_5.15.25.img.xz
+https://mirrors.tuna.tsinghua.edu.cn/armbian-releases/rpi4b/archive/Armbian_22.02.1_Rpi4b_jammy_current_5.15.24_xfce_desktop.img.xz.sha
