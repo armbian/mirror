@@ -20,6 +20,7 @@ jobs:
           - board: clearfogbase
           - board: clearfogpro
           - board: cubox-i
+          - board: espressobin
           - board: firefly-rk3399
           - board: helios4
           - board: helios64
@@ -66,18 +67,18 @@ jobs:
           - board: orangepiplus
           - board: orangepiprime
           - board: orangepi-r1
-          - board: orangepi-r1plus-lts
           - board: orangepi-r1plus
+          - board: orangepi-r1plus-lts
           - board: orangepizero2
           - board: orangepizero
           - board: orangepizeroplus2-h3
           - board: orangepizeroplus
-          - board: orangepizero
           - board: pine64
           - board: pinebook-a64
           - board: pinebook-pro
           - board: pineh64
           - board: quartz64a
+          - board: radxa-zero2
           - board: radxa-zero
           - board: renegade
           - board: rk322x-box
