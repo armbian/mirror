@@ -61,7 +61,7 @@ jobs:
           FILES=$(cat temp/userdata.csv | grep ${BOARD}"/" | grep -v nightly | cut -d"|" -f2) # exclude nightly
           MIRRORS=$(curl -sq http://redirect.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
           # overrire with mirrors where file 100% exists
-          MIRRORS="http://stpete-mirror.armbian.com/dl/ http://imola.armbian.com/dl/"
+          # MIRRORS="http://stpete-mirror.armbian.com/dl/ http://imola.armbian.com/dl/"
           
           echo "BOARD=$BOARD" >> $GITHUB_ENV
           truncate -s 0 ${BOARD}.log
