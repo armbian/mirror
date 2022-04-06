@@ -43,7 +43,6 @@ jobs:
           - board: espressobin
           - board: firefly-rk3399
           - board: helios4
-          - board: helios64
           - board: jethubj100
           - board: jethubj80
           - board: jetson-nano
@@ -52,7 +51,6 @@ jobs:
           - board: khadas-vim2
           - board: khadas-vim3
           - board: khadas-vim3l
-          - board: khadas-vim3
           - board: lafrite
           - board: lepotato
           - board: lime2
