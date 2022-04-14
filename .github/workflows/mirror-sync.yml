@@ -73,6 +73,7 @@ jobs:
           - board: odroidn2
           - board: odroidxu4
           - board: orangepi3
+          - board: orangepi3-lts
           - board: orangepi4
           - board: orangepilite2
           - board: orangepilite
