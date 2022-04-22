@@ -1,3 +1,9 @@
+http://mirrors.nju.edu.cn/armbian-releases/bananapipro/archive/Armbian_22.02.1_Bananapipro_sid_edge_5.16.11.img.xz.asc
+http://mirrors.nju.edu.cn/armbian-releases/bananapipro/archive/Armbian_22.02.1_Bananapipro_sid_edge_5.16.11.img.xz.sha
+http://mirrors.nju.edu.cn/armbian-releases/bananapipro/archive/Armbian_22.02.1_Bananapipro_sid_edge_5.16.11.img.xz.torrent
+http://mirrors.nju.edu.cn/armbian-releases/pineh64/archive/Armbian_22.02.2_Pineh64_focal_current_5.15.26.img.xz.sha
+http://mirrors.nju.edu.cn/armbian-releases/pineh64/archive/Armbian_22.02.2_Pineh64_focal_current_5.15.26.img.xz.torrent
+http://mirrors.nju.edu.cn/armbian-releases/pineh64/archive/Armbian_22.02.2_Pineh64_focal_current_5.15.26_xfce_desktop.img.xz
 http://xogium.performanceservers.nl/dl/bananapi/archive/Armbian_22.02.1_Bananapi_bullseye_current_5.15.25.img.xz
 http://xogium.performanceservers.nl/dl/bananapi/archive/Armbian_22.02.1_Bananapi_bullseye_current_5.15.25.img.xz.asc
 http://xogium.performanceservers.nl/dl/bananapi/archive/Armbian_22.02.1_Bananapi_bullseye_current_5.15.25.img.xz.sha
@@ -67,9 +73,6 @@ http://xogium.performanceservers.nl/dl/bananapipro/archive/Armbian_22.02.1_Banan
 http://xogium.performanceservers.nl/dl/bananapipro/archive/Armbian_22.02.1_Bananapipro_jammy_current_5.15.25_xfce_desktop.img.xz.sha
 http://xogium.performanceservers.nl/dl/bananapipro/archive/Armbian_22.02.1_Bananapipro_jammy_current_5.15.25_xfce_desktop.img.xz.torrent
 http://xogium.performanceservers.nl/dl/bananapipro/archive/Armbian_22.02.1_Bananapipro_sid_edge_5.16.11.img.xz
-http://xogium.performanceservers.nl/dl/bananapipro/archive/Armbian_22.02.1_Bananapipro_sid_edge_5.16.11.img.xz.asc
-http://xogium.performanceservers.nl/dl/bananapipro/archive/Armbian_22.02.1_Bananapipro_sid_edge_5.16.11.img.xz.sha
-http://xogium.performanceservers.nl/dl/bananapipro/archive/Armbian_22.02.1_Bananapipro_sid_edge_5.16.11.img.xz.torrent
 http://xogium.performanceservers.nl/dl/clearfogbase/archive/Armbian_22.02.1_Clearfogbase_bullseye_current_5.15.25.img.xz
 http://xogium.performanceservers.nl/dl/clearfogbase/archive/Armbian_22.02.1_Clearfogbase_bullseye_current_5.15.25.img.xz.asc
 http://xogium.performanceservers.nl/dl/clearfogbase/archive/Armbian_22.02.1_Clearfogbase_bullseye_current_5.15.25.img.xz.sha
@@ -968,9 +971,6 @@ http://xogium.performanceservers.nl/dl/pineh64/archive/Armbian_22.02.2_Pineh64_b
 http://xogium.performanceservers.nl/dl/pineh64/archive/Armbian_22.02.2_Pineh64_bullseye_current_5.15.26.img.xz.torrent
 http://xogium.performanceservers.nl/dl/pineh64/archive/Armbian_22.02.2_Pineh64_focal_current_5.15.26.img.xz
 http://xogium.performanceservers.nl/dl/pineh64/archive/Armbian_22.02.2_Pineh64_focal_current_5.15.26.img.xz.asc
-http://xogium.performanceservers.nl/dl/pineh64/archive/Armbian_22.02.2_Pineh64_focal_current_5.15.26.img.xz.sha
-http://xogium.performanceservers.nl/dl/pineh64/archive/Armbian_22.02.2_Pineh64_focal_current_5.15.26.img.xz.torrent
-http://xogium.performanceservers.nl/dl/pineh64/archive/Armbian_22.02.2_Pineh64_focal_current_5.15.26_xfce_desktop.img.xz
 http://xogium.performanceservers.nl/dl/pineh64/archive/Armbian_22.02.2_Pineh64_focal_current_5.15.26_xfce_desktop.img.xz.asc
 http://xogium.performanceservers.nl/dl/pineh64/archive/Armbian_22.02.2_Pineh64_focal_current_5.15.26_xfce_desktop.img.xz.sha
 http://xogium.performanceservers.nl/dl/pineh64/archive/Armbian_22.02.2_Pineh64_focal_current_5.15.26_xfce_desktop.img.xz.torrent
