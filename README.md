@@ -95,7 +95,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 ## Mirrors error count
       3 http://mirrors.nju.edu.cn/armbian-releases/
-   1285 http://xogium.performanceservers.nl/dl/
 
 
 [Detailed report](detailed.txt)
