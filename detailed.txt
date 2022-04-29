@@ -1,3 +1,2 @@
-http://mirrors.nju.edu.cn/armbian-releases/nanopim4/archive/Armbian_22.02.1_Nanopim4_bullseye_current_5.15.25.img.xz.torrent
-http://mirrors.nju.edu.cn/armbian-releases/nanopim4/archive/Armbian_22.02.1_Nanopim4_focal_current_5.15.25.img.xz
-http://mirrors.nju.edu.cn/armbian-releases/nanopim4/archive/Armbian_22.02.1_Nanopim4_focal_current_5.15.25.img.xz.asc
+http://mirrors.aliyun.com/armbian-releases/orangepipc2/archive/Armbian_22.02.2_Orangepipc2_jammy_edge_5.16.12.img.xz
+http://mirrors.aliyun.com/armbian-releases/orangepiprime/archive/Armbian_22.02.1_Orangepiprime_bullseye_current_5.15.25.img.xz
