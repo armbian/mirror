@@ -92,10 +92,3 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |:--|:--|:--:|--:|
 |http://imola.armbian.com/beta/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
 
-
-## Mirrors error count
-     27 http://mirror.iscas.ac.cn/armbian-releases/
-     29 http://mirrors.nju.edu.cn/armbian-releases/
-
-
-[Detailed report](detailed.txt)
