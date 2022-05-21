@@ -36,6 +36,7 @@ jobs:
           - board: bananapim2plus
           - board: bananapim64
           - board: bananapipro
+          - board: bananapi
           - board: clearfogbase
           - board: clearfogpro
           - board: cubox-i
@@ -52,52 +53,52 @@ jobs:
           - board: khadas-vim3l
           - board: lafrite
           - board: lepotato
-          - board: lime-a64
           - board: lime2
+          - board: lime-a64
           - board: nanopct4
+          - board: nanopik1plus
+          - board: nanopim4
+          - board: nanopim4v2
+          - board: nanopineo2black
+          - board: nanopineo2
+          - board: nanopineo
+          - board: nanopineoplus2
           - board: nanopi-r1
           - board: nanopi-r2c
           - board: nanopi-r2s
           - board: nanopi-r4s
-          - board: nanopik1plus
-          - board: nanopim4
-          - board: nanopim4v2
-          - board: nanopineo
-          - board: nanopineo2
-          - board: nanopineo2black
-          - board: nanopineoplus2
           - board: odroidc2
           - board: odroidc4
           - board: odroidhc4
           - board: odroidn2
           - board: odroidxu4
-          - board: orangepi-r1
-          - board: orangepi-r1plus-lts
-          - board: orangepi-r1plus
-          - board: orangepi3-lts
           - board: orangepi3
+          - board: orangepi3-lts
           - board: orangepi4
-          - board: orangepilite
           - board: orangepilite2
+          - board: orangepilite
           - board: orangepione
           - board: orangepioneplus
-          - board: orangepipc
           - board: orangepipc2
+          - board: orangepipc
           - board: orangepipcplus
-          - board: orangepiplus
           - board: orangepiplus2e
+          - board: orangepiplus
           - board: orangepiprime
-          - board: orangepizero
+          - board: orangepi-r1
+          - board: orangepi-r1plus
+          - board: orangepi-r1plus-lts
           - board: orangepizero2
-          - board: orangepizeroplus
+          - board: orangepizero
           - board: orangepizeroplus2-h3
+          - board: orangepizeroplus
           - board: pine64
           - board: pinebook-a64
           - board: pinebook-pro
           - board: pineh64
           - board: quartz64a
-          - board: radxa-zero
           - board: radxa-zero2
+          - board: radxa-zero
           - board: renegade
           - board: rk322x-box
           - board: rock-3a
