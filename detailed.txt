@@ -1,7 +1,9 @@
-http://mirrors.nju.edu.cn/armbian-releases/nanopineoplus2/archive/Armbian_22.02.1_Nanopineoplus2_bullseye_current_5.15.25.img.xz.torrent
-http://mirrors.nju.edu.cn/armbian-releases/nanopineoplus2/archive/Armbian_22.02.1_Nanopineoplus2_jammy_current_5.15.25.img.xz
-http://mirrors.nju.edu.cn/armbian-releases/nanopineoplus2/archive/Armbian_22.02.1_Nanopineoplus2_jammy_current_5.15.25.img.xz.asc
-http://mirrors.nju.edu.cn/armbian-releases/station-m1/archive/Armbian_22.02.1_Station-m1_jammy_current_5.15.25.img.xz.asc
-http://mirrors.nju.edu.cn/armbian-releases/station-m1/archive/Armbian_22.02.1_Station-m1_jammy_current_5.15.25.img.xz.sha
-http://mirrors.nju.edu.cn/armbian-releases/station-m1/archive/Armbian_22.02.1_Station-m1_jammy_current_5.15.25.img.xz.torrent
-http://mirrors.nju.edu.cn/armbian-releases/station-m1/archive/Armbian_22.02.1_Station-m1_jammy_current_5.15.25_xfce_desktop.img.xz
+http://mirrors.nju.edu.cn/armbian-releases/nanopineo2/archive/Armbian_22.02.2_Nanopineo2_bullseye_current_5.15.26.img.xz.asc
+http://mirrors.nju.edu.cn/armbian-releases/nanopineo2/archive/Armbian_22.02.2_Nanopineo2_bullseye_current_5.15.26.img.xz.sha
+http://mirrors.nju.edu.cn/armbian-releases/nanopineo2/archive/Armbian_22.02.2_Nanopineo2_bullseye_current_5.15.26.img.xz.torrent
+http://mirrors.nju.edu.cn/armbian-releases/nanopineo2/archive/Armbian_22.02.2_Nanopineo2_focal_current_5.15.26.img.xz.asc
+http://mirrors.nju.edu.cn/armbian-releases/nanopineo2/archive/Armbian_22.02.2_Nanopineo2_focal_current_5.15.26.img.xz.sha
+http://mirrors.nju.edu.cn/armbian-releases/nanopineo2/archive/Armbian_22.02.2_Nanopineo2_focal_current_5.15.26.img.xz.torrent
+http://mirrors.nju.edu.cn/armbian-releases/nanopineo2/archive/Armbian_22.02.2_Nanopineo2_jammy_edge_5.16.12.img.xz.asc
+http://mirrors.nju.edu.cn/armbian-releases/nanopineo2/archive/Armbian_22.02.2_Nanopineo2_jammy_edge_5.16.12.img.xz.sha
+http://mirrors.nju.edu.cn/armbian-releases/nanopineo2/archive/Armbian_22.02.2_Nanopineo2_jammy_edge_5.16.12.img.xz.torrent
