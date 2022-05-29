@@ -19,6 +19,7 @@ jobs:
           - board: bananapi
           - board: clearfogbase
           - board: clearfogpro
+          - board: clockworkpi-a06
           - board: cubox-i
           - board: espressobin
           - board: firefly-rk3399
@@ -66,30 +67,34 @@ jobs:
           - board: orangepiplus
           - board: orangepiprime
           - board: orangepi-r1
-          - board: orangepi-r1plus
           - board: orangepi-r1plus-lts
           - board: orangepizero2
           - board: orangepizero
           - board: orangepizeroplus2-h3
           - board: orangepizeroplus
           - board: pine64
+          - board: pine64so
           - board: pinebook-a64
           - board: pinebook-pro
-          - board: pineh64
-          - board: quartz64a
+          - board: pineh64-b
           - board: radxa-zero2
           - board: radxa-zero
           - board: renegade
           - board: rk322x-box
           - board: rock-3a
+          - board: rock64
+          - board: rockpi-4a
+          - board: rockpi-4b
+          - board: rockpi-4c
           - board: rockpro64
           - board: rpi4b
           - board: station-m1
           - board: station-m2
           - board: station-p1
           - board: station-p2
-          - board: tinkerboard-2
           - board: tinkerboard
+          - board: tritium-h3
+          - board: tritium-h5
           - board: uefi-arm64
           - board: uefi-x86
           - board: virtual-qemu
