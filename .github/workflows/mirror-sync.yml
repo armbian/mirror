@@ -76,6 +76,7 @@ jobs:
           - board: orangepi3
           - board: orangepi3-lts
           - board: orangepi4
+          - board: orangepi4-lts
           - board: orangepilite2
           - board: orangepilite
           - board: orangepione
@@ -87,7 +88,6 @@ jobs:
           - board: orangepiplus
           - board: orangepiprime
           - board: orangepi-r1
-          - board: orangepi-r1plus
           - board: orangepi-r1plus-lts
           - board: orangepizero2
           - board: orangepizero
@@ -98,8 +98,6 @@ jobs:
           - board: pinebook-a64
           - board: pinebook-pro
           - board: pineh64-b
-          - board: quartz64a
-          - board: radxa-zero2
           - board: radxa-zero
           - board: renegade
           - board: rk322x-box
@@ -114,13 +112,11 @@ jobs:
           - board: station-m2
           - board: station-p1
           - board: station-p2
-          - board: tinkerboard-2
           - board: tinkerboard
           - board: tritium-h3
           - board: tritium-h5
           - board: uefi-arm64
           - board: uefi-x86
-          - board: virtual-qemu
           - board: xt-q8l-v10
           - board: zeropi
     steps:
