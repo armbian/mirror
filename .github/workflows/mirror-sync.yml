@@ -52,6 +52,7 @@ jobs:
           - board: khadas-vim2
           - board: khadas-vim3
           - board: khadas-vim3l
+          - board: khadas-vim3
           - board: lafrite
           - board: lepotato
           - board: lime2
@@ -75,8 +76,10 @@ jobs:
           - board: odroidxu4
           - board: orangepi3
           - board: orangepi3-lts
+          - board: orangepi3
           - board: orangepi4
           - board: orangepi4-lts
+          - board: orangepi4
           - board: orangepilite2
           - board: orangepilite
           - board: orangepione
