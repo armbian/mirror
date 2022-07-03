@@ -87,6 +87,7 @@ jobs:
           - board: orangepipc2
           - board: orangepipc
           - board: orangepipcplus
+          - board: orangepipc
           - board: orangepiplus2e
           - board: orangepiplus
           - board: orangepiprime
