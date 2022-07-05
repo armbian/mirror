@@ -65,6 +65,7 @@ jobs:
           - board: nanopineo2
           - board: nanopineo
           - board: nanopineoplus2
+          - board: nanopineo
           - board: nanopi-r1
           - board: nanopi-r2c
           - board: nanopi-r2s
@@ -84,6 +85,7 @@ jobs:
           - board: orangepilite
           - board: orangepione
           - board: orangepioneplus
+          - board: orangepione
           - board: orangepipc2
           - board: orangepipc
           - board: orangepipcplus
@@ -97,6 +99,7 @@ jobs:
           - board: orangepizero
           - board: orangepizeroplus2-h3
           - board: orangepizeroplus
+          - board: orangepizero
           - board: pine64
           - board: pine64so
           - board: pinebook-a64
