@@ -1,0 +1,121 @@
+name: Sync mirror
+on:
+  schedule:
+    - cron:  '0 1 * * *'
+
+  workflow_dispatch:
+
+jobs:
+
+  List:
+
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Display structure of downloaded files
+        run: |
+          
+          function exceptions()
+          {
+          if [[ $k == *aliyun* ]]; then 
+                COUNTRY=China
+                CITY=Hangzhou
+                FLAG="https://cdn.ipwhois.io/flags/cn.svg"
+          fi
+          if [[ $k == *nju.edu* ]]; then 
+                COUNTRY=China
+                CITY=Nanjing
+                FLAG="https://cdn.ipwhois.io/flags/cn.svg"
+          fi
+          if [[ $k == *imola.armbian* ]]; then 
+                COUNTRY=Slovenia
+                CITY=Ljubljana
+                FLAG="https://cdn.ipwhois.io/flags/si.svg"
+          fi
+          }
+          
+          function show_mirrors()
+          {
+          MIRRORS=$1
+          echo -en "\n## $2\n\n"
+          echo "|URL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Flag|Country &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|"
+          echo "|:--|:--|:--:|--:|"
+          for k in ${MIRRORS[@]}
+              do
+              HOST=$(echo "$k" | awk -F/ '{print $3}')
+              IP=$(dig +short $HOST | tail -1)
+          RES=$(
+          curl --max-time 5 -s http://ipwhois.app/json/${IP} | \
+          jq '.timezone, .city, .country, .country_flag' | \
+          while read -r TIMEZONE; do
+          read -r COUNTRY
+          echo "${TIMEZONE},${COUNTRY},${COUNTRYFLAG}" | tr --delete \"
+          done
+          )
+          TZDATA=$(echo ${RES} | cut -d"," -f1)
+          CITY=$(echo ${RES} | cut -d"," -f2)
+          COUNTRY=$(echo ${RES} | cut -d"," -f3 | xargs)
+          FLAG=$(echo ${RES} | cut -d"," -f4)
+          
+          # automation is not perfect
+          exceptions
+
+          echo "|$k|$CITY|<img width=24 src=$FLAG>|$COUNTRY|"
+          done
+          }
+          
+          echo '<h3 align=center><a href="#build-tools"><img src="https://raw.githubusercontent.com/armbian/build/master/.github/armbian-logo.png" alt="Armbian logo" width="144"></a><br>mirror sync</h3>'  > README.md
+          echo -en "<p align=right>&nbsp;</p>\n" >> README.md
+          echo -en "\n[![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml) [![Rootfs sync](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml)" >> README.md
+          echo "
+          ## Mirroring Armbian?
+          
+          We are providing rsync service for stable images (dl), repository (apt), beta (beta) and archive (archive) at:
+
+              rsync -av rsync://rsync.armbian.com/
+
+          Alternatively you can sync most valuable date from one of our mirror that provides rsync and is much faster: 
+          
+              rsync -av rsync://mirrors.dotsrc.org/armbian-dl
+              rsync -av rsync://mirrors.dotsrc.org/armbian-apt
+
+          Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
+
+          1. Setup HTTP and HTTPS hostname
+          2. Setup cron to sync every 2-4 hours
+          3. [Inform us](https://www.armbian.com/#contact)
+          " >> README.md
+          MIR=$(curl -sq http://redirect.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
+          show_mirrors "$MIR" "Images" >> README.md
+          echo "" >> README.md
+          MIR=$(curl -sq http://apt.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
+          show_mirrors "$MIR" "Packages" >> README.md
+          echo "" >> README.md
+          MIR=$(curl -sq http://archive.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
+          show_mirrors "$MIR" "Archive" >> README.md
+          echo "" >> README.md
+          MIR=$(curl -sq http://beta.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
+          show_mirrors "$MIR" "Beta" >> README.md
+          echo "" >> README.md
+          if [[ $(cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n | wc -l) -gt 0 ]]; then
+          echo -en "\n## Mirrors error count\n" >> README.md
+          cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
+          echo -en "\n\n[Detailed report](detailed.txt)" >> README.md
+          find *.log -not -empty -type f -print0 | xargs -0 -I % sh -c 'cat % | cut -d"," -f2-3 |tr -d \"," " ' | sort > detailed.txt
+          fi
+      - name: Add
+        run: |
+          git pull
+          git add README.md
+          git add detailed.txt
+
+      - name: Commit files
+        run: |
+          git config --local user.email "info@armbian.com"
+          git config --local user.name "Armbianworker"
+          git commit --allow-empty -m "Update github actions" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.MIRROR }}
+          branch: ${{ github.ref }}
