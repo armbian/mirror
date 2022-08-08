@@ -66,7 +66,7 @@ jobs:
           
           echo '<h3 align=center><a href="#build-tools"><img src="https://raw.githubusercontent.com/armbian/build/master/.github/armbian-logo.png" alt="Armbian logo" width="144"></a><br>mirror sync</h3>'  > README.md
           echo -en "<p align=right>&nbsp;</p>\n" >> README.md
-          echo -en "\n[![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml) [![Rootfs sync](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml)" >> README.md
+          #echo -en "\n[![Sync mirror](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/mirror-sync.yml) [![Rootfs sync](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml/badge.svg)](https://github.com/armbian/mirror/actions/workflows/rootfs-sync.yml)" >> README.md
           echo "
           ## Mirroring Armbian?
           
@@ -94,15 +94,15 @@ jobs:
           MIR=$(curl -sq http://archive.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
           show_mirrors "$MIR" "Archive" >> README.md
           echo "" >> README.md
-          MIR=$(curl -sq http://beta.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
-          show_mirrors "$MIR" "Beta" >> README.md
-          echo "" >> README.md
-          if [[ $(cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n | wc -l) -gt 0 ]]; then
-          echo -en "\n## Mirrors error count\n" >> README.md
-          cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
-          echo -en "\n\n[Detailed report](detailed.txt)" >> README.md
-          find *.log -not -empty -type f -print0 | xargs -0 -I % sh -c 'cat % | cut -d"," -f2-3 |tr -d \"," " ' | sort > detailed.txt
-          fi
+          #MIR=$(curl -sq http://beta.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
+          #show_mirrors "$MIR" "Beta" >> README.md
+          #echo "" >> README.md
+          #if [[ $(cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n | wc -l) -gt 0 ]]; then
+          #echo -en "\n## Mirrors error count\n" >> README.md
+          #cat *.log | awk -F ',' '{print $2}' | sort | uniq -c | sort -n >> README.md
+          #echo -en "\n\n[Detailed report](detailed.txt)" >> README.md
+          #find *.log -not -empty -type f -print0 | xargs -0 -I % sh -c 'cat % | cut -d"," -f2-3 |tr -d \"," " ' | sort > detailed.txt
+          #fi
       - name: Add
         run: |
           git pull
