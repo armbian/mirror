@@ -1,18 +1,22 @@
-<h3 align=center><a href="#build-tools"><img src="https://raw.githubusercontent.com/armbian/build/master/.github/armbian-logo.png" alt="Armbian logo" width="144"></a><br>mirror sync</h3>
-<p align=right>&nbsp;</p>
+<p align="center">
+  <a href="#build-framework">
+  <img src="https://raw.githubusercontent.com/armbian/build/master/.github/armbian-logo.png" alt="Armbian logo" width="144">
+  </a><br>
+  <strong>Armbian Linux Mirror Infrastructure</strong><br>
+<br>
 
 ## Mirroring Armbian?
 
-We are providing rsync service for stable images (dl), repository (apt), beta (beta) and archive (archive) at:
+We are providing rsync service for stable images (dl), repository (apt), beta , root cache and archive at:
 
     rsync -av rsync://rsync.armbian.com/
 
-Alternatively you can sync most valuable date from one of our mirror that provides rsync and is much faster: 
+Alternatively you can sync most valuable date from one of our mirror that provides rsync and will probably sync faster: 
 
     rsync -av rsync://mirrors.dotsrc.org/armbian-dl
     rsync -av rsync://mirrors.dotsrc.org/armbian-apt
 
-Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
+Space needs: 500Gb (images), 100Gb (packages), 200Gb (rootfs cache) and (optional) 3TB for archives
 
 1. Setup HTTP and HTTPS hostname
 2. Setup cron to sync every 2-4 hours
