@@ -4,6 +4,15 @@
   </a><br>
   <strong>Armbian Linux Mirror Infrastructure</strong><br>
 <br>
+<a href=https://github.com/armbian/mirror/actions/workflows/update-list.yml><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/armbian/mirror/Sync%20mirror?logo=googlecloud&label=List%20update&style=for-the-badge"></a>
+ <br>
+
+<br>
+<a href=https://twitter.com/armbian><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/armbian?logo=twitter&style=flat-square"></a>
+<a href=http://discord.armbian.com/><img alt="Discord" src="https://img.shields.io/discord/854735915313659944?label=Discord&logo=discord&style=flat-square"></a>
+<a href=https://liberapay.com/armbian><img alt="Liberapay patrons" src="https://img.shields.io/liberapay/patrons/armbian?logo=liberapay&style=flat-square"></a>
+</p>
+
 
 ## Mirroring Armbian?
 
