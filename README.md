@@ -1,31 +1,18 @@
-<p align="center">
-  <a href="#build-framework">
-  <img src="https://raw.githubusercontent.com/armbian/build/master/.github/armbian-logo.png" alt="Armbian logo" width="144">
-  </a><br>
-  <strong>Armbian Linux Mirror Infrastructure</strong><br>
-<br>
-<a href=https://github.com/armbian/mirror/actions/workflows/update-list.yml><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/armbian/mirror/Sync%20mirror?logo=googlecloud&label=List%20update&style=for-the-badge"></a>
- <br>
-
-<br>
-<a href=https://twitter.com/armbian><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/armbian?logo=twitter&style=flat-square"></a>
-<a href=http://discord.armbian.com/><img alt="Discord" src="https://img.shields.io/discord/854735915313659944?label=Discord&logo=discord&style=flat-square"></a>
-<a href=https://liberapay.com/armbian><img alt="Liberapay patrons" src="https://img.shields.io/liberapay/patrons/armbian?logo=liberapay&style=flat-square"></a>
-</p>
-
+<h3 align=center><a href="#build-tools"><img src="https://raw.githubusercontent.com/armbian/build/master/.github/armbian-logo.png" alt="Armbian logo" width="144"></a><br>mirror sync</h3>
+<p align=right>&nbsp;</p>
 
 ## Mirroring Armbian?
 
-We are providing rsync service for stable images (dl), repository (apt), beta , root cache and archive at:
+We are providing rsync service for stable images (dl), repository (apt), beta (beta) and archive (archive) at:
 
     rsync -av rsync://rsync.armbian.com/
 
-Alternatively you can sync most valuable date from one of our mirror that provides rsync and will probably sync faster: 
+Alternatively you can sync most valuable date from one of our mirror that provides rsync and is much faster: 
 
     rsync -av rsync://mirrors.dotsrc.org/armbian-dl
     rsync -av rsync://mirrors.dotsrc.org/armbian-apt
 
-Space needs: 500Gb (images), 100Gb (packages), 200Gb (rootfs cache) and (optional) 3TB for archives
+Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 1. Setup HTTP and HTTPS hostname
 2. Setup cron to sync every 2-4 hours
