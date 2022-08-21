@@ -220,6 +220,11 @@ jobs:
           
           function exceptions()
           {
+          if [[ $k == *albony* ]]; then 
+                COUNTRY=India
+                CITY=Nagpur
+                FLAG="https://cdn.ipwhois.io/flags/in.svg"
+          fi
           if [[ $k == *aliyun* ]]; then 
                 COUNTRY=China
                 CITY=Hangzhou
