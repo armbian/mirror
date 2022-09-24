@@ -17,6 +17,11 @@ jobs:
           
           function exceptions()
           {
+          if [[ $k == *albony* ]]; then 
+                COUNTRY=Brasil
+                CITY="Sao Paulo"
+                FLAG="https://cdn.ipwhois.io/flags/br.svg"
+          fi
           if [[ $k == *aliyun* ]]; then 
                 COUNTRY=China
                 CITY=Hangzhou
@@ -31,6 +36,11 @@ jobs:
                 COUNTRY=Slovenia
                 CITY=Ljubljana
                 FLAG="https://cdn.ipwhois.io/flags/si.svg"
+          fi
+          if [[ $k == *mirrors.naho* ]]; then 
+                COUNTRY=Korea
+                CITY=Seoul
+                FLAG="https://cdn.ipwhois.io/flags/kr.svg"
           fi
           }
           
