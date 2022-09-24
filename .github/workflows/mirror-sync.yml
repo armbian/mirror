@@ -298,7 +298,7 @@ jobs:
                 CITY=Ljubljana
                 FLAG="https://cdn.ipwhois.io/flags/si.svg"
           fi
-          if [[ $k == *kr.mirrors.naho.moe* ]]; then 
+          if [[ $k == *mirrors.naho* ]]; then 
                 COUNTRY=Korea
                 CITY=Seoul
                 FLAG="https://cdn.ipwhois.io/flags/kr.svg"
