@@ -106,6 +106,64 @@ jobs:
           - board: uefi-x86
           - board: xt-q8l-v10
           - board: zeropi
+          - board: bananapim1plus
+          - board: bananapim2ultra
+          - board: bananapim2zero
+          - board: bananapim3
+          - board: bananapir2pro
+          - board: beelinkx2
+          - board: cubieboard2
+          - board: cubieboard4
+          - board: cubieboard
+          - board: cubietruck
+          - board: cubietruckplus
+          - board: cubox-i
+          - board: helios64
+          - board: lime-a33
+          - board: lime
+          - board: macchiatobin-doubleshot
+          - board: melea1000
+          - board: micro
+          - board: mk808c
+          - board: nanopia64
+          - board: nanopiair
+          - board: nanopiduo2
+          - board: nanopiduo
+          - board: nanopik2-s905
+          - board: nanopineo2black
+          - board: nanopineo3
+          - board: nanopineo4
+          - board: nanopineocore2
+          - board: olinux-som-a13
+          - board: onecloud
+          - board: orangepi-r1plus
+          - board: orangepi-rk3399
+          - board: orangepi2
+          - board: orangepiplus
+          - board: orangepiwin
+          - board: orangepizeroplus2-h5
+          - board: pcduino3
+          - board: pinebook-a64
+          - board: pinecube
+          - board: pineh64
+          - board: quartz64a
+          - board: radxa-zero2
+          - board: recore
+          - board: rk322x-box
+          - board: rk3318-box
+          - board: roc-rk3399-pc
+          - board: rock-5b
+          - board: rockpi-4bplus
+          - board: rockpi-e
+          - board: rockpi-n10
+          - board: rpi4b
+          - board: sunvell-r69
+          - board: teres-a64
+          - board: tinkerboard-2
+          - board: udoo
+          - board: virtual-qemu
+          - board: xt-q8l-v10
+          - board: z28pro
     steps:
       - uses: igorpecovnik/delete-tag-and-release@master
         with:
