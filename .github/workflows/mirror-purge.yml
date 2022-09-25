@@ -71,13 +71,13 @@ jobs:
           - board: orangepipc
           - board: orangepiplus2e
           - board: orangepiplus
-          - board: orangepiprime
           - board: orangepi-r1
+          - board: orangepi-r1plus
           - board: orangepi-r1plus-lts
+          - board: orangepi-r1plus
           - board: orangepi-r1
           - board: orangepizero2
           - board: orangepizero
-          - board: orangepizeroplus2-h3
           - board: orangepizeroplus
           - board: orangepizero
           - board: pine64
