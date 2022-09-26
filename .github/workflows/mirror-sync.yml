@@ -91,6 +91,7 @@ jobs:
           - board: orangepipc
           - board: orangepiplus2e
           - board: orangepiplus
+          - board: orangepiprime
           - board: orangepi-r1
           - board: orangepi-r1plus
           - board: orangepi-r1plus-lts
@@ -98,6 +99,7 @@ jobs:
           - board: orangepi-r1
           - board: orangepizero2
           - board: orangepizero
+          - board: orangepizeroplus2-h3
           - board: orangepizeroplus
           - board: orangepizero
           - board: pine64
@@ -156,7 +158,6 @@ jobs:
           - board: nanopineocore2
           - board: olinux-som-a13
           - board: onecloud
-          - board: orangepi-r1plus
           - board: orangepi-rk3399
           - board: orangepi2
           - board: orangepiplus
