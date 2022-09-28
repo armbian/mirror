@@ -46,6 +46,8 @@ jobs:
           - board: nanopineoplus2
           - board: nanopineo
           - board: nanopi-r1
+          - board: nanopi-r1s-h5
+          - board: nanopi-r1
           - board: nanopi-r2c
           - board: nanopi-r2s
           - board: nanopi-r4s
@@ -99,6 +101,7 @@ jobs:
           - board: rpi4b
           - board: station-m1
           - board: station-m2
+          - board: station-m3
           - board: station-p1
           - board: station-p2
           - board: tinkerboard
