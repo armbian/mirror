@@ -71,6 +71,7 @@ jobs:
           - board: nanopi-r2c
           - board: nanopi-r2s
           - board: nanopi-r4s
+          - board: nanopi-r5s
           - board: odroidc2
           - board: odroidc4
           - board: odroidhc4
