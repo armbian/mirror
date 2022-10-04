@@ -14,6 +14,7 @@ jobs:
         include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
           - board: bananapi
           - board: bananapim2plus
+          - board: bananapim5
           - board: bananapim64
           - board: bananapipro
           - board: bananapi
