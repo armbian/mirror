@@ -37,10 +37,15 @@ jobs:
                 CITY=Ljubljana
                 FLAG="https://cdn.ipwhois.io/flags/si.svg"
           fi
-          if [[ $k == *mirrors.naho* ]]; then 
+          if [[ $k == *kr.mirrors.naho* ]]; then 
                 COUNTRY=Korea
                 CITY=Seoul
                 FLAG="https://cdn.ipwhois.io/flags/kr.svg"
+          fi
+          if [[ $k == *jp.mirrors.naho* ]]; then 
+                COUNTRY=Japan
+                CITY=Tokyo
+                FLAG="https://cdn.ipwhois.io/flags/jp.svg"
           fi
           }
           
