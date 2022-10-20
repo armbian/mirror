@@ -125,7 +125,6 @@ jobs:
           - board: cubietruck
           - board: cubietruckplus
           - board: cubox-i
-          - board: helios64
           - board: lime-a33
           - board: lime
           - board: macchiatobin-doubleshot
