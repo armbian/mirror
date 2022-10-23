@@ -43,9 +43,9 @@ jobs:
           - board: nanopim4v2
           - board: nanopineo2black
           - board: nanopineo2
+          - board: nanopineo3
           - board: nanopineo
           - board: nanopineoplus2
-          - board: nanopineo
           - board: nanopi-r1
           - board: nanopi-r1s-h5
           - board: nanopi-r1
@@ -85,11 +85,11 @@ jobs:
           - board: orangepizero
           - board: orangepizeroplus2-h3
           - board: orangepizeroplus
-          - board: orangepizero
           - board: pine64
           - board: pine64so
           - board: pinebook-pro
           - board: pineh64-b
+          - board: radxa-zero2
           - board: radxa-zero
           - board: renegade
           - board: rk322x-box
