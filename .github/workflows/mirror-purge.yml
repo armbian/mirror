@@ -234,6 +234,7 @@ jobs:
           - board: rockpi-n10
           - board: rockpi-s
           - board: rockpro64
+          - board: rpi4b
           - board: station-m1
           - board: station-m2
           - board: station-p1
