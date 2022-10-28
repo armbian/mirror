@@ -133,6 +133,9 @@ jobs:
           - board: uefi-x86
           - board: xt-q8l-v10
           - board: zeropi
+          - board: rpi4b
+          - board: uefi-arm64
+          - board: uefi-x86
           - board: bananapi
           - board: bananapim1plus
           - board: bananapim2plus
@@ -254,7 +257,6 @@ jobs:
           - board: rockpi-n10
           - board: rockpi-s
           - board: rockpro64
-          - board: rpi4b
           - board: station-m1
           - board: station-m2
           - board: station-p1
@@ -266,8 +268,6 @@ jobs:
           - board: tritium-h3
           - board: tritium-h5
           - board: udoo
-          - board: uefi-arm64
-          - board: uefi-x86
           - board: xt-q8l-v10
           - board: zeropi
     steps:
