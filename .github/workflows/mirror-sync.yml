@@ -52,7 +52,6 @@ jobs:
           - board: khadas-vim2
           - board: khadas-vim3
           - board: khadas-vim3l
-          - board: khadas-vim3
           - board: lafrite
           - board: lepotato
           - board: lime2
