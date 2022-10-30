@@ -17,7 +17,6 @@ jobs:
           - board: bananapim5
           - board: bananapim64
           - board: bananapipro
-          - board: bananapi
           - board: clearfogbase
           - board: clearfogpro
           - board: clockworkpi-a06
