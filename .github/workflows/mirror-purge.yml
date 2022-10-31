@@ -179,6 +179,7 @@ jobs:
           - board: odroidc2
           - board: odroidc4
           - board: odroidhc4
+          - board: odroidm1
           - board: odroidn2
           - board: odroidxu4
           - board: olinux-som-a13
