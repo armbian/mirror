@@ -133,7 +133,9 @@ jobs:
           - board: zeropi
           - board: rpi4b
           - board: uefi-arm64
+          - board: uefi-riscv64
           - board: uefi-x86
+          - board: aml-s9xx-box
           - board: bananapi
           - board: bananapim1plus
           - board: bananapim2plus
@@ -252,6 +254,7 @@ jobs:
           - board: rockpi-4b
           - board: rockpi-4bplus
           - board: rockpi-4c
+          - board: rockpi-4cplus
           - board: rockpi-e
           - board: rockpi-n10
           - board: rockpi-s
