@@ -50,7 +50,6 @@ jobs:
           - board: nanopi-r2c
           - board: nanopi-r2s
           - board: nanopi-r4s
-          - board: nanopi-r5s
           - board: odroidc2
           - board: odroidc4
           - board: odroidhc4
@@ -110,8 +109,6 @@ jobs:
           - board: uefi-x86
           - board: xt-q8l-v10
           - board: zeropi
-          - board: rpi4b
-          - board: uefi-arm64
           - board: uefi-riscv64
           - board: uefi-x86
           - board: aml-s9xx-box
@@ -126,8 +123,6 @@ jobs:
           - board: bananapipro
           - board: bananapir2pro
           - board: beelinkx2
-          - board: clearfogbase
-          - board: clearfogpro
           - board: clockworkpi-a06
           - board: cubieboard2
           - board: cubieboard4
@@ -137,7 +132,7 @@ jobs:
           - board: cubox-i
           - board: espressobin
           - board: firefly-rk3399
-          - board: helios4
+          - board: helios64
           - board: jethubj100
           - board: jethubj80
           - board: jetson-nano
@@ -182,7 +177,6 @@ jobs:
           - board: odroidhc4
           - board: odroidm1
           - board: odroidn2
-          - board: odroidxu4
           - board: olinux-som-a13
           - board: onecloud
           - board: orangepi-r1
@@ -227,7 +221,6 @@ jobs:
           - board: rk3318-box
           - board: roc-rk3399-pc
           - board: rock-3a
-          - board: rock-5b
           - board: rock64
           - board: rockpi-4a
           - board: rockpi-4b
@@ -243,14 +236,6 @@ jobs:
           - board: station-p1
           - board: station-p2
           - board: sunvell-r69
-          - board: teres-a64
-          - board: tinkerboard-2
-          - board: tinkerboard
-          - board: tritium-h3
-          - board: tritium-h5
-          - board: udoo
-          - board: xt-q8l-v10
-          - board: zeropi
     steps:
       - uses: igorpecovnik/delete-tag-and-release@master
         with:
