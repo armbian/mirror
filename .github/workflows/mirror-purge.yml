@@ -84,6 +84,7 @@ jobs:
           - board: renegade
           - board: rk322x-box
           - board: rock-3a
+          - board: rock-5b
           - board: rock64
           - board: rockpi-4a
           - board: rockpi-4b
