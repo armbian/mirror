@@ -247,6 +247,7 @@ jobs:
           - board: udoo
           - board: xt-q8l-v10
           - board: zeropi
+          - board: bananapim5
     steps:
       - uses: igorpecovnik/delete-tag-and-release@master
         with:
