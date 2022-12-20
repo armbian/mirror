@@ -73,6 +73,7 @@ jobs:
           - board: odroidc2
           - board: odroidc4
           - board: odroidhc4
+          - board: odroidm1
           - board: odroidn2
           - board: odroidxu4
           - board: orangepi3
@@ -126,7 +127,10 @@ jobs:
           - board: uefi-x86
           - board: xt-q8l-v10
           - board: zeropi
+          - board: rpi4b
+          - board: uefi-arm64
           - board: uefi-riscv64
+          - board: uefi-x86
           - board: aml-s9xx-box
           - board: bananapi
           - board: bananapim1plus
@@ -265,7 +269,7 @@ jobs:
           - board: udoo
           - board: xt-q8l-v10
           - board: zeropi
-          - board: clockworkpi-a06
+          - board: uefi-riscv64
           - board: jethubj100
           - board: jethubj80
           - board: odroidm1
@@ -273,7 +277,6 @@ jobs:
           - board: quartz64a
           - board: radxa-zero2
           - board: rock-5b
-          - board: rockpi-s
           - board: tinkerboard-2
           - board: uefi-arm64
           - board: uefi-riscv64
