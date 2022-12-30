@@ -252,6 +252,7 @@ jobs:
           - board: uefi-arm64
           - board: uefi-x86
           - board: uefi-arm64
+          - board: uefi-x86
           - board: jethubj100
           - board: jethubj80
           - board: odroidm1
