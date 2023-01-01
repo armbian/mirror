@@ -60,6 +60,7 @@ jobs:
           - board: orangepi3-lts
           - board: orangepi4
           - board: orangepi4-lts
+          - board: orangepi5
           - board: orangepilite2
           - board: orangepilite
           - board: orangepione
@@ -249,10 +250,6 @@ jobs:
           - board: udoo
           - board: xt-q8l-v10
           - board: zeropi
-          - board: uefi-arm64
-          - board: uefi-x86
-          - board: uefi-arm64
-          - board: uefi-x86
           - board: jethubj100
           - board: jethubj80
           - board: odroidm1
