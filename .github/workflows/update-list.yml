@@ -19,7 +19,7 @@ jobs:
           {
           if [[ $k == *albony* ]]; then 
                 COUNTRY=India
-                CITY="New Delhi"
+                CITY="Nagpur"
                 FLAG="https://cdn.ipwhois.io/flags/in.svg"
           fi
           if [[ $k == *aliyun* ]]; then 
