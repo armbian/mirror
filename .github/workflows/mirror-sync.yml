@@ -272,10 +272,8 @@ jobs:
           - board: xt-q8l-v10
           - board: zeropi
           - board: uefi-arm64
-          - board: rock-5b
           - board: orangepi5
-          - board: rock-5b
-          - board: tinkerboard-2
+          - board: uefi-arm64
           - board: jethubj100
           - board: jethubj80
           - board: odroidm1
