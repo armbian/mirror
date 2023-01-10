@@ -133,10 +133,10 @@ jobs:
           - board: uefi-riscv64
           - board: uefi-x86
           - board: aml-s9xx-box
-          - board: bananapi-m2s
           - board: bananapi
           - board: bananapim1plus
           - board: bananapim2plus
+          - board: bananapim2s
           - board: bananapim2ultra
           - board: bananapim2zero
           - board: bananapim3
