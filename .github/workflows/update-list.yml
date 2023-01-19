@@ -22,6 +22,11 @@ jobs:
                 CITY="Nagpur"
                 FLAG="https://cdn.ipwhois.io/flags/in.svg"
           fi
+          if [[ $k == *stpete* ]]; then 
+                COUNTRY=Russia
+                CITY="Saint Petersburg"
+                FLAG="https://cdn.ipwhois.io/flags/ru.svg"
+          fi
           if [[ $k == *aliyun* ]]; then 
                 COUNTRY=China
                 CITY=Hangzhou
