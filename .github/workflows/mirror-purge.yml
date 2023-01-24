@@ -242,7 +242,6 @@ jobs:
           - board: station-m1
           - board: station-m2
           - board: station-p1
-          - board: station-p2
           - board: sunvell-r69
           - board: teres-a64
           - board: tinkerboard-2
@@ -251,7 +250,6 @@ jobs:
           - board: tritium-h5
           - board: udoo
           - board: xt-q8l-v10
-          - board: zeropi
           - board: jethubj100
           - board: jethubj80
           - board: odroidm1
