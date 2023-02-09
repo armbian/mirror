@@ -220,6 +220,7 @@ jobs:
           - board: pineh64-b
           - board: pineh64
           - board: quartz64a
+          - board: quartz64b
           - board: radxa-zero2
           - board: radxa-zero
           - board: recore
@@ -252,6 +253,7 @@ jobs:
           - board: udoo
           - board: xt-q8l-v10
           - board: zeropi
+          - board: uefi-arm64
           - board: uefi-riscv64
           - board: jethubj100
           - board: jethubj80
