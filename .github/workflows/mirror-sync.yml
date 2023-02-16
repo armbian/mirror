@@ -215,6 +215,7 @@ jobs:
           - board: orangepi3
           - board: orangepi4-lts
           - board: orangepi4
+          - board: orangepi5
           - board: orangepilite2
           - board: orangepilite
           - board: orangepione
