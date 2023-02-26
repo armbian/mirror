@@ -32,6 +32,7 @@ jobs:
       fail-fast: false # let other jobs try to complete if one fails
       matrix: 
         include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
+          - board: aml-s9xx-box
           - board: bananapi
           - board: bananapim2plus
           - board: bananapim5
@@ -47,6 +48,7 @@ jobs:
           - board: jethubj100
           - board: jethubj80
           - board: jetson-nano
+          - board: khadas-edge2
           - board: khadas-edge
           - board: khadas-vim1
           - board: khadas-vim2
@@ -107,6 +109,7 @@ jobs:
           - board: radxa-zero
           - board: renegade
           - board: rk322x-box
+          - board: rk3318-box
           - board: rock-3a
           - board: rock-5b
           - board: rock64
@@ -274,17 +277,6 @@ jobs:
           - board: udoo
           - board: xt-q8l-v10
           - board: zeropi
-          - board: jethubj100
-          - board: jethubj80
-          - board: odroidm1
-          - board: orangepi5
-          - board: orangepizero2
-          - board: quartz64a
-          - board: radxa-zero2
-          - board: rock-5b
-          - board: uefi-arm64
-          - board: uefi-riscv64
-          - board: uefi-x86
     steps:
       - name: Install depen
         run: sudo apt-get -y install parallel jq axel
