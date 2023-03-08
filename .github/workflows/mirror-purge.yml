@@ -59,6 +59,7 @@ jobs:
           - board: odroidm1
           - board: odroidn2
           - board: odroidxu4
+          - board: olimex-teres-a64
           - board: orangepi3
           - board: orangepi3-lts
           - board: orangepi4
