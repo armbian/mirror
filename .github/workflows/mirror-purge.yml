@@ -260,7 +260,6 @@ jobs:
           - board: zeropi
           - board: aml-s9xx-box
           - board: beaglev
-          - board: jethubj100
           - board: jethubj80
           - board: khadas-edge2
           - board: mangopi-mq
@@ -269,8 +268,6 @@ jobs:
           - board: olimex-teres-a64
           - board: onecloud
           - board: orangepi5
-          - board: quartz64a
-          - board: quartz64b
           - board: radxa-zero2
           - board: rock-5b
           - board: star64
