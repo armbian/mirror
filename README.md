@@ -29,7 +29,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://armbian.site-meganet.com/dl/|Roubaix|<img width=24 src=https://cdn.ipwhois.io/flags/fr.svg>|France|
 |http://armbian.tnahosting.net/dl/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://au-mirror.bret.dk/armbian/dl/|Sydney|<img width=24 src=https://cdn.ipwhois.io/flags/au.svg>|Australia|
-|http://de.mirrors.naho.moe/armbian/dl/|Frankfurt|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |http://es-mirror.bret.dk/armbian/dl/|Madrid|<img width=24 src=https://cdn.ipwhois.io/flags/es.svg>|Spain|
 |http://fi.mirror.armbian.de/dl/|Tuusula|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://imola.armbian.com/dl/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
@@ -67,13 +66,10 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://armbian.systemonachip.net/apt/|Roubaix|<img width=24 src=https://cdn.ipwhois.io/flags/fr.svg>|France|
 |http://armbian.tnahosting.net/apt/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://au-mirror.bret.dk/armbian/apt/|Sydney|<img width=24 src=https://cdn.ipwhois.io/flags/au.svg>|Australia|
-|http://au.mirrors.naho.moe/armbian/apt/|Henley Beach|<img width=24 src=https://cdn.ipwhois.io/flags/au.svg>|Australia|
-|http://de.mirrors.naho.moe/armbian/apt/|Frankfurt|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |http://es-mirror.bret.dk/armbian/apt/|Madrid|<img width=24 src=https://cdn.ipwhois.io/flags/es.svg>|Spain|
 |http://fi.mirror.armbian.de/apt/|Tuusula|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://ftp.ubuntu-tw.org/mirror/armbian/apt/|Taichung|<img width=24 src=https://cdn.ipwhois.io/flags/tw.svg>|Taiwan|
 |http://imola.armbian.com/apt/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
-|http://in.mirrors.naho.moe/armbian/apt/|Noida|<img width=24 src=https://cdn.ipwhois.io/flags/in.svg>|India|
 |http://jp.mirrors.naho.moe/armbian/apt/|Tokyo|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
 |http://kr.mirrors.naho.moe/armbian/apt/|Seoul|<img width=24 src=https://cdn.ipwhois.io/flags/kr.svg>|Korea|
 |http://mirror-eu-de1.armbian.airframes.io/apt/|Munich|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
@@ -99,7 +95,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://mirrors.ustc.edu.cn/armbian/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.xtom.de/armbian/|Düsseldorf|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |http://sg-mirror.bret.dk/armbian/apt/|Singapore|<img width=24 src=https://cdn.ipwhois.io/flags/sg.svg>|Singapore|
-|http://sg.mirrors.naho.moe/armbian/apt/|Singapore|<img width=24 src=https://cdn.ipwhois.io/flags/sg.svg>|Singapore|
 |http://stpete-mirror.armbian.com/apt/|Saint Petersburg|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 |http://xogium.performanceservers.nl/apt/|Amsterdam|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
 
