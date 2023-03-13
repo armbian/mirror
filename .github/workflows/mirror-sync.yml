@@ -138,6 +138,7 @@ jobs:
           - board: jethubj80
           - board: khadas-edge2
           - board: odroidm1
+          - board: odroidn2
           - board: olimex-teres-a64
           - board: onecloud
           - board: orangepi5
