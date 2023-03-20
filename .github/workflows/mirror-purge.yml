@@ -113,6 +113,21 @@ jobs:
           - board: uefi-x86
           - board: xt-q8l-v10
           - board: zeropi
+          - board: aml-s9xx-box
+          - board: bananapicm4io
+          - board: jethubj100
+          - board: jethubj80
+          - board: khadas-edge2
+          - board: odroidm1
+          - board: odroidn2
+          - board: olimex-teres-a64
+          - board: orangepi5
+          - board: quartz64a
+          - board: quartz64b
+          - board: radxa-zero2
+          - board: rock-5b
+          - board: tinkerboard-2
+          - board: uefi-arm64
           - board: uefi-x86
           - board: orangepione
           - board: uefi-x86
@@ -1428,6 +1443,15 @@ jobs:
           - board: uefi-x86
           - board: orangepi5
           - board: uefi-x86
+          - board: beaglev
+          - board: mangopi-mq
+          - board: nezha
+          - board: star64
+          - board: uefi-riscv64
+          - board: unleashed
+          - board: unmatched
+          - board: visionfive2
+          - board: visionfive
     steps:
       - uses: igorpecovnik/delete-tag-and-release@master
         with:
