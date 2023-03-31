@@ -1464,13 +1464,9 @@ jobs:
           - board: orangepi5
           - board: uefi-x86
           - board: beaglev
-          - board: mangopi-mq
-          - board: nezha
-          - board: star64
           - board: uefi-riscv64
           - board: unleashed
           - board: unmatched
-          - board: visionfive2
           - board: visionfive
     steps:
       - name: Install depen
