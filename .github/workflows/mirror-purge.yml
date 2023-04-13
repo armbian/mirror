@@ -166,138 +166,32 @@ jobs:
           - board: khadas-vim3
           - board: lafrite
           - board: lepotato
-          - board: lime2
           - board: lime-a33
           - board: lime-a64
           - board: lime2
-          - board: lepotato
-          - board: lime2
-          - board: lime-a33
-          - board: lepotato
-          - board: lime2
-          - board: lime-a33
-          - board: lepotato
-          - board: lime
-          - board: lepotato
-          - board: mangopi-mq
-          - board: lime
-          - board: lime-a64
-          - board: lime
-          - board: lime-a64
-          - board: mangopi-mq
-          - board: lime
-          - board: melea1000
-          - board: mangopi-mq
-          - board: lime-a64
-          - board: mangopi-mq
-          - board: lime-a64
-          - board: micro
           - board: lime
           - board: mangopi-mq
           - board: melea1000
-          - board: mangopi-mq
-          - board: melea1000
-          - board: mangopi-mq
-          - board: lime-a64
           - board: micro
-          - board: melea1000
-          - board: lime-a64
-          - board: micro
-          - board: melea1000
-          - board: nanopct4
-          - board: micro
-          - board: nanopia64
-          - board: micro
-          - board: nanopct4
-          - board: micro
-          - board: nanopia64
-          - board: micro
-          - board: nanopia64
-          - board: micro
-          - board: nanopct4
-          - board: nanopiair
-          - board: nanopct4
-          - board: nanopiair
-          - board: nanopia64
           - board: nanopct4
           - board: nanopia64
-          - board: nanopct4
           - board: nanopiair
           - board: nanopiduo2
-          - board: nanopia64
-          - board: nanopiduo
-          - board: nanopiduo2
-          - board: nanopiair
-          - board: nanopik1plus
-          - board: nanopct4
           - board: nanopiduo
           - board: nanopik1plus
-          - board: nanopiduo
-          - board: nanopct4
-          - board: nanopia64
-          - board: nanopiduo
-          - board: nanopik1plus
-          - board: nanopiduo
-          - board: nanopia64
-          - board: nanopiduo2
-          - board: nanopik1plus
           - board: nanopik2-s905
-          - board: nanopik1plus
-          - board: nanopim4
-          - board: nanopik1plus
-          - board: nanopim4
-          - board: nanopik2-s905
-          - board: nanopim4v2
-          - board: nanopik2-s905
-          - board: nanopim4v2
-          - board: nanopik2-s905
-          - board: nanopim4
-          - board: nanopik2-s905
-          - board: nanopik1plus
-          - board: nanopim4
-          - board: nanopik1plus
-          - board: nanopim4
-          - board: nanopik2-s905
-          - board: nanopineo2black
-          - board: nanopim4v2
-          - board: nanopik2-s905
-          - board: nanopim4v2
-          - board: nanopineo2
-          - board: nanopim4v2
-          - board: nanopim4
           - board: nanopim4v2
           - board: nanopim4
           - board: nanopineo2black
-          - board: nanopim4
-          - board: nanopineo2black
-          - board: nanopineo3
-          - board: nanopineo4
-          - board: nanopineo
-          - board: nanopineo4
           - board: nanopineo2
           - board: nanopineo3
           - board: nanopineo4
-          - board: nanopineo3
-          - board: nanopineo4
-          - board: nanopineo3
-          - board: nanopineo4
-          - board: nanopineo2black
-          - board: nanopineo2
-          - board: nanopineo2black
-          - board: nanopineo2
-          - board: nanopineo2black
-          - board: nanopineo2
-          - board: nanopineo4
-          - board: nanopineo3
-          - board: nanopineo4
-          - board: nanopineo2
-          - board: nanopineo4
-          - board: nanopim4v2
           - board: nanopi-r1s-h5
           - board: nanopi-r1
           - board: nanopi-r2c
           - board: nanopi-r2s
           - board: nanopi-r4s
+          - board: nanopineo4
           - board: nanopineocore2
           - board: nanopineoplus2
           - board: nanopineo
@@ -313,140 +207,30 @@ jobs:
           - board: orangepi2
           - board: orangepi3-lts
           - board: orangepi3
+          - board: orangepi-r1plus-lts
+          - board: orangepi-r1plus
+          - board: orangepi-r1
+          - board: orangepi-rk3399
+          - board: orangepi3-lts
           - board: orangepi4-lts
           - board: orangepi4
           - board: orangepi5
           - board: orangepilite2
-          - board: orangepi5
-          - board: orangepilite2
-          - board: orangepi5
-          - board: orangepi4-lts
-          - board: orangepi5
-          - board: orangepi4-lts
-          - board: orangepi5
-          - board: orangepi4-lts
-          - board: orangepilite2
-          - board: orangepi5
-          - board: orangepilite2
-          - board: orangepi4-lts
-          - board: orangepilite
-          - board: orangepilite2
-          - board: orangepi4-lts
-          - board: orangepilite
-          - board: orangepione
-          - board: orangepilite
-          - board: orangepi4-lts
-          - board: orangepilite
-          - board: orangepione
-          - board: orangepilite2
-          - board: orangepione
-          - board: orangepilite2
-          - board: orangepioneplus
-          - board: orangepilite
-          - board: orangepione
           - board: orangepilite
           - board: orangepioneplus
           - board: orangepione
           - board: orangepipc2
-          - board: orangepione
-          - board: orangepipc2
-          - board: orangepione
-          - board: orangepipc2
-          - board: orangepione
-          - board: orangepioneplus
-          - board: orangepipc
-          - board: orangepioneplus
-          - board: orangepipc2
-          - board: orangepione
-          - board: orangepioneplus
-          - board: orangepipc2
-          - board: orangepipc
-          - board: orangepipcplus
-          - board: orangepilite2
-          - board: orangepipc
-          - board: orangepipc2
-          - board: orangepipcplus
-          - board: orangepipc2
-          - board: orangepipc
-          - board: orangepipc2
           - board: orangepipcplus
           - board: orangepipc
-          - board: orangepipcplus
-          - board: orangepiplus2e
-          - board: orangepipc
-          - board: orangepiplus2e
-          - board: orangepipcplus
-          - board: orangepiplus
-          - board: orangepiplus2e
-          - board: orangepiplus
-          - board: orangepiplus2e
-          - board: orangepipc
-          - board: orangepiplus
-          - board: orangepipc
-          - board: orangepiplus
-          - board: orangepipcplus
           - board: orangepiplus2e
           - board: orangepiplus
           - board: orangepiprime
-          - board: orangepiplus
-          - board: orangepiplus2e
-          - board: orangepiprime
-          - board: orangepiplus2e
-          - board: orangepiplus
-          - board: orangepi-r1
-          - board: orangepiplus
-          - board: orangepi-r1
-          - board: orangepiplus2e
-          - board: orangepiprime
-          - board: orangepi-r1plus
-          - board: orangepiprime
-          - board: orangepi-r1plus
-          - board: orangepiprime
-          - board: orangepi-r1
-          - board: orangepi-r1plus-lts
-          - board: orangepi-r1
-          - board: orangepi-r1plus-lts
-          - board: orangepiprime
-          - board: orangepi-r1
-          - board: orangepiprime
-          - board: orangepi-r1plus
-          - board: orangepiplus
-          - board: orangepi-r1plus
-          - board: orangepiprime
-          - board: orangepi-r1plus
-          - board: orangepiprime
-          - board: orangepi-rk3399
-          - board: orangepi-r1plus-lts
           - board: orangepiwin
-          - board: orangepi-rk3399
-          - board: orangepi-r1plus-lts
-          - board: orangepiwin
-          - board: orangepi-r1plus
-          - board: orangepiwin
-          - board: orangepi-rk3399
-          - board: orangepizero2
-          - board: orangepi-rk3399
-          - board: orangepizero2
-          - board: orangepizero
-          - board: orangepizero2
-          - board: orangepiwin
-          - board: orangepizero2
-          - board: orangepiwin
-          - board: orangepi-rk3399
-          - board: orangepizeroplus2-h5
-          - board: orangepizeroplus2-h3
-          - board: orangepizero
-          - board: orangepizeroplus2-h3
-          - board: orangepizero2
-          - board: orangepizero
-          - board: orangepizeroplus2-h3
-          - board: orangepizero
-          - board: orangepizeroplus2-h3
           - board: orangepizero2
           - board: orangepizeroplus2-h3
-          - board: orangepiwin
           - board: orangepizeroplus2-h5
           - board: orangepizeroplus
+          - board: orangepizero
           - board: pcduino3
           - board: pine64so
           - board: pine64
@@ -463,15 +247,10 @@ jobs:
           - board: renegade
           - board: rk322x-box
           - board: rk3318-box
-          - board: rock-3a
           - board: roc-rk3399-pc
           - board: rock-3a
           - board: rock-5b
           - board: rock64
-          - board: rockpi-4a
-          - board: rockpi-4bplus
-          - board: rockpi-4b
-          - board: rockpi-4cplus
           - board: rockpi-4c
           - board: rockpi-e
           - board: rockpi-n10
@@ -481,23 +260,109 @@ jobs:
           - board: star64
           - board: station-m1
           - board: station-m2
+          - board: station-m3
           - board: station-p1
           - board: station-p2
           - board: sunvell-r69
+          - board: tinkerboard
           - board: tinkerboard-2
           - board: tinkerboard
+          - board: sunvell-r69
+          - board: tinkerboard
+          - board: sunvell-r69
+          - board: tinkerboard
+          - board: tinkerboard-2
+          - board: tritium-h3
+          - board: tinkerboard
+          - board: sunvell-r69
+          - board: tinkerboard
+          - board: tinkerboard-2
+          - board: tinkerboard
+          - board: tinkerboard-2
+          - board: sunvell-r69
+          - board: tinkerboard-2
+          - board: tritium-h5
+          - board: sunvell-r69
+          - board: tritium-h5
+          - board: tritium-h3
+          - board: tinkerboard-2
+          - board: tritium-h3
+          - board: tinkerboard-2
+          - board: tritium-h3
+          - board: udoo
+          - board: tritium-h3
+          - board: udoo
           - board: tritium-h3
           - board: tritium-h5
+          - board: tritium-h3
+          - board: tritium-h5
+          - board: tritium-h3
           - board: udoo
+          - board: tritium-h5
+          - board: udoo
+          - board: tritium-h5
           - board: uefi-arm64
+          - board: udoo
+          - board: uefi-x86
+          - board: udoo
+          - board: uefi-x86
           - board: uefi-riscv64
+          - board: udoo
+          - board: uefi-x86
+          - board: uefi-riscv64
+          - board: uefi-x86
+          - board: udoo
+          - board: uefi-x86
+          - board: uefi-riscv64
+          - board: uefi-x86
+          - board: uefi-riscv64
+          - board: uefi-x86
+          - board: uefi-arm64
+          - board: uefi-x86
+          - board: uefi-arm64
+          - board: uefi-x86
+          - board: uefi-arm64
+          - board: uefi-x86
+          - board: uefi-arm64
+          - board: uefi-x86
+          - board: unleashed
+          - board: uefi-x86
+          - board: uefi-arm64
+          - board: uefi-x86
+          - board: uefi-arm64
+          - board: unleashed
           - board: uefi-x86
           - board: unleashed
           - board: unmatched
           - board: visionfive2
+          - board: uefi-arm64
+          - board: unmatched
+          - board: uefi-arm64
+          - board: unmatched
+          - board: unleashed
+          - board: visionfive2
+          - board: unleashed
+          - board: visionfive2
+          - board: visionfive
+          - board: unleashed
+          - board: unmatched
+          - board: visionfive
+          - board: unmatched
+          - board: visionfive2
+          - board: visionfive
+          - board: xt-q8l-v10
           - board: visionfive
           - board: xt-q8l-v10
           - board: zeropi
+          - board: visionfive
+          - board: zeropi
+          - board: visionfive
+          - board: zeropi
+          - board: xt-q8l-v10
+          - board: zeropi
+          - board: xt-q8l-v10
+          - board: zeropi
+          - board: xt-q8l-v10
     steps:
       - uses: igorpecovnik/delete-tag-and-release@master
         with:
