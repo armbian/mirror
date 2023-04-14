@@ -115,21 +115,6 @@ jobs:
           - board: zeropi
           - board: aml-s9xx-box
           - board: bananapicm4io
-          - board: jethubj100
-          - board: jethubj80
-          - board: khadas-edge2
-          - board: odroidm1
-          - board: odroidn2
-          - board: olimex-teres-a64
-          - board: orangepi5
-          - board: quartz64a
-          - board: quartz64b
-          - board: radxa-zero2
-          - board: rock-5b
-          - board: tinkerboard-2
-          - board: uefi-arm64
-          - board: aml-s9xx-box
-          - board: bananapicm4io
           - board: bananapim1plus
           - board: bananapim2plus
           - board: bananapim2pro
@@ -174,6 +159,8 @@ jobs:
           - board: melea1000
           - board: micro
           - board: nanopct4
+          - board: nanopi-r1s-h5
+          - board: nanopi-r1
           - board: nanopia64
           - board: nanopiair
           - board: nanopiduo2
@@ -186,15 +173,13 @@ jobs:
           - board: nanopineo2
           - board: nanopineo3
           - board: nanopineo4
-          - board: nanopi-r1s-h5
-          - board: nanopi-r1
-          - board: nanopi-r2c
-          - board: nanopi-r2s
-          - board: nanopi-r4s
-          - board: nanopineo4
           - board: nanopineocore2
           - board: nanopineoplus2
           - board: nanopineo
+          - board: nanopi-r1s-h5
+          - board: nanopi-r2c
+          - board: nanopi-r2s
+          - board: nanopi-r4s
           - board: nezha
           - board: odroidc2
           - board: odroidc4
@@ -207,10 +192,8 @@ jobs:
           - board: orangepi2
           - board: orangepi3-lts
           - board: orangepi3
-          - board: orangepi-r1plus-lts
           - board: orangepi-r1plus
           - board: orangepi-r1
-          - board: orangepi-rk3399
           - board: orangepi3-lts
           - board: orangepi4-lts
           - board: orangepi4
@@ -225,6 +208,9 @@ jobs:
           - board: orangepiplus2e
           - board: orangepiplus
           - board: orangepiprime
+          - board: orangepi-r1plus-lts
+          - board: orangepi-r1plus
+          - board: orangepi-rk3399
           - board: orangepiwin
           - board: orangepizero2
           - board: orangepizeroplus2-h3
@@ -247,12 +233,23 @@ jobs:
           - board: renegade
           - board: rk322x-box
           - board: rk3318-box
-          - board: roc-rk3399-pc
           - board: rock-3a
           - board: rock-5b
           - board: rock64
           - board: rockpi-4c
           - board: rockpi-e
+          - board: tritium-h5
+          - board: udoo
+          - board: uefi-arm64
+          - board: uefi-riscv64
+          - board: uefi-x86
+          - board: unleashed
+          - board: unmatched
+          - board: visionfive2
+          - board: visionfive
+          - board: xt-q8l-v10
+          - board: zeropi
+          - board: roc-rk3399-pc
           - board: rockpi-n10
           - board: rockpi-s
           - board: rockpro64
@@ -264,105 +261,10 @@ jobs:
           - board: station-p1
           - board: station-p2
           - board: sunvell-r69
-          - board: tinkerboard
           - board: tinkerboard-2
           - board: tinkerboard
-          - board: sunvell-r69
-          - board: tinkerboard
-          - board: sunvell-r69
-          - board: tinkerboard
-          - board: tinkerboard-2
-          - board: tritium-h3
-          - board: tinkerboard
-          - board: sunvell-r69
-          - board: tinkerboard
-          - board: tinkerboard-2
-          - board: tinkerboard
-          - board: tinkerboard-2
-          - board: sunvell-r69
-          - board: tinkerboard-2
-          - board: tritium-h5
-          - board: sunvell-r69
-          - board: tritium-h5
-          - board: tritium-h3
-          - board: tinkerboard-2
-          - board: tritium-h3
-          - board: tinkerboard-2
-          - board: tritium-h3
-          - board: udoo
-          - board: tritium-h3
-          - board: udoo
           - board: tritium-h3
           - board: tritium-h5
-          - board: tritium-h3
-          - board: tritium-h5
-          - board: tritium-h3
-          - board: udoo
-          - board: tritium-h5
-          - board: udoo
-          - board: tritium-h5
-          - board: uefi-arm64
-          - board: udoo
-          - board: uefi-x86
-          - board: udoo
-          - board: uefi-x86
-          - board: uefi-riscv64
-          - board: udoo
-          - board: uefi-x86
-          - board: uefi-riscv64
-          - board: uefi-x86
-          - board: udoo
-          - board: uefi-x86
-          - board: uefi-riscv64
-          - board: uefi-x86
-          - board: uefi-riscv64
-          - board: uefi-x86
-          - board: uefi-arm64
-          - board: uefi-x86
-          - board: uefi-arm64
-          - board: uefi-x86
-          - board: uefi-arm64
-          - board: uefi-x86
-          - board: uefi-arm64
-          - board: uefi-x86
-          - board: unleashed
-          - board: uefi-x86
-          - board: uefi-arm64
-          - board: uefi-x86
-          - board: uefi-arm64
-          - board: unleashed
-          - board: uefi-x86
-          - board: unleashed
-          - board: unmatched
-          - board: visionfive2
-          - board: uefi-arm64
-          - board: unmatched
-          - board: uefi-arm64
-          - board: unmatched
-          - board: unleashed
-          - board: visionfive2
-          - board: unleashed
-          - board: visionfive2
-          - board: visionfive
-          - board: unleashed
-          - board: unmatched
-          - board: visionfive
-          - board: unmatched
-          - board: visionfive2
-          - board: visionfive
-          - board: xt-q8l-v10
-          - board: visionfive
-          - board: xt-q8l-v10
-          - board: zeropi
-          - board: visionfive
-          - board: zeropi
-          - board: visionfive
-          - board: zeropi
-          - board: xt-q8l-v10
-          - board: zeropi
-          - board: xt-q8l-v10
-          - board: zeropi
-          - board: xt-q8l-v10
     steps:
       - uses: igorpecovnik/delete-tag-and-release@master
         with:
