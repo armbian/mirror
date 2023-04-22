@@ -164,160 +164,39 @@ jobs:
           - board: helios4
           - board: jethubj100
           - board: jethubj80
-          - board: khadas-edge
           - board: jetson-nano
           - board: khadas-edge
-          - board: jetson-nano
-          - board: khadas-edge
-          - board: jetson-nano
-          - board: khadas-edge
-          - board: jetson-nano
-          - board: khadas-vim1
-          - board: khadas-edge
-          - board: khadas-vim1
-          - board: khadas-edge
-          - board: khadas-vim1
-          - board: khadas-edge
-          - board: khadas-vim1
-          - board: khadas-edge
           - board: khadas-vim1
           - board: khadas-vim2
-          - board: jetson-nano
-          - board: khadas-vim1
-          - board: khadas-vim2
-          - board: khadas-vim1
-          - board: khadas-vim2
-          - board: khadas-vim1
-          - board: khadas-vim2
-          - board: khadas-vim1
-          - board: khadas-vim3
-          - board: khadas-vim1
-          - board: khadas-vim3
-          - board: khadas-vim2
-          - board: khadas-vim3
-          - board: khadas-vim2
           - board: khadas-vim3l
-          - board: khadas-vim3
-          - board: khadas-vim3l
-          - board: khadas-vim3
-          - board: khadas-vim3l
-          - board: lafrite
-          - board: khadas-vim3l
-          - board: lafrite
-          - board: khadas-vim3l
-          - board: lafrite
-          - board: khadas-vim3l
-          - board: lafrite
-          - board: khadas-vim3l
-          - board: lafrite
           - board: khadas-vim3
           - board: lafrite
           - board: lepotato
-          - board: lime2
-          - board: lepotato
-          - board: lime2
-          - board: lepotato
-          - board: lime2
-          - board: lafrite
-          - board: lime2
-          - board: lepotato
-          - board: lafrite
-          - board: lepotato
-          - board: lime2
           - board: lime-a33
           - board: lime-a64
-          - board: lime-a33
           - board: lime2
-          - board: lime-a64
-          - board: lime-a33
-          - board: lime2
-          - board: lime-a64
           - board: lime
-          - board: lime-a64
-          - board: mangopi-mq
-          - board: lime-a64
-          - board: mangopi-mq
-          - board: lime
-          - board: mangopi-mq
-          - board: lime
-          - board: mangopi-mq
-          - board: lime
-          - board: mangopi-mq
-          - board: lime
-          - board: melea1000
-          - board: mangopi-mq
-          - board: micro
           - board: mangopi-mq
           - board: melea1000
           - board: micro
           - board: nanopct4
-          - board: micro
-          - board: nanopia64
-          - board: micro
-          - board: nanopct4
-          - board: micro
+          - board: nanopi-r1s-h5
+          - board: nanopi-r1
           - board: nanopia64
           - board: nanopiair
-          - board: nanopia64
           - board: nanopiduo2
           - board: nanopiduo
           - board: nanopik1plus
-          - board: nanopiduo
-          - board: nanopik1plus
-          - board: nanopiduo
           - board: nanopik2-s905
-          - board: nanopik1plus
-          - board: nanopik2-s905
-          - board: nanopik1plus
-          - board: nanopik2-s905
-          - board: nanopik1plus
-          - board: nanopik2-s905
-          - board: nanopik1plus
-          - board: nanopik2-s905
-          - board: nanopik1plus
-          - board: nanopik2-s905
-          - board: nanopik1plus
-          - board: nanopineo2black
-          - board: nanopineo2
+          - board: nanopim4v2
+          - board: nanopim4
           - board: nanopineo2black
           - board: nanopineo2
           - board: nanopineo3
-          - board: nanopineo2
-          - board: nanopineo3
-          - board: nanopineo2
-          - board: nanopineo3
-          - board: nanopineo2
-          - board: nanopineo3
-          - board: nanopineo2
           - board: nanopineo4
+          - board: nanopineocore2
+          - board: nanopineoplus2
           - board: nanopineo
-          - board: nanopineocore2
-          - board: nanopineo
-          - board: nanopineocore2
-          - board: nanopineo
-          - board: nanopineo4
-          - board: nanopi-r1s-h5
-          - board: nanopiair
-          - board: nanopiduo
-          - board: nanopiduo2
-          - board: nanopiair
-          - board: nanopia64
-          - board: nanopiduo2
-          - board: nanopia64
-          - board: nanopiair
-          - board: nanopia64
-          - board: nanopineocore2
-          - board: nanopineoplus2
-          - board: nanopi-r1
-          - board: nanopineoplus2
-          - board: nanopi-r1
-          - board: nanopineoplus2
-          - board: nanopi-r1
-          - board: nanopineoplus2
-          - board: nanopineocore2
-          - board: nanopi-r1
-          - board: nanopineo4
-          - board: nanopi-r1s-h5
           - board: nanopi-r2c
           - board: nanopi-r1s-h5
           - board: nanopi-r2c
@@ -668,6 +547,19 @@ jobs:
           - board: zeropi
           - board: xt-q8l-v10
           - board: zeropi
+          - board: uefi-x86
+          - board: visionfive2
+          - board: visionfive
+          - board: unmatched
+          - board: visionfive2
+          - board: unmatched
+          - board: visionfive2
+          - board: unmatched
+          - board: visionfive
+          - board: visionfive2
+          - board: uefi-arm64
+          - board: visionfive2
+          - board: uefi-arm64
     steps:
       - name: Install depen
         run: sudo apt-get -y install parallel jq axel
