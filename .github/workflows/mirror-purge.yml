@@ -165,6 +165,33 @@ jobs:
           - board: nanopiduo2
           - board: nanopiduo
           - board: nanopik1plus
+          - board: orangepi-r1plus-lts
+          - board: orangepi-r1plus
+          - board: orangepi-r1
+          - board: orangepi-rk3399
+          - board: orangepi3-lts
+          - board: orangepi4-lts
+          - board: orangepi4
+          - board: orangepi5
+          - board: orangepilite2
+          - board: orangepilite
+          - board: orangepioneplus
+          - board: orangepione
+          - board: orangepipc2
+          - board: orangepipcplus
+          - board: orangepipc
+          - board: orangepiplus2e
+          - board: orangepiplus
+          - board: orangepiprime
+          - board: orangepiwin
+          - board: orangepizero2
+          - board: orangepizeroplus2-h3
+          - board: orangepizeroplus2-h5
+          - board: orangepizeroplus
+          - board: orangepizero
+          - board: pcduino3
+          - board: pine64so
+          - board: pine64
           - board: nanopi-r1s-h5
           - board: nanopi-r1
           - board: nanopi-r2c
@@ -194,6 +221,48 @@ jobs:
           - board: orangepi2
           - board: orangepi3-lts
           - board: orangepi3
+          - board: pine64so
+          - board: pinebook-a64
+          - board: pinebook-pro
+          - board: pinecube
+          - board: pineh64-b
+          - board: pineh64
+          - board: quartz64a
+          - board: quartz64b
+          - board: radxa-zero2
+          - board: radxa-zero
+          - board: recore
+          - board: renegade
+          - board: rk322x-box
+          - board: rk3318-box
+          - board: roc-rk3399-pc
+          - board: rock-3a
+          - board: rock-5b
+          - board: rock64
+          - board: rockpi-4c
+          - board: rockpi-e
+          - board: rockpi-n10
+          - board: rockpi-s
+          - board: rockpro64
+          - board: rpi4b
+          - board: station-m3
+          - board: station-p1
+          - board: station-p2
+          - board: sunvell-r69
+          - board: tinkerboard-2
+          - board: tinkerboard
+          - board: tritium-h3
+          - board: tritium-h5
+          - board: udoo
+          - board: uefi-arm64
+          - board: uefi-riscv64
+          - board: uefi-x86
+          - board: unleashed
+          - board: unmatched
+          - board: visionfive2
+          - board: visionfive
+          - board: xt-q8l-v10
+          - board: zeropi
     steps:
       - uses: igorpecovnik/delete-tag-and-release@master
         with:
