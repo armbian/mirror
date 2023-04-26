@@ -190,7 +190,6 @@ jobs:
           - board: orangepizeroplus
           - board: orangepizero
           - board: pcduino3
-          - board: pine64so
           - board: pine64
           - board: nanopi-r1s-h5
           - board: nanopi-r1
@@ -219,7 +218,6 @@ jobs:
           - board: olimex-teres-a64
           - board: onecloud
           - board: orangepi2
-          - board: orangepi3-lts
           - board: orangepi3
           - board: pine64so
           - board: pinebook-a64
