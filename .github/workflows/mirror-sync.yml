@@ -165,7 +165,6 @@ jobs:
           - board: jethubj100
           - board: jethubj80
           - board: jetson-nano
-          - board: khadas-edge
           - board: khadas-vim1
           - board: khadas-vim2
           - board: khadas-vim3l
