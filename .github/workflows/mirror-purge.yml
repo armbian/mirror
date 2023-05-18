@@ -142,9 +142,8 @@ jobs:
           - board: espressobin
           - board: firefly-rk3399
           - board: helios4
-          - board: jethubj100
-          - board: jethubj80
           - board: jetson-nano
+          - board: khadas-edge
           - board: khadas-vim1
           - board: khadas-vim2
           - board: khadas-vim3l
@@ -188,15 +187,16 @@ jobs:
           - board: orangepizeroplus2-h5
           - board: orangepizeroplus
           - board: orangepizero
+          - board: panther-x2
           - board: pcduino3
           - board: pine64
           - board: nanopi-r1s-h5
           - board: nanopi-r1
           - board: nanopi-r2c
           - board: nanopi-r2s
+          - board: nanopi-r4se
           - board: nanopi-r4s
           - board: nanopi-r6s
-          - board: nanopik1plus
           - board: nanopik2-s905
           - board: nanopim4v2
           - board: nanopim4
@@ -219,6 +219,7 @@ jobs:
           - board: orangepi2
           - board: orangepi3
           - board: pine64so
+          - board: pine64
           - board: pinebook-a64
           - board: pinebook-pro
           - board: pinecube
@@ -226,6 +227,7 @@ jobs:
           - board: pineh64
           - board: quartz64a
           - board: quartz64b
+          - board: radxa-e25
           - board: radxa-zero2
           - board: radxa-zero
           - board: recore
@@ -243,6 +245,26 @@ jobs:
           - board: rockpro64
           - board: rpi4b
           - board: star64
+          - board: station-m1
+          - board: station-m2
+          - board: station-m3
+          - board: station-p1
+          - board: station-p2
+          - board: sunvell-r69
+          - board: tinkerboard-2
+          - board: tinkerboard
+          - board: tritium-h3
+          - board: tritium-h5
+          - board: udoo
+          - board: uefi-arm64
+          - board: uefi-riscv64
+          - board: uefi-x86
+          - board: unleashed
+          - board: unmatched
+          - board: visionfive2
+          - board: visionfive
+          - board: xt-q8l-v10
+          - board: zeropi
     steps:
       - uses: igorpecovnik/delete-tag-and-release@master
         with:
