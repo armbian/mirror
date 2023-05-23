@@ -162,6 +162,8 @@ jobs:
           - board: espressobin
           - board: firefly-rk3399
           - board: helios4
+          - board: jethubj100
+          - board: jethubj80
           - board: jetson-nano
           - board: khadas-edge
           - board: khadas-vim1
