@@ -173,6 +173,7 @@ jobs:
           - board: bananapi
           - board: beaglev
           - board: beelinkx2
+          - board: bigtreetech-cb1
           - board: clearfogbase
           - board: clearfogpro
           - board: clockworkpi-a06
@@ -213,6 +214,7 @@ jobs:
           - board: orangepi-r1
           - board: orangepi-rk3399
           - board: orangepi3-lts
+          - board: orangepi3
           - board: orangepi4-lts
           - board: orangepi4
           - board: orangepi5
@@ -235,32 +237,180 @@ jobs:
           - board: panther-x2
           - board: pcduino3
           - board: pine64
-          - board: nanopi-r1s-h5
-          - board: nanopi-r1
-          - board: nanopi-r2c
-          - board: nanopi-r2s
-          - board: nanopi-r4se
-          - board: nanopi-r4s
-          - board: nanopi-r6s
+          - board: nanopineo2black
+          - board: nanopim4v2
+          - board: nanopim4
+          - board: nanopik2-s905
+          - board: nanopim4
+          - board: nanopik2-s905
+          - board: nanopim4
+          - board: nanopik2-s905
+          - board: nanopim4
           - board: nanopik2-s905
           - board: nanopim4v2
           - board: nanopim4
+          - board: nanopim4v2
+          - board: nanopim4
+          - board: nanopim4v2
+          - board: nanopik1plus
+          - board: nanopineo2
+          - board: nanopik1plus
+          - board: nanopim4v2
           - board: nanopineo2black
+          - board: nanopim4v2
+          - board: nanopineo2black
+          - board: nanopineo3
+          - board: nanopineo2
+          - board: nanopim4
+          - board: nanopineo2black
+          - board: nanopim4
+          - board: nanopineo4
+          - board: nanopik2-s905
+          - board: nanopineo2black
+          - board: nanopineo3
+          - board: nanopik2-s905
+          - board: nanopineo3
+          - board: nanopim4
+          - board: nanopineo3
           - board: nanopineo2
           - board: nanopineo3
+          - board: nanopineo2
+          - board: nanopim4
           - board: nanopineo4
+          - board: nanopik2-s905
+          - board: nanopineo
+          - board: nanopineo4
+          - board: nanopineo
+          - board: nanopik2-s905
+          - board: nanopineo4
+          - board: nanopineo3
+          - board: nanopineo
           - board: nanopineocore2
           - board: nanopineoplus2
           - board: nanopineo
+          - board: nanopineocore2
+          - board: nanopi-r1
+          - board: nanopineocore2
+          - board: nanopi-r1
+          - board: nanopineocore2
+          - board: nanopineoplus2
+          - board: nanopi-r1s-h5
+          - board: nanopineoplus2
+          - board: nanopineo
+          - board: nanopineocore2
+          - board: nanopineoplus2
+          - board: nanopineo4
+          - board: nanopi-r1
+          - board: nanopineo4
+          - board: nanopi-r1
+          - board: nanopineo4
+          - board: nanopi-r2c
+          - board: nanopineoplus2
+          - board: nanopi-r1s-h5
+          - board: nanopineoplus2
+          - board: nanopi-r1s-h5
+          - board: nanopi-r2s
+          - board: nanopi-r2c
+          - board: nanopi-r1s-h5
+          - board: nanopi-r2c
+          - board: nanopi-r4s
+          - board: nanopi-r2s
+          - board: nanopi-r2c
+          - board: nanopi-r4s
           - board: nezha
           - board: odroidc2
+          - board: nezha
+          - board: nanopi-r6s
+          - board: nanopi-r4se
+          - board: nanopi-r6s
+          - board: nanopi-r4se
+          - board: nanopi-r4s
+          - board: nezha
+          - board: nanopi-r4s
+          - board: nanopi-r4se
+          - board: nanopi-r4s
+          - board: nanopi-r4se
+          - board: nanopi-r4s
+          - board: nezha
+          - board: odroidc2
+          - board: nanopi-r4se
+          - board: nanopi-r6s
           - board: odroidc4
+          - board: nanopi-r4se
+          - board: odroidc2
           - board: odroidhc4
+          - board: odroidc2
+          - board: nanopi-r6s
+          - board: odroidhc4
+          - board: nezha
+          - board: nanopi-r6s
+          - board: odroidc2
+          - board: odroidc4
+          - board: odroidc2
+          - board: nezha
+          - board: odroidc4
+          - board: nezha
+          - board: odroidc4
+          - board: nanopi-r6s
+          - board: nezha
+          - board: odroidc4
+          - board: nanopi-r6s
+          - board: odroidc4
+          - board: odroidm1
+          - board: odroidhc4
+          - board: odroidc2
+          - board: odroidhc4
+          - board: odroidc2
+          - board: odroidhc4
+          - board: odroidn2
+          - board: odroidc2
+          - board: odroidm1
+          - board: odroidxu4
+          - board: odroidn2
           - board: odroidm1
           - board: odroidn2
+          - board: odroidc4
+          - board: odroidm1
+          - board: odroidn2
+          - board: odroidc4
+          - board: odroidhc4
+          - board: odroidn2
+          - board: odroidm1
+          - board: odroidn2
+          - board: odroidm1
+          - board: odroidn2
+          - board: onecloud
+          - board: odroidxu4
+          - board: onecloud
+          - board: orangepi2
+          - board: onecloud
+          - board: orangepi2
+          - board: olimex-teres-a64
+          - board: odroidxu4
+          - board: olimex-teres-a64
+          - board: odroidxu4
+          - board: olimex-teres-a64
+          - board: odroidxu4
+          - board: onecloud
+          - board: odroidxu4
+          - board: onecloud
           - board: odroidxu4
           - board: olimex-teres-a64
           - board: onecloud
+          - board: orangepi3
+          - board: orangepi2
+          - board: odroidxu4
+          - board: orangepi2
+          - board: odroidxu4
+          - board: orangepi3
+          - board: orangepi2
+          - board: orangepi3
+          - board: orangepi2
+          - board: olimex-teres-a64
+          - board: orangepi3
+          - board: olimex-teres-a64
+          - board: orangepi3
+          - board: olimex-teres-a64
           - board: orangepi2
           - board: orangepi3
           - board: pine64so
