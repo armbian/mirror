@@ -16,6 +16,7 @@ jobs:
           - board: bananapicm4io
           - board: bananapim1plus
           - board: bananapim2plus
+          - board: bananapim2pro
           - board: bananapim2s
           - board: bananapim2ultra
           - board: bananapim2zero
