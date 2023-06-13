@@ -95,6 +95,7 @@ jobs:
           - board: orangepi4
           - board: orangepi4-lts
           - board: orangepi5
+          - board: orangepi5-plus
           - board: orangepilite2
           - board: orangepioneplus
           - board: orangepipc2
@@ -136,6 +137,7 @@ jobs:
           - board: rockpi-4a
           - board: rockpi-4b
           - board: rockpi-4c
+          - board: rockpi-4cplus
           - board: rockpi-e
           - board: rockpi-n10
           - board: rockpi-s
