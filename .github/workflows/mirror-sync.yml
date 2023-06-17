@@ -291,7 +291,6 @@ jobs:
           - board: orangepi3-lts
           - board: orangepi3
           - board: pine64so
-          - board: pine64
           - board: pinebook-a64
           - board: pinebook-pro
           - board: pinecube
@@ -310,6 +309,7 @@ jobs:
           - board: rock-3a
           - board: rock-5b
           - board: rock64
+          - board: rockpi-4cplus
           - board: rockpi-4c
           - board: rockpi-e
           - board: rockpi-n10
