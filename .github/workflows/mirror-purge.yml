@@ -132,6 +132,7 @@ jobs:
           - board: rk322x-box
           - board: rk3318-box
           - board: rock-3a
+          - board: rock-5a
           - board: rock-5b
           - board: rock64
           - board: rockpi-4a
@@ -189,6 +190,7 @@ jobs:
           - board: espressobin
           - board: firefly-rk3399
           - board: helios4
+          - board: helios64
           - board: jethubj100
           - board: jethubj80
           - board: jetson-nano
@@ -271,6 +273,7 @@ jobs:
           - board: orangepi3-lts
           - board: orangepi3
           - board: pine64so
+          - board: pine64
           - board: pinebook-a64
           - board: pinebook-pro
           - board: pinecube
@@ -281,7 +284,6 @@ jobs:
           - board: radxa-e25
           - board: radxa-zero2
           - board: radxa-zero
-          - board: recore
           - board: renegade
           - board: rk322x-box
           - board: rk3318-box
