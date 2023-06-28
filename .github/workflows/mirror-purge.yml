@@ -145,12 +145,14 @@ jobs:
           - board: rockpro64
           - board: roc-rk3399-pc
           - board: rpi4b
+          - board: sk-am64b
           - board: station-m1
           - board: station-m2
           - board: station-m3
           - board: station-p1
           - board: station-p2
           - board: sunvell-r69
+          - board: thinkpad-x13s
           - board: tinkerboard-2
           - board: tinkerboard
           - board: tritium-h3
@@ -219,7 +221,6 @@ jobs:
           - board: orangepi-r1plus
           - board: orangepi-r1
           - board: orangepi-rk3399
-          - board: orangepi3-lts
           - board: orangepi4-lts
           - board: orangepi4
           - board: orangepi5-plus
@@ -242,6 +243,7 @@ jobs:
           - board: orangepizero
           - board: panther-x2
           - board: pcduino3
+          - board: pine64so
           - board: pine64
           - board: nanopi-r1s-h5
           - board: nanopi-r1
@@ -272,8 +274,7 @@ jobs:
           - board: orangepi2
           - board: orangepi3-lts
           - board: orangepi3
-          - board: pine64so
-          - board: pine64
+          - board: orangepi4
           - board: pinebook-a64
           - board: pinebook-pro
           - board: pinecube
@@ -289,6 +290,7 @@ jobs:
           - board: rk3318-box
           - board: roc-rk3399-pc
           - board: rock-3a
+          - board: rock-5a
           - board: rock-5b
           - board: rock64
           - board: rockpi-4cplus
@@ -298,6 +300,7 @@ jobs:
           - board: rockpi-s
           - board: rockpro64
           - board: rpi4b
+          - board: sk-am64b
           - board: star64
           - board: station-m1
           - board: station-m2
@@ -305,6 +308,7 @@ jobs:
           - board: station-p1
           - board: station-p2
           - board: sunvell-r69
+          - board: thinkpad-x13s
           - board: tinkerboard-2
           - board: tinkerboard
           - board: tritium-h3
