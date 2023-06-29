@@ -241,40 +241,181 @@ jobs:
           - board: orangepizeroplus2-h5
           - board: orangepizeroplus
           - board: orangepizero
-          - board: panther-x2
           - board: pcduino3
           - board: pine64so
           - board: pine64
-          - board: nanopi-r1s-h5
-          - board: nanopi-r1
-          - board: nanopi-r2c
-          - board: nanopi-r2s
-          - board: nanopi-r4se
-          - board: nanopi-r4s
-          - board: nanopi-r6s
-          - board: nanopik2-s905
-          - board: nanopim4v2
+          - board: nanopineo2
+          - board: nanopineo2black
           - board: nanopim4
           - board: nanopineo2black
+          - board: nanopim4
+          - board: nanopim4v2
+          - board: nanopim4
+          - board: nanopim4v2
+          - board: nanopineo2black
+          - board: nanopim4
           - board: nanopineo2
+          - board: nanopim4v2
+          - board: nanopineo2
+          - board: nanopineo2black
+          - board: nanopim4v2
+          - board: nanopineo2black
+          - board: nanopim4
+          - board: nanopim4v2
+          - board: nanopim4
+          - board: nanopineo2
+          - board: nanopik2-s905
           - board: nanopineo3
+          - board: nanopik2-s905
+          - board: nanopineo3
+          - board: nanopik2-s905
           - board: nanopineo4
+          - board: nanopik2-s905
+          - board: nanopineo2
+          - board: nanopim4
+          - board: nanopik2-s905
+          - board: nanopineo2
+          - board: nanopim4
+          - board: nanopineo3
+          - board: nanopim4
+          - board: nanopineo3
+          - board: nanopim4v2
+          - board: nanopim4
+          - board: nanopineo3
+          - board: nanopim4
+          - board: nanopineo3
+          - board: nanopim4v2
+          - board: nanopineo4
+          - board: nanopineo
+          - board: nanopim4v2
+          - board: nanopineo
+          - board: nanopineocore2
+          - board: nanopineo
+          - board: nanopineo4
+          - board: nanopim4v2
+          - board: nanopineo4
+          - board: nanopim4v2
+          - board: nanopineo4
+          - board: nanopineoplus2
           - board: nanopineocore2
           - board: nanopineoplus2
           - board: nanopineo
+          - board: nanopi-r1
+          - board: nanopineo
+          - board: nanopineoplus2
+          - board: nanopineocore2
+          - board: nanopineo4
+          - board: nanopi-r1s-h5
+          - board: nanopineo4
+          - board: nanopi-r1s-h5
+          - board: nanopineocore2
+          - board: nanopineo4
+          - board: nanopineocore2
+          - board: nanopineoplus2
+          - board: nanopi-r2c
+          - board: nanopi-r1s-h5
+          - board: nanopi-r1
+          - board: nanopi-r2c
+          - board: nanopi-r1s-h5
+          - board: nanopi-r2s
+          - board: nanopi-r1s-h5
+          - board: nanopi-r2s
+          - board: nanopi-r1s-h5
+          - board: nanopi-r2c
+          - board: nanopi-r4s
+          - board: nanopi-r1
+          - board: nanopi-r2c
+          - board: nanopi-r1
+          - board: nanopi-r6s
+          - board: nanopi-r4se
+          - board: nanopi-r2s
+          - board: nanopi-r4se
+          - board: nanopi-r2s
+          - board: nanopi-r4se
+          - board: nanopi-r2s
+          - board: nanopi-r4se
+          - board: nanopi-r2s
+          - board: nanopi-r4s
+          - board: nanopi-r4se
+          - board: nanopi-r4s
+          - board: nanopi-r4se
+          - board: nanopi-r6s
+          - board: odroidc2
+          - board: nezha
+          - board: nanopi-r6s
+          - board: odroidc4
+          - board: odroidc2
+          - board: nezha
+          - board: odroidc2
           - board: nezha
           - board: odroidc2
           - board: odroidc4
+          - board: nanopi-r6s
+          - board: odroidhc4
+          - board: nanopi-r6s
+          - board: nezha
+          - board: nanopi-r6s
+          - board: nezha
+          - board: odroidc2
+          - board: nanopi-r6s
+          - board: odroidc4
+          - board: odroidc2
+          - board: odroidc4
+          - board: nezha
+          - board: odroidc2
+          - board: odroidhc4
+          - board: odroidc2
+          - board: odroidc4
+          - board: odroidm1
+          - board: odroidc4
+          - board: odroidc2
+          - board: odroidm1
+          - board: odroidn2
+          - board: odroidm1
+          - board: odroidc4
+          - board: odroidxu4
+          - board: odroidhc4
+          - board: odroidm1
+          - board: odroidn2
+          - board: odroidm1
+          - board: odroidn2
+          - board: odroidxu4
+          - board: odroidn2
+          - board: odroidxu4
+          - board: odroidm1
+          - board: odroidxu4
+          - board: odroidhc4
+          - board: odroidxu4
           - board: odroidhc4
           - board: odroidm1
           - board: odroidn2
           - board: odroidxu4
+          - board: odroidn2
+          - board: orangepi3
+          - board: orangepi2
+          - board: orangepi3
           - board: olimex-teres-a64
-          - board: onecloud
+          - board: orangepi2
+          - board: orangepi3
+          - board: orangepi3-lts
+          - board: olimex-teres-a64
+          - board: orangepi3-lts
+          - board: olimex-teres-a64
+          - board: orangepi2
+          - board: orangepi3
+          - board: orangepi2
+          - board: orangepi3
+          - board: orangepi2
+          - board: olimex-teres-a64
+          - board: orangepi3-lts
+          - board: olimex-teres-a64
+          - board: orangepi2
+          - board: orangepi3
+          - board: orangepi2
+          - board: orangepi3
+          - board: orangepi3-lts
           - board: orangepi2
           - board: orangepi3-lts
-          - board: orangepi3
-          - board: orangepi4
           - board: pinebook-a64
           - board: pinebook-pro
           - board: pinecube
@@ -299,7 +440,6 @@ jobs:
           - board: rockpi-n10
           - board: rockpi-s
           - board: rockpro64
-          - board: rpi4b
           - board: sk-am64b
           - board: star64
           - board: station-m1
