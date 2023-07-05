@@ -275,7 +275,6 @@ jobs:
           - board: orangepi2
           - board: orangepi3-lts
           - board: orangepi3
-          - board: orangepi4
           - board: pinebook-a64
           - board: pinebook-pro
           - board: pinecube
