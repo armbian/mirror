@@ -336,7 +336,6 @@ jobs:
           - board: tritium-h5
           - board: udoo
           - board: uefi-arm64
-          - board: uefi-riscv64
           - board: uefi-x86
           - board: unleashed
           - board: unmatched
