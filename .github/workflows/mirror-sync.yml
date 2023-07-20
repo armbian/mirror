@@ -184,6 +184,8 @@ jobs:
           - board: uefi-x86
           - board: xt-q8l-v10
           - board: zeropi
+          - board: jetson-nano
+          - board: odroidm1
     steps:
       - name: Install depen
         run: sudo apt-get -y install parallel jq axel
