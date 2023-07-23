@@ -118,6 +118,7 @@ jobs:
           - board: orangepi5
           - board: orangepi5-plus
           - board: orangepilite2
+          - board: orangepione
           - board: orangepioneplus
           - board: orangepipc2
           - board: orangepipc
