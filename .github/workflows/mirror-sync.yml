@@ -185,31 +185,166 @@ jobs:
           - board: uefi-x86
           - board: xt-q8l-v10
           - board: zeropi
+          - board: bananapi
+          - board: bananapim1plus
+          - board: bananapicm4io
           - board: aml-s9xx-box
           - board: bananapicm4io
+          - board: aml-s9xx-box
+          - board: bananapi
+          - board: aml-s9xx-box
+          - board: bananapi
+          - board: aml-s9xx-box
+          - board: bananapicm4io
+          - board: aml-s9xx-box
           - board: bananapim1plus
+          - board: aml-s9xx-box
+          - board: bananapi
+          - board: bananapicm4io
           - board: bananapim2plus
+          - board: bananapicm4io
+          - board: bananapim1plus
+          - board: aml-s9xx-box
+          - board: bananapicm4io
+          - board: bananapim2pro
+          - board: bananapicm4io
+          - board: bananapim2pro
+          - board: bananapim2plus
+          - board: bananapim1plus
+          - board: bananapi
+          - board: bananapim2plus
+          - board: bananapi
+          - board: bananapim2plus
+          - board: aml-s9xx-box
+          - board: bananapim2pro
+          - board: aml-s9xx-box
           - board: bananapim2pro
           - board: bananapim2s
+          - board: bananapim2pro
+          - board: bananapim1plus
+          - board: bananapim2plus
+          - board: bananapim2ultra
+          - board: bananapim2plus
+          - board: bananapim2s
+          - board: bananapim1plus
+          - board: bananapim2pro
+          - board: bananapim2s
+          - board: bananapim2pro
+          - board: bananapim2s
+          - board: bananapim2zero
+          - board: bananapim2pro
+          - board: bananapim2ultra
+          - board: bananapim2pro
+          - board: bananapim2plus
+          - board: bananapim2zero
           - board: bananapim2ultra
           - board: bananapim2zero
           - board: bananapim3
+          - board: bananapim2zero
+          - board: bananapim2pro
+          - board: bananapim2ultra
+          - board: bananapim2s
+          - board: bananapim3
+          - board: bananapim5
+          - board: bananapim3
+          - board: bananapim5
+          - board: bananapim2zero
+          - board: bananapim2ultra
+          - board: bananapim3
+          - board: bananapim64
+          - board: bananapim5
+          - board: bananapipro
+          - board: bananapim5
+          - board: bananapim2zero
+          - board: bananapim5
+          - board: bananapim2zero
+          - board: bananapim64
+          - board: bananapim2zero
+          - board: bananapim64
+          - board: bananapim3
+          - board: bananapim64
+          - board: bananapim3
+          - board: bananapim64
+          - board: bananapim3
+          - board: bananapipro
+          - board: bananapim3
+          - board: bananapipro
+          - board: bananapim64
           - board: bananapim5
           - board: bananapim64
+          - board: bananapir2pro
+          - board: bananapim5
+          - board: bananapipro
+          - board: bananapim5
+          - board: bananapim64
+          - board: bananapir2pro
           - board: bananapipro
           - board: bananapir2pro
-          - board: bananapi
-          - board: beaglev
+          - board: bananapipro
+          - board: bananapir2pro
+          - board: clearfogpro
+          - board: beelinkx2
+          - board: clearfogbase
+          - board: beelinkx2
+          - board: clearfogbase
           - board: beelinkx2
           - board: bigtreetech-cb1
           - board: clearfogbase
+          - board: clockworkpi-a06
           - board: clearfogpro
+          - board: bigtreetech-cb1
+          - board: clearfogpro
+          - board: beelinkx2
+          - board: clearfogbase
+          - board: clearfogpro
+          - board: beelinkx2
+          - board: bananapir2pro
+          - board: cubieboard2
+          - board: bananapir2pro
+          - board: cubieboard2
+          - board: clockworkpi-a06
+          - board: cubieboard2
           - board: clockworkpi-a06
           - board: cubieboard2
           - board: cubieboard4
+          - board: clockworkpi-a06
+          - board: cubieboard4
+          - board: bananapir2pro
+          - board: cubieboard2
+          - board: cubieboard4
+          - board: cubieboard2
           - board: cubieboard
-          - board: cubietruckplus
+          - board: beelinkx2
+          - board: cubieboard
+          - board: cubieboard4
+          - board: cubieboard2
+          - board: cubieboard4
+          - board: cubieboard2
+          - board: beelinkx2
+          - board: clockworkpi-a06
+          - board: cubieboard
+          - board: cubieboard4
           - board: cubietruck
+          - board: cubieboard2
+          - board: cubieboard
+          - board: cubieboard2
+          - board: cubietruck
+          - board: cubieboard4
+          - board: cubietruck
+          - board: cubieboard
+          - board: cubieboard4
+          - board: cubieboard
+          - board: cubietruck
+          - board: cubieboard4
+          - board: cubietruck
+          - board: cubietruckplus
+          - board: cubox-i
+          - board: cubietruck
+          - board: cubietruckplus
+          - board: cubox-i
+          - board: cubietruckplus
+          - board: cubox-i
+          - board: cubietruckplus
           - board: cubox-i
           - board: espressobin
           - board: firefly-rk3399
@@ -238,7 +373,6 @@ jobs:
           - board: nanopiduo2
           - board: nanopiduo
           - board: nanopik1plus
-          - board: nanopik2-s905
           - board: orangepi-r1plus-lts
           - board: orangepi-r1plus
           - board: orangepi-r1
@@ -289,10 +423,7 @@ jobs:
           - board: odroidc4
           - board: odroidhc4
           - board: odroidm1
-          - board: odroidn2
-          - board: odroidxu4
           - board: olimex-teres-a64
-          - board: onecloud
           - board: orangepi2
           - board: orangepi3-lts
           - board: orangepi3
@@ -330,15 +461,10 @@ jobs:
           - board: station-p1
           - board: station-p2
           - board: sunvell-r69
-          - board: thinkpad-x13s
-          - board: tinkerboard-2
           - board: tinkerboard
           - board: tritium-h3
           - board: tritium-h5
           - board: udoo
-          - board: uefi-arm64
-          - board: uefi-riscv64
-          - board: uefi-x86
           - board: unleashed
           - board: unmatched
           - board: visionfive2
