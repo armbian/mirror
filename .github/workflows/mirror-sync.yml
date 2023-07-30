@@ -203,6 +203,11 @@ jobs:
           - board: beelinkx2
           - board: bigtreetech-cb1
           - board: clockworkpi-a06
+          - board: cubieboard2
+          - board: cubieboard4
+          - board: cubieboard
+          - board: cubietruckplus
+          - board: cubietruck
           - board: cubox-i
           - board: firefly-rk3399
           - board: helios64
@@ -219,8 +224,16 @@ jobs:
           - board: lime-a33
           - board: lime-a64
           - board: lime2
+          - board: lime
           - board: mangopi-mq
+          - board: melea1000
+          - board: micro
           - board: nanopct4
+          - board: nanopia64
+          - board: nanopiair
+          - board: nanopiduo2
+          - board: nanopiduo
+          - board: nanopik1plus
           - board: nanopik2-s905
           - board: orangepi-r1plus-lts
           - board: orangepi-r1plus
@@ -240,7 +253,16 @@ jobs:
           - board: orangepiplus2e
           - board: orangepiplus
           - board: orangepiprime
+          - board: orangepiwin
+          - board: orangepizero2
+          - board: orangepizeroplus2-h3
+          - board: orangepizeroplus2-h5
+          - board: orangepizeroplus
+          - board: orangepizero
           - board: panther-x2
+          - board: pcduino3
+          - board: pine64so
+          - board: pine64
           - board: nanopi-r1s-h5
           - board: nanopi-r1
           - board: nanopi-r2c
@@ -265,7 +287,11 @@ jobs:
           - board: odroidm1
           - board: odroidn2
           - board: odroidxu4
+          - board: olimex-teres-a64
           - board: onecloud
+          - board: orangepi2
+          - board: orangepi3-lts
+          - board: orangepi3
           - board: orangepi4
     steps:
       - name: Install depen
