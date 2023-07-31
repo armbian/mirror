@@ -182,6 +182,8 @@ jobs:
           - board: beaglev
           - board: beelinkx2
           - board: bigtreetech-cb1
+          - board: clearfogbase
+          - board: clearfogpro
           - board: clockworkpi-a06
           - board: cubieboard2
           - board: cubieboard4
@@ -189,6 +191,7 @@ jobs:
           - board: cubietruckplus
           - board: cubietruck
           - board: cubox-i
+          - board: espressobin
           - board: firefly-rk3399
           - board: helios64
           - board: jethubj100
