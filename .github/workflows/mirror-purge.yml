@@ -252,12 +252,14 @@ jobs:
           - board: orangepi-rk3399
           - board: orangepi2
           - board: orangepi3-lts
+          - board: orangepi3
           - board: orangepi4-lts
           - board: orangepi4
           - board: orangepi5-plus
           - board: orangepi5
           - board: orangepilite2
           - board: orangepioneplus
+          - board: orangepione
           - board: orangepipc2
           - board: orangepipcplus
           - board: orangepipc
