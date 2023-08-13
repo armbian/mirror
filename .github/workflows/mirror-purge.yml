@@ -304,6 +304,7 @@ jobs:
           - board: rockpi-s
           - board: rockpro64
           - board: rpi4b
+          - board: sk-am62b
           - board: star64
           - board: station-m1
           - board: station-m2
