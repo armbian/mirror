@@ -46,9 +46,11 @@ jobs:
           - board: khadas-edge2
           - board: khadas-edge
           - board: khadas-vim1
+          - board: khadas-vim1s
           - board: khadas-vim2
           - board: khadas-vim3
           - board: khadas-vim3l
+          - board: khadas-vim4
           - board: lafrite
           - board: lepotato
           - board: lime2
@@ -61,6 +63,7 @@ jobs:
           - board: melea1000
           - board: micro
           - board: nanopct4
+          - board: nanopct6
           - board: nanopia64
           - board: nanopiair
           - board: nanopiduo2
@@ -197,10 +200,7 @@ jobs:
           - board: jethubj80
           - board: jetson-nano
           - board: khadas-edge2
-          - board: khadas-edge
           - board: khadas-vim1s
-          - board: khadas-vim1
-          - board: khadas-vim2
           - board: khadas-vim3l
           - board: khadas-vim3
           - board: khadas-vim4
