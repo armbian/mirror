@@ -294,6 +294,7 @@ jobs:
           - board: rk3318-box
           - board: roc-rk3399-pc
           - board: rock-3a
+          - board: rock-4se
           - board: rock-5b
           - board: rock64
           - board: rockpi-4a
