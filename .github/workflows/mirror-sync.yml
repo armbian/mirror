@@ -45,14 +45,15 @@ jobs:
           - board: bananapim64
           - board: bananapipro
           - board: bananapir2pro
+          - board: beaglev
           - board: beelinkx2
           - board: bigtreetech-cb1
           - board: clearfogbase
           - board: clearfogpro
           - board: clockworkpi-a06
+          - board: cubieboard
           - board: cubieboard2
           - board: cubieboard4
-          - board: cubieboard
           - board: cubietruck
           - board: cubietruckplus
           - board: cubox-i
@@ -63,8 +64,8 @@ jobs:
           - board: jethubj100
           - board: jethubj80
           - board: jetson-nano
-          - board: khadas-edge2
           - board: khadas-edge
+          - board: khadas-edge2
           - board: khadas-vim1
           - board: khadas-vim1s
           - board: khadas-vim2
@@ -73,10 +74,11 @@ jobs:
           - board: khadas-vim4
           - board: lafrite
           - board: lepotato
-          - board: lime2
           - board: lime-a33
           - board: lime-a64
           - board: lime
+          - board: lime2
+          - board: mangopi-mq
           - board: mekotronics-r58-minipc
           - board: mekotronics-r58x-4g
           - board: mekotronics-r58x
@@ -84,21 +86,6 @@ jobs:
           - board: micro
           - board: nanopct4
           - board: nanopct6
-          - board: nanopia64
-          - board: nanopiair
-          - board: nanopiduo2
-          - board: nanopiduo
-          - board: nanopik1plus
-          - board: nanopik2-s905
-          - board: nanopim4
-          - board: nanopim4v2
-          - board: nanopineo2
-          - board: nanopineo2black
-          - board: nanopineo3
-          - board: nanopineo4
-          - board: nanopineo
-          - board: nanopineocore2
-          - board: nanopineoplus2
           - board: nanopi-r1
           - board: nanopi-r1s-h5
           - board: nanopi-r2c
@@ -106,6 +93,22 @@ jobs:
           - board: nanopi-r4s
           - board: nanopi-r4se
           - board: nanopi-r6s
+          - board: nanopia64
+          - board: nanopiair
+          - board: nanopiduo
+          - board: nanopiduo2
+          - board: nanopik1plus
+          - board: nanopik2-s905
+          - board: nanopim4
+          - board: nanopim4v2
+          - board: nanopineo
+          - board: nanopineo2
+          - board: nanopineo2black
+          - board: nanopineo3
+          - board: nanopineo4
+          - board: nanopineocore2
+          - board: nanopineoplus2
+          - board: nezha
           - board: odroidc2
           - board: odroidc4
           - board: odroidhc4
@@ -114,30 +117,31 @@ jobs:
           - board: odroidxu4
           - board: olimex-teres-a64
           - board: onecloud
+          - board: orangepi-r1
+          - board: orangepi-r1plus-lts
+          - board: orangepi-r1plus
+          - board: orangepi-rk3399
           - board: orangepi2
           - board: orangepi3-lts
-          - board: orangepi4
+          - board: orangepi3
           - board: orangepi4-lts
-          - board: orangepi5
+          - board: orangepi4
           - board: orangepi5-plus
+          - board: orangepi5
           - board: orangepilite2
           - board: orangepione
           - board: orangepioneplus
-          - board: orangepipc2
           - board: orangepipc
+          - board: orangepipc2
           - board: orangepipcplus
           - board: orangepiplus2e
           - board: orangepiprime
-          - board: orangepi-r1
-          - board: orangepi-r1plus
-          - board: orangepi-r1plus-lts
-          - board: orangepi-rk3399
           - board: orangepiwin
-          - board: orangepizero2
           - board: orangepizero
+          - board: orangepizero2
+          - board: orangepizeroplus
           - board: orangepizeroplus2-h3
           - board: orangepizeroplus2-h5
-          - board: orangepizeroplus
           - board: panther-x2
           - board: pcduino3
           - board: pine64
@@ -145,18 +149,20 @@ jobs:
           - board: pinebook-a64
           - board: pinebook-pro
           - board: pinecube
-          - board: pineh64
           - board: pineh64-b
+          - board: pineh64
           - board: quartz64a
           - board: quartz64b
           - board: radxa-e25
-          - board: radxa-zero2
           - board: radxa-zero
+          - board: radxa-zero2
           - board: recore
           - board: renegade
           - board: rk322x-box
           - board: rk3318-box
+          - board: roc-rk3399-pc
           - board: rock-3a
+          - board: rock-4se
           - board: rock-5a
           - board: rock-5b
           - board: rock64
@@ -168,164 +174,9 @@ jobs:
           - board: rockpi-n10
           - board: rockpi-s
           - board: rockpro64
-          - board: roc-rk3399-pc
-          - board: rpi4b
-          - board: sk-am64b
-          - board: station-m1
-          - board: station-m2
-          - board: station-m3
-          - board: station-p1
-          - board: station-p2
-          - board: sunvell-r69
-          - board: thinkpad-x13s
-          - board: tinkerboard-2
-          - board: tinkerboard
-          - board: tritium-h3
-          - board: tritium-h5
-          - board: udoo
-          - board: uefi-arm64
-          - board: uefi-riscv64
-          - board: uefi-x86
-          - board: xt-q8l-v10
-          - board: zeropi
-          - board: aml-s9xx-box
-          - board: bananapicm4io
-          - board: bananapim1plus
-          - board: bananapim2plus
-          - board: bananapim2pro
-          - board: bananapim2s
-          - board: bananapim2ultra
-          - board: bananapim2zero
-          - board: bananapim3
-          - board: bananapim5
-          - board: bananapim64
-          - board: bananapipro
-          - board: bananapir2pro
-          - board: beaglev
-          - board: beelinkx2
-          - board: bigtreetech-cb1
-          - board: clearfogbase
-          - board: clearfogpro
-          - board: clockworkpi-a06
-          - board: cubieboard2
-          - board: cubieboard4
-          - board: cubieboard
-          - board: cubietruckplus
-          - board: cubietruck
-          - board: cubox-i
-          - board: espressobin
-          - board: firefly-rk3399
-          - board: helios4
-          - board: jethubj100
-          - board: jethubj80
-          - board: jetson-nano
-          - board: khadas-edge2
-          - board: khadas-vim1s
-          - board: khadas-vim3l
-          - board: khadas-vim3
-          - board: khadas-vim4
-          - board: lafrite
-          - board: lepotato
-          - board: lime-a33
-          - board: lime-a64
-          - board: lime2
-          - board: lime
-          - board: mangopi-mq
-          - board: mekotronics-r58-minipc
-          - board: mekotronics-r58x-4g
-          - board: mekotronics-r58x
-          - board: melea1000
-          - board: micro
-          - board: nanopct4
-          - board: nanopct6
-          - board: nanopi-r1s-h5
-          - board: nanopi-r1
-          - board: nanopi-r2c
-          - board: nanopi-r2s
-          - board: nanopi-r4se
-          - board: nanopi-r4s
-          - board: nanopi-r6s
-          - board: nanopia64
-          - board: nanopiair
-          - board: nanopiduo2
-          - board: nanopiduo
-          - board: nanopik1plus
-          - board: nanopik2-s905
-          - board: nanopim4v2
-          - board: nanopim4
-          - board: nanopineo2black
-          - board: nanopineo2
-          - board: nanopineo3
-          - board: nanopineo4
-          - board: nanopineocore2
-          - board: nanopineoplus2
-          - board: nanopineo
-          - board: nezha
-          - board: odroidc2
-          - board: odroidc4
-          - board: odroidhc4
-          - board: odroidm1
-          - board: odroidn2
-          - board: odroidxu4
-          - board: olimex-teres-a64
-          - board: onecloud
-          - board: orangepi-r1plus-lts
-          - board: orangepi-r1plus
-          - board: orangepi-r1
-          - board: orangepi-rk3399
-          - board: orangepi2
-          - board: orangepi3-lts
-          - board: orangepi3
-          - board: orangepi4-lts
-          - board: orangepi4
-          - board: orangepi5-plus
-          - board: orangepi5
-          - board: orangepilite2
-          - board: orangepioneplus
-          - board: orangepione
-          - board: orangepipc2
-          - board: orangepipcplus
-          - board: orangepipc
-          - board: orangepiplus2e
-          - board: orangepiprime
-          - board: orangepiwin
-          - board: orangepizero2
-          - board: orangepizeroplus2-h3
-          - board: orangepizeroplus2-h5
-          - board: orangepizeroplus
-          - board: orangepizero
-          - board: panther-x2
-          - board: pcduino3
-          - board: pine64so
-          - board: pine64
-          - board: pinebook-a64
-          - board: pinebook-pro
-          - board: pinecube
-          - board: pineh64-b
-          - board: pineh64
-          - board: quartz64a
-          - board: quartz64b
-          - board: radxa-e25
-          - board: radxa-zero2
-          - board: radxa-zero
-          - board: recore
-          - board: renegade
-          - board: rk322x-box
-          - board: rk3318-box
-          - board: roc-rk3399-pc
-          - board: rock-3a
-          - board: rock-4se
-          - board: rock-5b
-          - board: rock64
-          - board: rockpi-4a
-          - board: rockpi-4b
-          - board: rockpi-4c
-          - board: rockpi-e
-          - board: rockpi-n10
-          - board: rockpi-s
-          - board: rockpro64
           - board: rpi4b
           - board: sk-am62b
+          - board: sk-am64b
           - board: star64
           - board: station-m1
           - board: station-m2
@@ -344,8 +195,8 @@ jobs:
           - board: uefi-x86
           - board: unleashed
           - board: unmatched
-          - board: visionfive2
           - board: visionfive
+          - board: visionfive2
           - board: xt-q8l-v10
           - board: zeropi
     steps:
