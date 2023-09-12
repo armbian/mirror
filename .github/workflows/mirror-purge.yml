@@ -13,6 +13,7 @@ jobs:
       matrix: 
         include: # build this way: cat userdata.csv | cut -d"/" -f1 | uniq | sed 's/.*/          - board: &/'
           - board: aml-s9xx-box
+          - board: bananapi
           - board: bananapicm4io
           - board: bananapim1plus
           - board: bananapim2plus
