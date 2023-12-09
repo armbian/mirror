@@ -130,7 +130,7 @@ jobs:
         run: |
           git pull
           git add README.md
-          git add detailed.txt
+          #git add detailed.txt
 
       - name: Commit files
         run: |
