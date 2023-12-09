@@ -199,7 +199,6 @@ jobs:
           - board: mixtile-blade3
           - board: nanopct6
           - board: nanopi-r4s
-          - board: nanopi-r5s
           - board: nanopi-r6s
           - board: nanopiduo2
           - board: nanopiduo
