@@ -33,13 +33,13 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://fastmirror.pp.ua/armbian-dl/|Kyiv|<img width=24 src=https://cdn.ipwhois.io/flags/ua.svg>|Ukraine|
 |http://fi.mirror.armbian.de/dl/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://jp.mirrors.naho.moe/armbian/dl/|Tokyo|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
-|http://k-space.ee.armbian.com/dl/|Tallinn|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
+|http://k-space.ee.armbian.com/dl/|Viljandi|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
 |http://kr.mirrors.naho.moe/armbian/dl/|Seoul|<img width=24 src=https://cdn.ipwhois.io/flags/kr.svg>|Korea|
 |http://mirror-eu-de1.armbian.airframes.io/dl/|Frankfurt|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |http://mirror-us-sea1.armbian.airframes.io/dl/|St. Louis|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://mirror-us-sea2.armbian.airframes.io/dl/|St. Louis|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://mirror.iscas.ac.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
-|http://mirror.vinehost.net/armbian/dl/|Emsworth|<img width=24 src=https://cdn.ipwhois.io/flags/gb.svg>|United Kingdom|
+|http://mirror.vinehost.net/armbian/dl/|Cambridge|<img width=24 src=https://cdn.ipwhois.io/flags/gb.svg>|United Kingdom|
 |http://mirror.yandex.ru/mirrors/armbian/dl/|Moscow|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 |http://mirrors.aliyun.com/armbian-releases/|Hangzhou|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.bfsu.edu.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
@@ -70,7 +70,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://fastmirror.pp.ua/armbian/|Kyiv|<img width=24 src=https://cdn.ipwhois.io/flags/ua.svg>|Ukraine|
 |http://fi.mirror.armbian.de/apt/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://jp.mirrors.naho.moe/armbian/apt/|Tokyo|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
-|http://k-space.ee.armbian.com/apt/|Tallinn|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
+|http://k-space.ee.armbian.com/apt/|Viljandi|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
 |http://kr.mirrors.naho.moe/armbian/apt/|Seoul|<img width=24 src=https://cdn.ipwhois.io/flags/kr.svg>|Korea|
 |http://mirror-eu-de1.armbian.airframes.io/apt/|Frankfurt|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |http://mirror-us-sea1.armbian.airframes.io/apt/|St. Louis|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
@@ -79,7 +79,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://mirror.iscas.ac.cn/armbian/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirror.ossplanet.net/armbian/apt/|Taipei|<img width=24 src=https://cdn.ipwhois.io/flags/tw.svg>|Taiwan|
 |http://mirror.sjtu.edu.cn/armbian/|Shanghai|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
-|http://mirror.vinehost.net/armbian/apt/|Emsworth|<img width=24 src=https://cdn.ipwhois.io/flags/gb.svg>|United Kingdom|
+|http://mirror.vinehost.net/armbian/apt/|Cambridge|<img width=24 src=https://cdn.ipwhois.io/flags/gb.svg>|United Kingdom|
 |http://mirror.yandex.ru/mirrors/armbian/apt/|Moscow|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 |http://mirrors.aliyun.com/armbian/|Hangzhou|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.bfsu.edu.cn/armbian/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
@@ -88,6 +88,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://mirrors.netix.net/armbian/apt/|Sofia|<img width=24 src=https://cdn.ipwhois.io/flags/bg.svg>|Bulgaria|
 |http://mirrors.nju.edu.cn/armbian/|Nanjing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.shanghaitech.edu.cn/armbian/|Shanghai|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.sustech.edu.cn/armbian/|Shenzhen|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.tuna.tsinghua.edu.cn/armbian/|Haidian|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.ustc.edu.cn/armbian/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.xtom.de/armbian/|Düsseldorf|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
@@ -105,7 +106,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://armbian.systemonachip.net/archive/|Vienna|<img width=24 src=https://cdn.ipwhois.io/flags/at.svg>|Austria|
 |http://armbian.tnahosting.net/archive/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://fi.mirror.armbian.de/archive/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
-|http://k-space.ee.armbian.com/archive/|Tallinn|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
+|http://k-space.ee.armbian.com/archive/|Viljandi|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
 |http://mirror.yandex.ru/mirrors/armbian/archive/|Moscow|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 |http://stpete-mirror.armbian.com/archive/|Saint Petersburg|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 |http://xogium.performanceservers.nl/archive/|Amsterdam|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
@@ -117,7 +118,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |:--|:--|:--:|--:|
 |https://fi.mirror.armbian.de/beta/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |https://hetzner-mirror.armbian.com/beta/|Falkenstein|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
-|https://k-space.ee.armbian.com/beta/|Tallinn|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
+|https://k-space.ee.armbian.com/beta/|Viljandi|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
 |https://stpete-mirror.armbian.com/beta/|Saint Petersburg|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 
 
