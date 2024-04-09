@@ -24,11 +24,10 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |URL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Flag|Country|
 |:--|:--|:--:|--:|
 |http://fi.mirror.armbian.de/dl/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
-|http://imola.armbian.com/dl/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
 |http://k-space.ee.armbian.com/dl/|Tallinn|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
 |http://mirror-us-sea1.armbian.airframes.io/dl/|Seattle|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://mirror-us-sea2.armbian.airframes.io/dl/|Seattle|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
-|http://mirror.iscas.ac.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirror.iscas.ac.cn/armbian-releases/|Haidian|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirror.yandex.ru/mirrors/armbian/dl/|Moscow|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 |http://mirrors.aliyun.com/armbian-releases/|Hangzhou|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.bfsu.edu.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
@@ -38,7 +37,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://mirrors.shanghaitech.edu.cn/armbian-releases/|Shanghai|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.tuna.tsinghua.edu.cn/armbian-releases/|Haidian|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.ustc.edu.cn/armbian-dl/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
-|http://repo.jing.rocks/armbian-dl/|Kitakyushu|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
+|http://repo.jing.rocks/armbian-dl/|Osaka|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
 
 
 ## Packages (apt.armbian.com)
@@ -47,6 +46,21 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |:--|:--|:--:|--:|
 |http://fi.mirror.armbian.de/apt/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://k-space.ee.armbian.com/apt/|Tallinn|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
+|http://mirror-us-sea1.armbian.airframes.io/apt/|Seattle|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
+|http://mirror-us-sea2.armbian.airframes.io/apt/|Seattle|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
+|http://mirror.albony.xyz/armbian/|Nagpur|<img width=24 src=https://cdn.ipwhois.io/flags/in.svg>|India|
+|http://mirror.iscas.ac.cn/armbian/|Haidian|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirror.sjtu.edu.cn/armbian/|Shanghai|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.aliyun.com/armbian/|Hangzhou|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.bfsu.edu.cn/armbian/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.dotsrc.org/armbian-apt/|Copenhagen|<img width=24 src=https://cdn.ipwhois.io/flags/dk.svg>|Denmark|
+|http://mirrors.netix.net/armbian/apt/|Sofia|<img width=24 src=https://cdn.ipwhois.io/flags/bg.svg>|Bulgaria|
+|http://mirrors.nju.edu.cn/armbian/|Nanjing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.shanghaitech.edu.cn/armbian/|Shanghai|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.sustech.edu.cn/armbian/|Lang Fang Shi|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.tuna.tsinghua.edu.cn/armbian/|Haidian|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.ustc.edu.cn/armbian/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.xtom.de/armbian/|Düsseldorf|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |http://stpete-mirror.armbian.com/apt/|Saint Petersburg|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 
 
@@ -54,11 +68,10 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 |URL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Flag|Country|
 |:--|:--|:--:|--:|
-|http://armbian.lv.auroradev.org/archive/|Las Vegas|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
+|http://armbian.lv.auroradev.org/archive/|Cheyenne|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://armbian.systemonachip.net/archive/|Vienna|<img width=24 src=https://cdn.ipwhois.io/flags/at.svg>|Austria|
 |http://armbian.tnahosting.net/archive/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://fi.mirror.armbian.de/archive/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
-|http://imola.armbian.com/archive/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
 |http://k-space.ee.armbian.com/archive/|Tallinn|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
 |http://mirror.yandex.ru/mirrors/armbian/archive/|Moscow|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
 |http://stpete-mirror.armbian.com/archive/|Saint Petersburg|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
