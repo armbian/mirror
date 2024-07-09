@@ -23,7 +23,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 |URL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Flag|Country|
 |:--|:--|:--:|--:|
-|http://armbian.chi.auroradev.org/dl/|West Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://armbian.hosthatch.com/dl/|Amsterdam|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
 |http://armbian.lv.auroradev.org/dl/|Cheyenne|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://armbian.systemonachip.net/dl/|Vienna|<img width=24 src=https://cdn.ipwhois.io/flags/at.svg>|Austria|
@@ -33,7 +32,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://fi.mirror.armbian.de/dl/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://imola.armbian.com/dl/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
 |http://in.mirrors.naho.moe/armbian-dl/|Mumbai|<img width=24 src=https://cdn.ipwhois.io/flags/in.svg>|India|
-|http://jp.mirrors.naho.moe/armbian-dl/|Tokyo|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
 |http://k-space.ee.armbian.com/dl/|Võru|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
 |http://kr.mirrors.naho.moe/armbian-dl/|Seoul|<img width=24 src=https://cdn.ipwhois.io/flags/kr.svg>|Korea|
 |http://mirror-eu-de1.armbian.airframes.io/dl/|Nuremberg|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
@@ -62,7 +60,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 
 |URL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Flag|Country|
 |:--|:--|:--:|--:|
-|http://armbian.chi.auroradev.org/apt/|West Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://armbian.hosthatch.com/apt/|Amsterdam|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
 |http://armbian.lv.auroradev.org/apt/|Cheyenne|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://armbian.site-meganet.com/apt/|Roubaix|<img width=24 src=https://cdn.ipwhois.io/flags/fr.svg>|France|
@@ -73,7 +70,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://fi.mirror.armbian.de/apt/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://imola.armbian.com/apt/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
 |http://in.mirrors.naho.moe/armbian/|Mumbai|<img width=24 src=https://cdn.ipwhois.io/flags/in.svg>|India|
-|http://jp.mirrors.naho.moe/armbian/|Tokyo|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
 |http://k-space.ee.armbian.com/apt/|Võru|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
 |http://kr.mirrors.naho.moe/armbian/|Seoul|<img width=24 src=https://cdn.ipwhois.io/flags/kr.svg>|Korea|
 |http://mirror-eu-de1.armbian.airframes.io/apt/|Nuremberg|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
