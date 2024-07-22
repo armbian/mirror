@@ -103,7 +103,7 @@ jobs:
 
           1. Setup HTTP and HTTPS hostname
           2. Setup cron to sync every 2-4 hours
-          3. [Inform us](https://www.armbian.com/#contact)
+          3. [Inform us](https://www.armbian.com/contact/)
           " >> README.md
           MIR=$(curl -sq http://redirect.armbian.com/mirrors | jq -Mr '.' | grep http | tr -d \"," " | sort | uniq)
           show_mirrors "$MIR" "Images (dl.armbian.com)" >> README.md
