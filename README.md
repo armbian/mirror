@@ -33,21 +33,18 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://fastmirror.pp.ua/armbian-dl/|Kyiv|<img width=24 src=https://cdn.ipwhois.io/flags/ua.svg>|Ukraine|
 |http://fi.mirror.armbian.de/dl/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://imola.armbian.com/dl/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
+|http://in.mirrors.naho.moe/armbian-dl/|Mumbai|<img width=24 src=https://cdn.ipwhois.io/flags/in.svg>|India|
+|http://jp.mirrors.naho.moe/armbian-dl/|Tokyo|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
 |http://k-space.ee.armbian.com/dl/|Võru|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
 |http://mirror-eu-de1.armbian.airframes.io/dl/|Nuremberg|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |http://mirror-us-sea1.armbian.airframes.io/dl/|St. Louis|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://mirror-us-stl1.armbian.airframes.io/dl/|New York|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
-|http://mirror.iscas.ac.cn/armbian-releases/|Haidian|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirror.vinehost.net/armbian/dl/|Cambridge|<img width=24 src=https://cdn.ipwhois.io/flags/gb.svg>|United Kingdom|
 |http://mirror.yandex.ru/mirrors/armbian/dl/|Moscow|<img width=24 src=https://cdn.ipwhois.io/flags/ru.svg>|Russia|
-|http://mirrors.bfsu.edu.cn/armbian-releases/|Xicheng|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.dotsrc.org/armbian-dl/|Copenhagen|<img width=24 src=https://cdn.ipwhois.io/flags/dk.svg>|Denmark|
 |http://mirrors.jevincanders.net/armbian/dl/|West Seneca|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://mirrors.netix.net/armbian/dl/|Sofia|<img width=24 src=https://cdn.ipwhois.io/flags/bg.svg>|Bulgaria|
-|http://mirrors.nju.edu.cn/armbian-releases/|Nanjing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
-|http://mirrors.shanghaitech.edu.cn/armbian-releases/|Shanghai|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
-|http://mirrors.tuna.tsinghua.edu.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
-|http://repo.jing.rocks/armbian-dl/|Uji|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
+|http://sg.mirrors.naho.moe/armbian-dl/|Singapore|<img width=24 src=https://cdn.ipwhois.io/flags/sg.svg>|Singapore|
 |http://sg.sbcmirror.org/armbian/dl/|Singapore|<img width=24 src=https://cdn.ipwhois.io/flags/sg.svg>|Singapore|
 |http://uk.mirrors.naho.moe/armbian-dl/|London|<img width=24 src=https://cdn.ipwhois.io/flags/gb.svg>|United Kingdom|
 |http://wa.mirrors.naho.moe/armbian-dl/|Seattle|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
@@ -63,9 +60,9 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://fi.mirror.armbian.de/apt/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://imola.armbian.com/apt/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
 |http://k-space.ee.armbian.com/apt/|Võru|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
-|http://mirror-us-sea1.armbian.airframes.io/apt/|St. Louis|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
-|http://mirror.ossplanet.net/armbian/apt/|Taichung|<img width=24 src=https://cdn.ipwhois.io/flags/tw.svg>|Taiwan|
+|http://mirrors.netix.net/armbian/apt/|Sofia|<img width=24 src=https://cdn.ipwhois.io/flags/bg.svg>|Bulgaria|
 |http://netcup.armbian.com/apt/|Karlsruhe|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
+|http://wa.mirrors.naho.moe/armbian/|Seattle|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 
 
 ## Archive (archive.armbian.com)
