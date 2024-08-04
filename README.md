@@ -30,6 +30,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://au.mirrors.naho.moe/armbian-dl/|Sydney|<img width=24 src=https://cdn.ipwhois.io/flags/au.svg>|Australia|
 |http://au.sbcmirror.org/armbian/dl/|Sydney|<img width=24 src=https://cdn.ipwhois.io/flags/au.svg>|Australia|
 |http://de.mirrors.naho.moe/armbian-dl/|Frankfurt|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
+|http://fastmirror.pp.ua/armbian-dl/|Kyiv|<img width=24 src=https://cdn.ipwhois.io/flags/ua.svg>|Ukraine|
 |http://fi.mirror.armbian.de/dl/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://imola.armbian.com/dl/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
 |http://in.mirrors.naho.moe/armbian-dl/|Mumbai|<img width=24 src=https://cdn.ipwhois.io/flags/in.svg>|India|
@@ -49,6 +50,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://mirrors.nju.edu.cn/armbian-releases/|Nanjing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.shanghaitech.edu.cn/armbian-releases/|Shanghai|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirrors.tuna.tsinghua.edu.cn/armbian-releases/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.ustc.edu.cn/armbian-dl/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://repo.jing.rocks/armbian-dl/|Uji|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
 |http://sg.mirrors.naho.moe/armbian-dl/|Singapore|<img width=24 src=https://cdn.ipwhois.io/flags/sg.svg>|Singapore|
 |http://sg.sbcmirror.org/armbian/dl/|Singapore|<img width=24 src=https://cdn.ipwhois.io/flags/sg.svg>|Singapore|
@@ -63,12 +65,23 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |:--|:--|:--:|--:|
 |http://armbian.site-meganet.com/apt/|Roubaix|<img width=24 src=https://cdn.ipwhois.io/flags/fr.svg>|France|
 |http://armbian.tnahosting.net/apt/|Chicago|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
+|http://au.mirrors.naho.moe/armbian/|Sydney|<img width=24 src=https://cdn.ipwhois.io/flags/au.svg>|Australia|
 |http://fi.mirror.armbian.de/apt/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://imola.armbian.com/apt/|Ljubljana|<img width=24 src=https://cdn.ipwhois.io/flags/si.svg>|Slovenia|
+|http://in.mirrors.naho.moe/armbian/|Mumbai|<img width=24 src=https://cdn.ipwhois.io/flags/in.svg>|India|
+|http://jp.mirrors.naho.moe/armbian/|Tokyo|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
 |http://k-space.ee.armbian.com/apt/|Võru|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
 |http://mirror-us-sea1.armbian.airframes.io/apt/|St. Louis|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://mirror.ossplanet.net/armbian/apt/|Taichung|<img width=24 src=https://cdn.ipwhois.io/flags/tw.svg>|Taiwan|
+|http://mirrors.aliyun.com/armbian/|Hangzhou|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.bfsu.edu.cn/armbian/|Xicheng|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
+|http://mirrors.dotsrc.org/armbian-apt/|Copenhagen|<img width=24 src=https://cdn.ipwhois.io/flags/dk.svg>|Denmark|
+|http://mirrors.netix.net/armbian/apt/|Sofia|<img width=24 src=https://cdn.ipwhois.io/flags/bg.svg>|Bulgaria|
+|http://mirrors.tuna.tsinghua.edu.cn/armbian/|Beijing|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://netcup.armbian.com/apt/|Karlsruhe|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
+|http://sg.mirrors.naho.moe/armbian/|Singapore|<img width=24 src=https://cdn.ipwhois.io/flags/sg.svg>|Singapore|
+|http://uk.mirrors.naho.moe/armbian/|London|<img width=24 src=https://cdn.ipwhois.io/flags/gb.svg>|United Kingdom|
+|http://wa.mirrors.naho.moe/armbian/|Seattle|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 
 
 ## Archive (archive.armbian.com)
