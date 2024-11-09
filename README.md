@@ -28,7 +28,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://armbian.lv.auroradev.org/dl/|Cheyenne|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
 |http://armbian.nardol.ovh/dl/|Paris|<img width=24 src=https://cdn.ipwhois.io/flags/fr.svg>|France|
 |http://au.sbcmirror.org/armbian/dl/|Sydney|<img width=24 src=https://cdn.ipwhois.io/flags/au.svg>|Australia|
-|http://fastmirror.pp.ua/armbian-dl/|Kyiv|<img width=24 src=https://cdn.ipwhois.io/flags/ua.svg>|Ukraine|
 |http://fi.mirror.armbian.de/dl/|Helsinki|<img width=24 src=https://cdn.ipwhois.io/flags/fi.svg>|Finland|
 |http://mirror-eu-de1.armbian.airframes.io/dl/|Nuremberg|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |http://mirror-us-stl1.armbian.airframes.io/dl/|St. Louis|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
@@ -64,6 +63,7 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://k-space.ee.armbian.com/apt/|Võru|<img width=24 src=https://cdn.ipwhois.io/flags/ee.svg>|Estonia|
 |http://mirror-eu-de1.armbian.airframes.io/apt/|Nuremberg|<img width=24 src=https://cdn.ipwhois.io/flags/de.svg>|Germany|
 |http://mirror-us-stl1.armbian.airframes.io/apt/|St. Louis|<img width=24 src=https://cdn.ipwhois.io/flags/us.svg>|United States|
+|http://mirror.iscas.ac.cn/armbian/|Haidian|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://mirror.ossplanet.net/armbian/apt/|Taipei|<img width=24 src=https://cdn.ipwhois.io/flags/tw.svg>|Taiwan|
 |http://mirror.twds.com.tw/armbian-apt/|Taipei|<img width=24 src=https://cdn.ipwhois.io/flags/tw.svg>|Taiwan|
 |http://mirror.vinehost.net/armbian/apt/|Tewkesbury|<img width=24 src=https://cdn.ipwhois.io/flags/gb.svg>|United Kingdom|
