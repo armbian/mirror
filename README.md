@@ -46,7 +46,6 @@ Space needs: 500Gb (images), 100Gb (packages) and (optional) 3TB for archives
 |http://mirrors.ustc.edu.cn/armbian-dl/|Hefei|<img width=24 src=https://cdn.ipwhois.io/flags/cn.svg>|China|
 |http://repo.jing.rocks/armbian-dl/|Tokyo|<img width=24 src=https://cdn.ipwhois.io/flags/jp.svg>|Japan|
 |http://sg.sbcmirror.org/armbian/dl/|Singapore|<img width=24 src=https://cdn.ipwhois.io/flags/sg.svg>|Singapore|
-|http://xogium.performanceservers.nl/dl/|Duivendrecht|<img width=24 src=https://cdn.ipwhois.io/flags/nl.svg>|Netherlands|
 
 
 ## Packages (apt.armbian.com)
